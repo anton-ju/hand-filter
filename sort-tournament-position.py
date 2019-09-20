@@ -6,15 +6,28 @@ from optparse import OptionParser
 import pprint
 from pathlib import Path
 
-cwd = Path.cwd()
-input_dir = 'input'
+CWD = Path.cwd()
+DEFAULT_INPIT_DIR = 'input'
 printer = pprint.PrettyPrinter()
-output_dir = 'output'
-storage = HandStorage(cwd.joinpath(input_dir))
+DEFAULT_OUTPUT_DIR = 'output'
 
 
 # this script filters hh of sats with 4 playrs tables, suits for 4max and for 3max
-def sort_by_tournament_position():
+def sort_by_tournament_position(options):
+    try:
+        storage = HandStorage(options.input_dir)
+    except IOError:
+        logging.exception('Invalid input dir')
+        try:
+            storage = HandStorage(CWD.joinpath(DEFAULT_INPIT_DIR))
+        except IOError:
+            logging.exception('Default input dir doesnt exists')
+            return
+
+    output_dir_path = CWD.joinpath(options.output_dir)
+    if not output_dir_path.exists():
+        output_dir_path.mkdir()
+
     result = []
     pos_codes = set()
     for txt in storage.read_hand():
@@ -26,6 +39,7 @@ def sort_by_tournament_position():
 
         positions = hh.positions()
         player_pos = {pos: hh.tournamentPosition(player) for player, pos in positions.items()}
+        # for now only for 4 and 3 max
         if hh.players_number() == 4:
             pos_str = str(player_pos['CO']) + str(player_pos['BU']) + str(player_pos['SB']) + str(player_pos['BB'])
         elif hh.players_number() == 3:
@@ -36,10 +50,7 @@ def sort_by_tournament_position():
         pos_codes.add(pos_str)
         result_row = {'pos_code': pos_str, 'txt': txt, 'fn': hh.hid}
         result.append(result_row)
-    output_dir_path = cwd.joinpath(output_dir)
     # create all possible output directories from pos_codes
-    if not output_dir_path.exists():
-        output_dir_path.mkdir()
     for pos_code in pos_codes:
         pos_code_dir_path = output_dir_path.joinpath(pos_code)
         if not pos_code_dir_path.exists():
@@ -53,7 +64,7 @@ def sort_by_tournament_position():
 
 def main(options):
     if options.save:
-        sort_by_tournament_position()
+        sort_by_tournament_position(options)
 
 
 if __name__ == '__main__':
@@ -67,6 +78,18 @@ if __name__ == '__main__':
                   default=True,
                   dest="save",
                   help="save results in different folders according to the relative stack size")
+    op.add_option("-i", "--input",
+                  action="store",
+                  default="input",
+                  dest="input_dir",
+                  help="input directory "
+                  " [default: %default]")
+    op.add_option("-o", "--output",
+                  action="store",
+                  default="output",
+                  dest="output_dir",
+                  help="output directory "
+                  " [default: %default]")
     op.add_option("-f", "--filter",
                   action="store",
                   default="less",
