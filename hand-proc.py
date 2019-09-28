@@ -10,6 +10,15 @@ CWD = Path.cwd()
 DEFAULT_INPIT_DIR = 'input'
 printer = pprint.PrettyPrinter()
 DEFAULT_OUTPUT_DIR = 'output'
+ROUND1_DIR = 'round1'
+ROUND2_DIR = 'round2'
+
+
+def get_output_dir(path):
+    output_dir_path = CWD.joinpath(path)
+    if not output_dir_path.exists():
+        output_dir_path.mkdir()
+    return output_dir_path
 
 
 # this script filters hh of sats with 4 playrs tables, suits for 4max and for 3max
@@ -24,9 +33,7 @@ def sort_by_tournament_position(options):
             logging.exception('Default input dir doesnt exists')
             return
 
-    output_dir_path = CWD.joinpath(options.output_dir)
-    if not output_dir_path.exists():
-        output_dir_path.mkdir()
+    output_dir_path = get_output_dir(options.output_dir)
 
     result = []
     pos_codes = set()
@@ -62,9 +69,62 @@ def sort_by_tournament_position(options):
         res_file_path.write_text(row['txt'], encoding='utf-8')
 
 
+def split(options):
+    input_path = CWD.joinpath(options.input_dir)
+    if not input_path.exists():
+        print('Place hand history files in "input" directory')
+        input("Press Enter to continue...")
+        return
+    output_dir_path = get_output_dir(options.output_dir)
+
+    round1_path = output_dir_path.joinpath(ROUND1_DIR)
+    if not round1_path.exists():
+        round1_path.mkdir()
+    round2_path = output_dir_path.joinpath(ROUND2_DIR)
+    if not round2_path.exists():
+        round2_path.mkdir()
+
+    file_list = list(input_path.glob('**/*.txt'))
+    counter = 0
+    skipped = 0
+    round1_path = output_dir_path.joinpath(ROUND1_DIR).joinpath(str(counter))
+    round2_path = output_dir_path.joinpath(ROUND2_DIR).joinpath(str(counter))
+    round1_path.mkdir()
+    round2_path.mkdir()
+    for file in file_list:
+        s = file.read_text(encoding='utf-8')
+        index = s.find('Match Round I')
+        if index == -1:
+            skipped += 1
+            continue
+        index = s.find('Match Round II')
+        if index == -1:
+            round1 = s[:]
+            round2 = ''
+            round1_path.joinpath(file.name).write_text(round1, encoding='utf-8')
+        else:
+            line_start = s.rfind('PokerStars', 0, index)
+            round1 = s[:line_start]
+            round2 = s[line_start:]
+            round1_path.joinpath(file.name).write_text(round1, encoding='utf-8')
+            round2_path.joinpath(file.name).write_text(round2, encoding='utf-8')
+        counter += 1
+        if counter % 500 == 0:
+            print(f'Processed {counter} of {len(file_list)}')
+            round1_path = output_dir_path.joinpath(ROUND1_DIR).joinpath(str(counter))
+            round2_path = output_dir_path.joinpath(ROUND2_DIR).joinpath(str(counter))
+            round1_path.mkdir()
+            round2_path.mkdir()
+
+    print(f'Finished: {counter}, skipped: {skipped}')
+    input("Press Enter to continue...")
+
+
 def main(options):
     if options.save:
         sort_by_tournament_position(options)
+    elif options.split:
+        split(options)
 
 
 if __name__ == '__main__':
@@ -78,6 +138,11 @@ if __name__ == '__main__':
                   default=True,
                   dest="save",
                   help="save results in different folders according to the relative stack size")
+    op.add_option("-p", "--split",
+                  action="store_true",
+                  default=True,
+                  dest="split",
+                  help="split sattelit tournaments to round1 and round2")
     op.add_option("-i", "--input",
                   action="store",
                   default="input",
