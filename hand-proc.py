@@ -5,6 +5,8 @@ import logging
 from optparse import OptionParser
 import pprint
 from pathlib import Path
+from xml.dom import minidom
+import json
 
 CWD = Path.cwd()
 DEFAULT_INPIT_DIR = 'input'
@@ -12,6 +14,51 @@ printer = pprint.PrettyPrinter()
 DEFAULT_OUTPUT_DIR = 'output'
 ROUND1_DIR = 'round1'
 ROUND2_DIR = 'round2'
+CONFIG_FILE = 'hand-proc.cfg'
+
+config = {
+    "HERO": 'DiggErr555',
+    "FISH_LABELS": ('15', '16', '17', '18', 'uu'),
+    "REG_LABELS": ('15', '16', '17', '18', 'uu'),
+    "NOTES": 'notes.DiggErr555.xml',
+    "INPUT": 'input',
+    "OUTPUT": 'output',
+    "BIINS": (3.0, 10.0, 25.0, 5.0, 100.0, 50.0),
+}
+
+
+def load_ps_notes(notes_file):
+    """
+    load pokerstars player notes from xml file
+    returns: dict {player: note}
+    """
+    if not Path.exists(notes_file):
+        raise RuntimeError('Path not exists')
+    if not Path.isfile(notes_file):
+        raise RuntimeError('Not a file')
+
+    xml = minidom.parse(notes_file)
+    notes = xml.getElementsByTagName('note')
+    notes_dict = {}
+    for note in notes:
+        notes_dict[note.attributes['player'].value] = note.attributes['label'].value
+
+    return notes_dict
+
+
+def load_config(config_current, config_file):
+    try:
+        with open(config_file, 'r') as f:
+            config_json = f.read()
+            if config_json == '':
+                return
+            new_config = json.loads(config_json, encoding='utf-8')
+            if new_config:
+                config_current.update(new_config)
+    except IOError:
+        logging.error('Error opening config file')
+    except json.JSONDecodeError:
+        logging.error('Invalid config file structure')
 
 
 def get_output_dir(path):
@@ -21,8 +68,8 @@ def get_output_dir(path):
     return output_dir_path
 
 
-# this script filters hh of sats with 4 playrs tables, suits for 4max and for 3max
 def sort_by_tournament_position(options):
+    # this script filters hh of sats with 4 playrs tables, suits for 4max and for 3max
     try:
         storage = HandStorage(options.input_dir)
     except IOError:
@@ -117,62 +164,68 @@ def split(options):
             round2_path.mkdir()
 
     print(f'Finished: {counter}, skipped: {skipped}')
-    input("Press Enter to continue...")
 
 
-def main(options):
-    if options.save:
-        sort_by_tournament_position(options)
-    elif options.split:
-        split(options)
+def main():
+    load_config(config, CONFIG_FILE)
 
-
-if __name__ == '__main__':
     usage = "usage: %prog [options] arg1 arg2"
     op = OptionParser(usage=usage)
-    op.add_option("-l", "--log", action="store", default=None,
-                  dest="log",
-                  help="log file")
     op.add_option("-s", "--save",
                   action="store_true",
-                  default=True,
+                  default=False,
                   dest="save",
                   help="save results in different folders according to the relative stack size")
     op.add_option("-p", "--split",
                   action="store_true",
-                  default=True,
+                  default=False,
                   dest="split",
                   help="split sattelit tournaments to round1 and round2")
     op.add_option("-i", "--input",
                   action="store",
-                  default="input",
+                  default=config["INPUT"],
                   dest="input_dir",
                   help="input directory "
                   " [default: %default]")
     op.add_option("-o", "--output",
                   action="store",
-                  default="output",
+                  default=config["OUTPUT"],
                   dest="output_dir",
                   help="output directory "
                   " [default: %default]")
-    op.add_option("-f", "--filter",
+    op.add_option("-n", "--notes",
+                  action="store",
+                  default=config["NOTES"],
+                  dest="notes",
+                  help="notes file"
+                  " [default: %default]")
+    op.add_option("-f", "--filter-chips",
                   action="store",
                   default="less",
                   dest="filter",
-                  help="filter hands if one of the players has stack: less, greater "
+                  help="filter hands if one of the players has stack in chips: less, greater "
+                  " [default: %default]")
+    op.add_option("--bb-reg",
+                  action="store_true",
+                  default=False,
+                  dest="bb_reg",
+                  help="filter hands if player on Big Blind match regular label in notes file"
                   " [default: %default]")
     (options, args) = op.parse_args()
-    logging.basicConfig(filename=options.log,
-                        level=logging.DEBUG,
+    logging.basicConfig(level=logging.DEBUG,
                         format='[%(asctime)s] %(levelname).1s %(message)s',
                         datefmt='%Y.%m.%d %H:%M:%S')
     logger = logging.getLogger(__name__)
-
-    if options.log:
-        fh = logging.FileHandler(options.log)
-        logger.addHandler(fh)
     ch = logging.StreamHandler()
     logger.addHandler(ch)
-    if len(args) == 0:
-        op.print_help()
-    main(options)
+
+    if options.save:
+        sort_by_tournament_position(options)
+    elif options.split:
+        split(options)
+    else:
+        op.print_usage()
+
+
+if __name__ == '__main__':
+    main()
