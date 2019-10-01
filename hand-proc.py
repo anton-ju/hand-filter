@@ -16,10 +16,12 @@ ROUND1_DIR = 'round1'
 ROUND2_DIR = 'round2'
 CONFIG_FILE = 'hand-proc.cfg'
 
+notes = None
+
 config = {
     "HERO": 'DiggErr555',
     "FISH_LABELS": ('15', '16', '17', '18', 'uu'),
-    "REG_LABELS": ('15', '16', '17', '18', 'uu'),
+    "REG_LABELS": ('11'),
     "NOTES": 'notes.DiggErr555.xml',
     "INPUT": 'input',
     "OUTPUT": 'output',
@@ -32,10 +34,11 @@ def load_ps_notes(notes_file):
     load pokerstars player notes from xml file
     returns: dict {player: note}
     """
-    if not Path.exists(notes_file):
-        raise RuntimeError('Path not exists')
-    if not Path.isfile(notes_file):
-        raise RuntimeError('Not a file')
+
+    notes_path = Path(notes_file)
+    logging.info(notes_path)
+    if not notes_path.exists():
+        raise RuntimeError('Invalid path to notes file')
 
     xml = minidom.parse(notes_file)
     notes = xml.getElementsByTagName('note')
@@ -68,6 +71,22 @@ def get_output_dir(path):
     return output_dir_path
 
 
+def pass_filters(hh, options):
+    """
+    check if hand pass filters
+    returns: boolean
+    """
+    passed = False
+    if options.bb_reg:
+        for player, pos in hh.positions().items():
+            if pos == 'BB' and notes.get(player, 'uu') in config['REG_LABELS']:
+                passed = True
+                break
+    else:
+        passed = True
+    return passed
+
+
 def sort_by_tournament_position(options):
     # this script filters hh of sats with 4 playrs tables, suits for 4max and for 3max
     try:
@@ -89,6 +108,9 @@ def sort_by_tournament_position(options):
             hh = PSHandHistory(txt)
         except Exception as e:
             logging.exception("%s " % e)
+            continue
+
+        if not pass_filters(hh, options):
             continue
 
         positions = hh.positions()
@@ -119,8 +141,7 @@ def sort_by_tournament_position(options):
 def split(options):
     input_path = CWD.joinpath(options.input_dir)
     if not input_path.exists():
-        print('Place hand history files in "input" directory')
-        input("Press Enter to continue...")
+        logging.info('Place hand history files in "input" directory')
         return
     output_dir_path = get_output_dir(options.output_dir)
 
@@ -157,13 +178,13 @@ def split(options):
             round2_path.joinpath(file.name).write_text(round2, encoding='utf-8')
         counter += 1
         if counter % 500 == 0:
-            print(f'Processed {counter} of {len(file_list)}')
+            logging.info(f'Processed {counter} of {len(file_list)}')
             round1_path = output_dir_path.joinpath(ROUND1_DIR).joinpath(str(counter))
             round2_path = output_dir_path.joinpath(ROUND2_DIR).joinpath(str(counter))
             round1_path.mkdir()
             round2_path.mkdir()
 
-    print(f'Finished: {counter}, skipped: {skipped}')
+    logging.info(f'Finished: {counter}, skipped: {skipped}')
 
 
 def main():
@@ -219,9 +240,15 @@ def main():
     ch = logging.StreamHandler()
     logger.addHandler(ch)
 
+    if options.bb_reg:
+        global notes
+        notes = load_ps_notes(options.notes)
+        logging.info('Player notes successfully loaded')
     if options.save:
+        logging.info('Sorting by positions...')
         sort_by_tournament_position(options)
     elif options.split:
+        logging.info('Splitting hand history files...')
         split(options)
     else:
         op.print_usage()
