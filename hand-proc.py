@@ -28,6 +28,34 @@ config = {
     "BIINS": (3.0, 10.0, 25.0, 5.0, 100.0, 50.0),
 }
 
+FILTERS = {
+    "BU_REG": 'bu_reg_filter',
+    "SB_REG": 'sb_reg_filter',
+    "BB_REG": 'bb_reg_filter',
+}
+
+
+# Print iterations progress
+def printProgressBar(iteration, total, prefix='', suffix='', decimals=1, length=100, fill='█'):
+    """
+    Call in a loop to create terminal progress bar
+    @params:
+        iteration   - Required  : current iteration (Int)
+        total       - Required  : total iterations (Int)
+        prefix      - Optional  : prefix string (Str)
+        suffix      - Optional  : suffix string (Str)
+        decimals    - Optional  : positive number of decimals in percent complete (Int)
+        length      - Optional  : character length of bar (Int)
+        fill        - Optional  : bar fill character (Str)
+    """
+    percent = ("{0:." + str(decimals) + "f}").format(100 * (iteration / float(total)))
+    filledLength = int(length * iteration // total)
+    bar = fill * filledLength + '-' * (length - filledLength)
+    print('\r%s |%s| %s%% %s' % (prefix, bar, percent, suffix), end='\r')
+    # Print New Line on Complete
+    if iteration == total:
+        print()
+
 
 def load_ps_notes(notes_file):
     """
@@ -71,20 +99,41 @@ def get_output_dir(path):
     return output_dir_path
 
 
+def bu_reg_filter(hh):
+    for player, pos in hh.positions().items():
+        if pos == 'BU' and notes.get(player, 'uu') in config['REG_LABELS']:
+            return True
+    return False
+
+
+def sb_reg_filter(hh):
+    for player, pos in hh.positions().items():
+        if pos == 'SB' and notes.get(player, 'uu') in config['REG_LABELS']:
+            return True
+    return False
+
+
+def bb_reg_filter(hh):
+    for player, pos in hh.positions().items():
+        if pos == 'BB' and notes.get(player, 'uu') in config['REG_LABELS']:
+            return True
+    return False
+
+
 def pass_filters(hh, options):
     """
     check if hand pass filters
     returns: boolean
     """
-    passed = False
+    passed = []
+    if options.bu_reg:
+        passed.append(bu_reg_filter(hh))
+    if options.sb_reg:
+        passed.append(sb_reg_filter(hh))
     if options.bb_reg:
-        for player, pos in hh.positions().items():
-            if pos == 'BB' and notes.get(player, 'uu') in config['REG_LABELS']:
-                passed = True
-                break
-    else:
-        passed = True
-    return passed
+        passed.append(bb_reg_filter(hh))
+
+    return all(passed)
 
 
 def sort_by_tournament_position(options):
@@ -103,6 +152,10 @@ def sort_by_tournament_position(options):
 
     result = []
     pos_codes = set()
+    total = len(list(storage.read_hand()))
+    counter = 0
+    logging.info('Sorting hands...')
+    printProgressBar(counter, total)
     for txt in storage.read_hand():
         try:
             hh = PSHandHistory(txt)
@@ -110,6 +163,8 @@ def sort_by_tournament_position(options):
             logging.exception("%s " % e)
             continue
 
+        counter += 1
+        printProgressBar(counter, total)
         if not pass_filters(hh, options):
             continue
 
@@ -132,10 +187,16 @@ def sort_by_tournament_position(options):
         if not pos_code_dir_path.exists():
             pos_code_dir_path.mkdir()
 
+    counter = 0
+    total = len(result)
+    logging.info('Saving results...')
+    printProgressBar(counter, total)
     for row in result:
         res_dir_path = output_dir_path.joinpath(row['pos_code'])
         res_file_path = res_dir_path.joinpath(row['fn']).with_suffix('.txt')
         res_file_path.write_text(row['txt'], encoding='utf-8')
+        counter += 1
+        printProgressBar(counter, total)
 
 
 def split(options):
@@ -153,12 +214,15 @@ def split(options):
         round2_path.mkdir()
 
     file_list = list(input_path.glob('**/*.txt'))
+    total = len(file_list)
     counter = 0
     skipped = 0
     round1_path = output_dir_path.joinpath(ROUND1_DIR).joinpath(str(counter))
     round2_path = output_dir_path.joinpath(ROUND2_DIR).joinpath(str(counter))
     round1_path.mkdir()
     round2_path.mkdir()
+
+    printProgressBar(counter, total)
     for file in file_list:
         s = file.read_text(encoding='utf-8')
         index = s.find('Match Round I')
@@ -178,7 +242,7 @@ def split(options):
             round2_path.joinpath(file.name).write_text(round2, encoding='utf-8')
         counter += 1
         if counter % 500 == 0:
-            logging.info(f'Processed {counter} of {len(file_list)}')
+            printProgressBar(counter, total)
             round1_path = output_dir_path.joinpath(ROUND1_DIR).joinpath(str(counter))
             round2_path = output_dir_path.joinpath(ROUND2_DIR).joinpath(str(counter))
             round1_path.mkdir()
@@ -187,9 +251,13 @@ def split(options):
     logging.info(f'Finished: {counter}, skipped: {skipped}')
 
 
+def add_filter(option, opt_str, value, parser):
+    option.values.filters.append(opt_str[2:])
+
+
 def main():
     load_config(config, CONFIG_FILE)
-
+    filters = []
     usage = "usage: %prog [options] arg1 arg2"
     op = OptionParser(usage=usage)
     op.add_option("-s", "--save",
@@ -232,6 +300,18 @@ def main():
                   dest="bb_reg",
                   help="filter hands if player on Big Blind match regular label in notes file"
                   " [default: %default]")
+    op.add_option("--sb-reg",
+                  action="store_true",
+                  default=False,
+                  dest="sb_reg",
+                  help="filter hands if player on Small Blind match regular label in notes file"
+                  " [default: %default]")
+    op.add_option("--bu-reg",
+                  action="store_true",
+                  default=False,
+                  dest="bu_reg",
+                  help="filter hands if player on Button match regular label in notes file"
+                  " [default: %default]")
     (options, args) = op.parse_args()
     logging.basicConfig(level=logging.DEBUG,
                         format='[%(asctime)s] %(levelname).1s %(message)s',
@@ -240,7 +320,7 @@ def main():
     ch = logging.StreamHandler()
     logger.addHandler(ch)
 
-    if options.bb_reg:
+    if options.bb_reg or options.sb_reg or options.bu_reg:
         global notes
         notes = load_ps_notes(options.notes)
         logging.info('Player notes successfully loaded')
