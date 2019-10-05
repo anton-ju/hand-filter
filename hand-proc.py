@@ -331,7 +331,7 @@ def main():
         logging.info('Splitting hand history files...')
         split(options)
     else:
-        op.print_usage()
+        op.print_help()
 
 
 if __name__ == '__main__':
