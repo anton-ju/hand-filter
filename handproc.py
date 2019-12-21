@@ -7,6 +7,7 @@ import pprint
 from pathlib import Path
 from xml.dom import minidom
 import json
+import re
 
 CWD = Path.cwd()
 DEFAULT_INPIT_DIR = 'input'
@@ -197,6 +198,11 @@ def sort_by_tournament_position(options):
         res_file_path.write_text(row['txt'], encoding='utf-8')
         counter += 1
         printProgressBar(counter, total)
+
+
+def renumber_places(hh_text):
+    pattern = re.compile('finished the tournament in (.+)th\splace')
+    pass
 
 
 def split(options):
