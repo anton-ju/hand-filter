@@ -200,7 +200,7 @@ def sort_by_tournament_position(options):
         printProgressBar(counter, total)
 
 
-def renumber_places(hh_text):
+def renumber_places(hh_text): ->str
     pattern = re.compile('finished the tournament in (.+)th\splace')
     pass
 
