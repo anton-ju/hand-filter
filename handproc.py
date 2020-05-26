@@ -100,6 +100,13 @@ def get_output_dir(path):
     return output_dir_path
 
 
+def co_reg_filter(hh):
+    for player, pos in hh.positions().items():
+        if pos == 'CO' and notes.get(player, 'uu') in config['REG_LABELS']:
+            return True
+    return False
+
+
 def bu_reg_filter(hh):
     for player, pos in hh.positions().items():
         if pos == 'BU' and notes.get(player, 'uu') in config['REG_LABELS']:
@@ -127,6 +134,8 @@ def pass_filters(hh, options):
     returns: boolean
     """
     passed = []
+    if options.co_reg:
+        passed.append(co_reg_filter(hh))
     if options.bu_reg:
         passed.append(bu_reg_filter(hh))
     if options.sb_reg:
@@ -317,6 +326,12 @@ def main():
                   default=False,
                   dest="bu_reg",
                   help="filter hands if player on Button match regular label in notes file"
+                  " [default: %default]")
+    op.add_option("--co-reg",
+                  action="store_true",
+                  default=False,
+                  dest="co_reg",
+                  help="filter hands if player on CO match regular label in notes file"
                   " [default: %default]")
     (options, args) = op.parse_args()
     logging.basicConfig(level=logging.DEBUG,
