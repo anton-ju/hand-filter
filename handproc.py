@@ -209,11 +209,6 @@ def sort_by_tournament_position(options):
         printProgressBar(counter, total)
 
 
-def renumber_places(hh_text): ->str
-    pattern = re.compile('finished the tournament in (.+)th\splace')
-    pass
-
-
 def split(options):
     input_path = CWD.joinpath(options.input_dir)
     if not input_path.exists():
