@@ -30,6 +30,7 @@ config = {
 }
 
 FILTERS = {
+    "CO_REG": 'co_reg_filter',
     "BU_REG": 'bu_reg_filter',
     "SB_REG": 'sb_reg_filter',
     "BB_REG": 'bb_reg_filter',
@@ -94,6 +95,10 @@ def load_config(config_current, config_file):
 
 
 def get_output_dir(path):
+    output_dir_path = Path(path)
+    if output_dir_path.exists():
+        return output_dir_path
+
     output_dir_path = CWD.joinpath(path)
     if not output_dir_path.exists():
         output_dir_path.mkdir()
@@ -128,6 +133,34 @@ def bb_reg_filter(hh):
     return False
 
 
+def bb_fish_filter(hh):
+    for player, pos in hh.positions().items():
+        if pos == 'BB' and notes.get(player, 'uu') in config['FISH_LABELS']:
+            return True
+    return False
+
+
+def sb_fish_filter(hh):
+    for player, pos in hh.positions().items():
+        if pos == 'SB' and notes.get(player, 'uu') in config['FISH_LABELS']:
+            return True
+    return False
+
+
+def bu_fish_filter(hh):
+    for player, pos in hh.positions().items():
+        if pos == 'BU' and notes.get(player, 'uu') in config['FISH_LABELS']:
+            return True
+    return False
+
+
+def co_fish_filter(hh):
+    for player, pos in hh.positions().items():
+        if pos == 'CO' and notes.get(player, 'uu') in config['FISH_LABELS']:
+            return True
+    return False
+
+
 def pass_filters(hh, options):
     """
     check if hand pass filters
@@ -143,6 +176,14 @@ def pass_filters(hh, options):
     if options.bb_reg:
         passed.append(bb_reg_filter(hh))
 
+    if options.co_fish:
+        passed.append(co_fish_filter(hh))
+    if options.bu_fish:
+        passed.append(bu_fish_filter(hh))
+    if options.sb_fish:
+        passed.append(sb_fish_filter(hh))
+    if options.bb_fish:
+        passed.append(bb_fish_filter(hh))
     return all(passed)
 
 
@@ -328,6 +369,30 @@ def main():
                   dest="co_reg",
                   help="filter hands if player on CO match regular label in notes file"
                   " [default: %default]")
+    op.add_option("--bb-fish",
+                  action="store_true",
+                  default=False,
+                  dest="bb_fish",
+                  help="filter hands if player on Big Blind match fish label in notes file"
+                  " [default: %default]")
+    op.add_option("--sb-fish",
+                  action="store_true",
+                  default=False,
+                  dest="sb_fish",
+                  help="filter hands if player on Small Blind match fish label in notes file"
+                  " [default: %default]")
+    op.add_option("--bu-fish",
+                  action="store_true",
+                  default=False,
+                  dest="bu_fish",
+                  help="filter hands if player on Button match fish label in notes file"
+                  " [default: %default]")
+    op.add_option("--co-fish",
+                  action="store_true",
+                  default=False,
+                  dest="co_fish",
+                  help="filter hands if player on CO match fish label in notes file"
+                  " [default: %default]")
     (options, args) = op.parse_args()
     logging.basicConfig(level=logging.DEBUG,
                         format='[%(asctime)s] %(levelname).1s %(message)s',
@@ -336,10 +401,9 @@ def main():
     ch = logging.StreamHandler()
     logger.addHandler(ch)
 
-    if options.bb_reg or options.sb_reg or options.bu_reg:
-        global notes
-        notes = load_ps_notes(options.notes)
-        logging.info('Player notes successfully loaded')
+    global notes
+    notes = load_ps_notes(options.notes)
+    logging.info('Player notes successfully loaded')
     if options.save:
         logging.info('Sorting by positions...')
         sort_by_tournament_position(options)
