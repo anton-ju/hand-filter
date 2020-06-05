@@ -1,0 +1,875 @@
+
+
+PokerStars Hand #207287792954: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2019/12/20 1:24:11 MSK [2019/12/19 17:24:11 ET]
+Table '2762507411 1' 4-max Seat #1 is the button
+Seat 1: busto_soon (500 in chips)
+Seat 2: newguy89 (500 in chips)
+Seat 3: Dr.Octagon77 (500 in chips)
+Seat 4: DiggErr555 (500 in chips)
+busto_soon: posts the ante 10
+newguy89: posts the ante 10
+Dr.Octagon77: posts the ante 10
+DiggErr555: posts the ante 10
+newguy89: posts small blind 25
+Dr.Octagon77: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [5s 8c]
+DiggErr555: folds
+busto_soon: raises 440 to 490 and is all-in
+newguy89: calls 465 and is all-in
+Dr.Octagon77: calls 440 and is all-in
+*** FLOP *** [Kh 7s Ks]
+*** TURN *** [Kh 7s Ks] [2d]
+*** RIVER *** [Kh 7s Ks 2d] [Qc]
+*** SHOW DOWN ***
+newguy89: shows [3h 3c] (two pair, Kings and Threes)
+Dr.Octagon77: shows [Jh Jd] (two pair, Kings and Jacks)
+busto_soon: shows [Ac 2h] (two pair, Kings and Deuces)
+Dr.Octagon77 collected 1510 from pot
+busto_soon finished the tournament in 14th place
+newguy89 finished the tournament in 14th place
+*** SUMMARY ***
+Total pot 1510 | Rake 0
+Board [Kh 7s Ks 2d Qc]
+Seat 1: busto_soon (button) showed [Ac 2h] and lost with two pair, Kings and Deuces
+Seat 2: newguy89 (small blind) showed [3h 3c] and lost with two pair, Kings and Threes
+Seat 3: Dr.Octagon77 (big blind) showed [Jh Jd] and won (1510) with two pair, Kings and Jacks
+Seat 4: DiggErr555 folded before Flop (didn't bet)
+
+PokerStars Hand #207287808879: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2019/12/20 1:24:40 MSK [2019/12/19 17:24:40 ET]
+Table '2762507411 1' 4-max Seat #3 is the button
+Seat 3: Dr.Octagon77 (1510 in chips)
+Seat 4: DiggErr555 (490 in chips)
+Dr.Octagon77: posts the ante 10
+DiggErr555: posts the ante 10
+Dr.Octagon77: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [8d 7d]
+Dr.Octagon77: folds
+Uncalled bet (25) returned to DiggErr555
+DiggErr555 collected 70 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 70 | Rake 0
+Seat 3: Dr.Octagon77 (button) (small blind) folded before Flop
+Seat 4: DiggErr555 (big blind) collected (70)
+
+PokerStars Hand #207287817298: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2019/12/20 1:24:55 MSK [2019/12/19 17:24:55 ET]
+Table '2762507411 1' 4-max Seat #4 is the button
+Seat 3: Dr.Octagon77 (1475 in chips)
+Seat 4: DiggErr555 (525 in chips)
+Dr.Octagon77: posts the ante 10
+DiggErr555: posts the ante 10
+DiggErr555: posts small blind 25
+Dr.Octagon77: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [5s 5h]
+DiggErr555: raises 465 to 515 and is all-in
+Dr.Octagon77: folds
+Uncalled bet (465) returned to DiggErr555
+DiggErr555 collected 120 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 120 | Rake 0
+Seat 3: Dr.Octagon77 (big blind) folded before Flop
+Seat 4: DiggErr555 (button) (small blind) collected (120)
+
+PokerStars Hand #207287827129: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2019/12/20 1:25:13 MSK [2019/12/19 17:25:13 ET]
+Table '2762507411 1' 4-max Seat #3 is the button
+Seat 3: Dr.Octagon77 (1415 in chips)
+Seat 4: DiggErr555 (585 in chips)
+Dr.Octagon77: posts the ante 10
+DiggErr555: posts the ante 10
+Dr.Octagon77: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [3c 9c]
+Dr.Octagon77: raises 1355 to 1405 and is all-in
+DiggErr555: folds
+Uncalled bet (1355) returned to Dr.Octagon77
+Dr.Octagon77 collected 120 from pot
+*** SUMMARY ***
+Total pot 120 | Rake 0
+Seat 3: Dr.Octagon77 (button) (small blind) collected (120)
+Seat 4: DiggErr555 (big blind) folded before Flop
+
+PokerStars Hand #207287832686: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2019/12/20 1:25:24 MSK [2019/12/19 17:25:24 ET]
+Table '2762507411 1' 4-max Seat #4 is the button
+Seat 3: Dr.Octagon77 (1475 in chips)
+Seat 4: DiggErr555 (525 in chips)
+Dr.Octagon77: posts the ante 10
+DiggErr555: posts the ante 10
+DiggErr555: posts small blind 25
+Dr.Octagon77: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [8s Ac]
+DiggErr555: raises 465 to 515 and is all-in
+Dr.Octagon77: folds
+Uncalled bet (465) returned to DiggErr555
+DiggErr555 collected 120 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 120 | Rake 0
+Seat 3: Dr.Octagon77 (big blind) folded before Flop
+Seat 4: DiggErr555 (button) (small blind) collected (120)
+
+PokerStars Hand #207287840756: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2019/12/20 1:25:38 MSK [2019/12/19 17:25:38 ET]
+Table '2762507411 1' 4-max Seat #3 is the button
+Seat 3: Dr.Octagon77 (1415 in chips)
+Seat 4: DiggErr555 (585 in chips)
+Dr.Octagon77: posts the ante 10
+DiggErr555: posts the ante 10
+Dr.Octagon77: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [8s 7c]
+Dr.Octagon77: folds
+Uncalled bet (25) returned to DiggErr555
+DiggErr555 collected 70 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 70 | Rake 0
+Seat 3: Dr.Octagon77 (button) (small blind) folded before Flop
+Seat 4: DiggErr555 (big blind) collected (70)
+
+PokerStars Hand #207287843709: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2019/12/20 1:25:44 MSK [2019/12/19 17:25:44 ET]
+Table '2762507411 1' 4-max Seat #4 is the button
+Seat 3: Dr.Octagon77 (1380 in chips)
+Seat 4: DiggErr555 (620 in chips)
+Dr.Octagon77: posts the ante 10
+DiggErr555: posts the ante 10
+DiggErr555: posts small blind 25
+Dr.Octagon77: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [5d Td]
+DiggErr555: calls 25
+Dr.Octagon77: raises 100 to 150
+DiggErr555: folds
+Uncalled bet (100) returned to Dr.Octagon77
+Dr.Octagon77 collected 120 from pot
+*** SUMMARY ***
+Total pot 120 | Rake 0
+Seat 3: Dr.Octagon77 (big blind) collected (120)
+Seat 4: DiggErr555 (button) (small blind) folded before Flop
+
+PokerStars Hand #207287855793: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2019/12/20 1:26:06 MSK [2019/12/19 17:26:06 ET]
+Table '2762507411 1' 4-max Seat #3 is the button
+Seat 3: Dr.Octagon77 (1440 in chips)
+Seat 4: DiggErr555 (560 in chips)
+Dr.Octagon77: posts the ante 10
+DiggErr555: posts the ante 10
+Dr.Octagon77: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [3d 9c]
+Dr.Octagon77: raises 1380 to 1430 and is all-in
+DiggErr555: folds
+Uncalled bet (1380) returned to Dr.Octagon77
+Dr.Octagon77 collected 120 from pot
+*** SUMMARY ***
+Total pot 120 | Rake 0
+Seat 3: Dr.Octagon77 (button) (small blind) collected (120)
+Seat 4: DiggErr555 (big blind) folded before Flop
+
+PokerStars Hand #207287860094: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2019/12/20 1:26:13 MSK [2019/12/19 17:26:13 ET]
+Table '2762507411 1' 4-max Seat #4 is the button
+Seat 3: Dr.Octagon77 (1500 in chips)
+Seat 4: DiggErr555 (500 in chips)
+Dr.Octagon77: posts the ante 10
+DiggErr555: posts the ante 10
+DiggErr555: posts small blind 25
+Dr.Octagon77: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Ad 7c]
+DiggErr555: raises 440 to 490 and is all-in
+Dr.Octagon77: folds
+Uncalled bet (440) returned to DiggErr555
+DiggErr555 collected 120 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 120 | Rake 0
+Seat 3: Dr.Octagon77 (big blind) folded before Flop
+Seat 4: DiggErr555 (button) (small blind) collected (120)
+
+PokerStars Hand #207287863155: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2019/12/20 1:26:19 MSK [2019/12/19 17:26:19 ET]
+Table '2762507411 1' 4-max Seat #3 is the button
+Seat 3: Dr.Octagon77 (1440 in chips)
+Seat 4: DiggErr555 (560 in chips)
+Dr.Octagon77: posts the ante 10
+DiggErr555: posts the ante 10
+Dr.Octagon77: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [8h 5h]
+Dr.Octagon77: folds
+Uncalled bet (25) returned to DiggErr555
+DiggErr555 collected 70 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 70 | Rake 0
+Seat 3: Dr.Octagon77 (button) (small blind) folded before Flop
+Seat 4: DiggErr555 (big blind) collected (70)
+
+PokerStars Hand #207287866733: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2019/12/20 1:26:25 MSK [2019/12/19 17:26:25 ET]
+Table '2762507411 1' 4-max Seat #4 is the button
+Seat 3: Dr.Octagon77 (1405 in chips)
+Seat 4: DiggErr555 (595 in chips)
+Dr.Octagon77: posts the ante 10
+DiggErr555: posts the ante 10
+DiggErr555: posts small blind 25
+Dr.Octagon77: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Ks 3s]
+DiggErr555: raises 535 to 585 and is all-in
+Dr.Octagon77: folds
+Uncalled bet (535) returned to DiggErr555
+DiggErr555 collected 120 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 120 | Rake 0
+Seat 3: Dr.Octagon77 (big blind) folded before Flop
+Seat 4: DiggErr555 (button) (small blind) collected (120)
+
+PokerStars Hand #207287874719: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2019/12/20 1:26:40 MSK [2019/12/19 17:26:40 ET]
+Table '2762507411 1' 4-max Seat #3 is the button
+Seat 3: Dr.Octagon77 (1345 in chips)
+Seat 4: DiggErr555 (655 in chips)
+Dr.Octagon77: posts the ante 10
+DiggErr555: posts the ante 10
+Dr.Octagon77: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [5d 6s]
+Dr.Octagon77: folds
+Uncalled bet (25) returned to DiggErr555
+DiggErr555 collected 70 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 70 | Rake 0
+Seat 3: Dr.Octagon77 (button) (small blind) folded before Flop
+Seat 4: DiggErr555 (big blind) collected (70)
+
+PokerStars Hand #207287884248: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2019/12/20 1:26:51 MSK [2019/12/19 17:26:51 ET]
+Table '2762507411 1' 4-max Seat #4 is the button
+Seat 3: Dr.Octagon77 (1310 in chips)
+Seat 4: DiggErr555 (690 in chips)
+Dr.Octagon77: posts the ante 10
+DiggErr555: posts the ante 10
+DiggErr555: posts small blind 25
+Dr.Octagon77: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [3s 4d]
+DiggErr555: calls 25
+Dr.Octagon77: raises 1250 to 1300 and is all-in
+DiggErr555: folds
+Uncalled bet (1250) returned to Dr.Octagon77
+Dr.Octagon77 collected 120 from pot
+*** SUMMARY ***
+Total pot 120 | Rake 0
+Seat 3: Dr.Octagon77 (big blind) collected (120)
+Seat 4: DiggErr555 (button) (small blind) folded before Flop
+
+PokerStars Hand #207287890285: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2019/12/20 1:27:03 MSK [2019/12/19 17:27:03 ET]
+Table '2762507411 1' 4-max Seat #3 is the button
+Seat 3: Dr.Octagon77 (1370 in chips)
+Seat 4: DiggErr555 (630 in chips)
+Dr.Octagon77: posts the ante 10
+DiggErr555: posts the ante 10
+Dr.Octagon77: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [7c Tc]
+Dr.Octagon77: folds
+Uncalled bet (25) returned to DiggErr555
+DiggErr555 collected 70 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 70 | Rake 0
+Seat 3: Dr.Octagon77 (button) (small blind) folded before Flop
+Seat 4: DiggErr555 (big blind) collected (70)
+
+PokerStars Hand #207287894679: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2019/12/20 1:27:11 MSK [2019/12/19 17:27:11 ET]
+Table '2762507411 1' 4-max Seat #4 is the button
+Seat 3: Dr.Octagon77 (1335 in chips)
+Seat 4: DiggErr555 (665 in chips)
+Dr.Octagon77: posts the ante 10
+DiggErr555: posts the ante 10
+DiggErr555: posts small blind 25
+Dr.Octagon77: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [7h 6s]
+DiggErr555: calls 25
+Dr.Octagon77: checks
+*** FLOP *** [Ac 4d 2d]
+Dr.Octagon77: checks
+DiggErr555: bets 50
+Dr.Octagon77: folds
+Uncalled bet (50) returned to DiggErr555
+DiggErr555 collected 120 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 120 | Rake 0
+Board [Ac 4d 2d]
+Seat 3: Dr.Octagon77 (big blind) folded on the Flop
+Seat 4: DiggErr555 (button) (small blind) collected (120)
+
+PokerStars Hand #207287912146: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2019/12/20 1:27:43 MSK [2019/12/19 17:27:43 ET]
+Table '2762507411 1' 4-max Seat #3 is the button
+Seat 3: Dr.Octagon77 (1275 in chips)
+Seat 4: DiggErr555 (725 in chips)
+Dr.Octagon77: posts the ante 20
+DiggErr555: posts the ante 20
+Dr.Octagon77: posts small blind 50
+DiggErr555: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [5s 9d]
+Dr.Octagon77: folds
+Uncalled bet (50) returned to DiggErr555
+DiggErr555 collected 140 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 140 | Rake 0
+Seat 3: Dr.Octagon77 (button) (small blind) folded before Flop
+Seat 4: DiggErr555 (big blind) collected (140)
+
+PokerStars Hand #207287915243: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2019/12/20 1:27:49 MSK [2019/12/19 17:27:49 ET]
+Table '2762507411 1' 4-max Seat #4 is the button
+Seat 3: Dr.Octagon77 (1205 in chips)
+Seat 4: DiggErr555 (795 in chips)
+Dr.Octagon77: posts the ante 20
+DiggErr555: posts the ante 20
+DiggErr555: posts small blind 50
+Dr.Octagon77: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [4d 3d]
+DiggErr555: raises 675 to 775 and is all-in
+Dr.Octagon77: folds
+Uncalled bet (675) returned to DiggErr555
+DiggErr555 collected 240 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 240 | Rake 0
+Seat 3: Dr.Octagon77 (big blind) folded before Flop
+Seat 4: DiggErr555 (button) (small blind) collected (240)
+
+PokerStars Hand #207287923624: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2019/12/20 1:28:04 MSK [2019/12/19 17:28:04 ET]
+Table '2762507411 1' 4-max Seat #3 is the button
+Seat 3: Dr.Octagon77 (1085 in chips)
+Seat 4: DiggErr555 (915 in chips)
+Dr.Octagon77: posts the ante 20
+DiggErr555: posts the ante 20
+Dr.Octagon77: posts small blind 50
+DiggErr555: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [5d 7d]
+Dr.Octagon77: raises 965 to 1065 and is all-in
+DiggErr555: folds
+Uncalled bet (965) returned to Dr.Octagon77
+Dr.Octagon77 collected 240 from pot
+*** SUMMARY ***
+Total pot 240 | Rake 0
+Seat 3: Dr.Octagon77 (button) (small blind) collected (240)
+Seat 4: DiggErr555 (big blind) folded before Flop
+
+PokerStars Hand #207287928190: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2019/12/20 1:28:12 MSK [2019/12/19 17:28:12 ET]
+Table '2762507411 1' 4-max Seat #4 is the button
+Seat 3: Dr.Octagon77 (1205 in chips)
+Seat 4: DiggErr555 (795 in chips)
+Dr.Octagon77: posts the ante 20
+DiggErr555: posts the ante 20
+DiggErr555: posts small blind 50
+Dr.Octagon77: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [3c Kd]
+DiggErr555: raises 675 to 775 and is all-in
+Dr.Octagon77: folds
+Uncalled bet (675) returned to DiggErr555
+DiggErr555 collected 240 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 240 | Rake 0
+Seat 3: Dr.Octagon77 (big blind) folded before Flop
+Seat 4: DiggErr555 (button) (small blind) collected (240)
+
+PokerStars Hand #207287931903: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2019/12/20 1:28:19 MSK [2019/12/19 17:28:19 ET]
+Table '2762507411 1' 4-max Seat #3 is the button
+Seat 3: Dr.Octagon77 (1085 in chips)
+Seat 4: DiggErr555 (915 in chips)
+Dr.Octagon77: posts the ante 20
+DiggErr555: posts the ante 20
+Dr.Octagon77: posts small blind 50
+DiggErr555: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [5d 9h]
+Dr.Octagon77: folds
+Uncalled bet (50) returned to DiggErr555
+DiggErr555 collected 140 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 140 | Rake 0
+Seat 3: Dr.Octagon77 (button) (small blind) folded before Flop
+Seat 4: DiggErr555 (big blind) collected (140)
+
+PokerStars Hand #207287934025: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2019/12/20 1:28:23 MSK [2019/12/19 17:28:23 ET]
+Table '2762507411 1' 4-max Seat #4 is the button
+Seat 3: Dr.Octagon77 (1015 in chips)
+Seat 4: DiggErr555 (985 in chips)
+Dr.Octagon77: posts the ante 20
+DiggErr555: posts the ante 20
+DiggErr555: posts small blind 50
+Dr.Octagon77: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [8d 4c]
+DiggErr555: calls 50
+Dr.Octagon77: raises 895 to 995 and is all-in
+DiggErr555: folds
+Uncalled bet (895) returned to Dr.Octagon77
+Dr.Octagon77 collected 240 from pot
+*** SUMMARY ***
+Total pot 240 | Rake 0
+Seat 3: Dr.Octagon77 (big blind) collected (240)
+Seat 4: DiggErr555 (button) (small blind) folded before Flop
+
+PokerStars Hand #207287939887: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2019/12/20 1:28:34 MSK [2019/12/19 17:28:34 ET]
+Table '2762507411 1' 4-max Seat #3 is the button
+Seat 3: Dr.Octagon77 (1135 in chips)
+Seat 4: DiggErr555 (865 in chips)
+Dr.Octagon77: posts the ante 20
+DiggErr555: posts the ante 20
+Dr.Octagon77: posts small blind 50
+DiggErr555: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Ah Ac]
+Dr.Octagon77: folds
+Uncalled bet (50) returned to DiggErr555
+DiggErr555 collected 140 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 140 | Rake 0
+Seat 3: Dr.Octagon77 (button) (small blind) folded before Flop
+Seat 4: DiggErr555 (big blind) collected (140)
+
+PokerStars Hand #207287942153: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2019/12/20 1:28:38 MSK [2019/12/19 17:28:38 ET]
+Table '2762507411 1' 4-max Seat #4 is the button
+Seat 3: Dr.Octagon77 (1065 in chips)
+Seat 4: DiggErr555 (935 in chips)
+Dr.Octagon77: posts the ante 20
+DiggErr555: posts the ante 20
+DiggErr555: posts small blind 50
+Dr.Octagon77: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [4c Kc]
+DiggErr555: raises 815 to 915 and is all-in
+Dr.Octagon77: folds
+Uncalled bet (815) returned to DiggErr555
+DiggErr555 collected 240 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 240 | Rake 0
+Seat 3: Dr.Octagon77 (big blind) folded before Flop
+Seat 4: DiggErr555 (button) (small blind) collected (240)
+
+PokerStars Hand #207287950000: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2019/12/20 1:28:53 MSK [2019/12/19 17:28:53 ET]
+Table '2762507411 1' 4-max Seat #3 is the button
+Seat 3: Dr.Octagon77 (945 in chips)
+Seat 4: DiggErr555 (1055 in chips)
+Dr.Octagon77: posts the ante 20
+DiggErr555: posts the ante 20
+Dr.Octagon77: posts small blind 50
+DiggErr555: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Kd 9s]
+Dr.Octagon77: raises 825 to 925 and is all-in
+DiggErr555: calls 825
+*** FLOP *** [7s Ks 8s]
+*** TURN *** [7s Ks 8s] [3d]
+*** RIVER *** [7s Ks 8s 3d] [Jh]
+*** SHOW DOWN ***
+DiggErr555: shows [Kd 9s] (a pair of Kings)
+Dr.Octagon77: shows [4s 4c] (a pair of Fours)
+DiggErr555 collected 1890 from pot
+*** SUMMARY ***
+Total pot 1890 | Rake 0
+Board [7s Ks 8s 3d Jh]
+Seat 3: Dr.Octagon77 (button) (small blind) showed [4s 4c] and lost with a pair of Fours
+Seat 4: DiggErr555 (big blind) showed [Kd 9s] and won (1890) with a pair of Kings
+
+PokerStars Hand #207287962509: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2019/12/20 1:29:16 MSK [2019/12/19 17:29:16 ET]
+Table '2762507411 1' 4-max Seat #4 is the button
+Seat 1: DiggErr555 (500 in chips)
+Seat 2: MandieRin (500 in chips)
+Seat 3: piet33 (500 in chips)
+Seat 4: NanoDawn (500 in chips)
+DiggErr555: posts the ante 10
+MandieRin: posts the ante 10
+piet33: posts the ante 10
+NanoDawn: posts the ante 10
+DiggErr555: posts small blind 25
+MandieRin: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [4s 6h]
+piet33: raises 440 to 490 and is all-in
+NanoDawn: folds
+DiggErr555: folds
+MandieRin: folds
+Uncalled bet (440) returned to piet33
+piet33 collected 165 from pot
+piet33: doesn't show hand
+*** SUMMARY ***
+Total pot 165 | Rake 0
+Seat 1: DiggErr555 (small blind) folded before Flop
+Seat 2: MandieRin (big blind) folded before Flop
+Seat 3: piet33 collected (165)
+Seat 4: NanoDawn (button) folded before Flop (didn't bet)
+
+PokerStars Hand #207287971340: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2019/12/20 1:29:32 MSK [2019/12/19 17:29:32 ET]
+Table '2762507411 1' 4-max Seat #1 is the button
+Seat 1: DiggErr555 (465 in chips)
+Seat 2: MandieRin (440 in chips)
+Seat 3: piet33 (605 in chips)
+Seat 4: NanoDawn (490 in chips)
+DiggErr555: posts the ante 10
+MandieRin: posts the ante 10
+piet33: posts the ante 10
+NanoDawn: posts the ante 10
+MandieRin: posts small blind 25
+piet33: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [7h 3c]
+NanoDawn: folds
+DiggErr555: folds
+MandieRin: raises 380 to 430 and is all-in
+piet33: folds
+Uncalled bet (380) returned to MandieRin
+MandieRin collected 140 from pot
+*** SUMMARY ***
+Total pot 140 | Rake 0
+Seat 1: DiggErr555 (button) folded before Flop (didn't bet)
+Seat 2: MandieRin (small blind) collected (140)
+Seat 3: piet33 (big blind) folded before Flop
+Seat 4: NanoDawn folded before Flop (didn't bet)
+
+PokerStars Hand #207287977374: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2019/12/20 1:29:43 MSK [2019/12/19 17:29:43 ET]
+Table '2762507411 1' 4-max Seat #2 is the button
+Seat 1: DiggErr555 (455 in chips)
+Seat 2: MandieRin (520 in chips)
+Seat 3: piet33 (545 in chips)
+Seat 4: NanoDawn (480 in chips)
+DiggErr555: posts the ante 10
+MandieRin: posts the ante 10
+piet33: posts the ante 10
+NanoDawn: posts the ante 10
+piet33: posts small blind 25
+NanoDawn: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [3s Ad]
+DiggErr555: raises 395 to 445 and is all-in
+MandieRin: folds
+piet33: folds
+NanoDawn: folds
+Uncalled bet (395) returned to DiggErr555
+DiggErr555 collected 165 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 165 | Rake 0
+Seat 1: DiggErr555 collected (165)
+Seat 2: MandieRin (button) folded before Flop (didn't bet)
+Seat 3: piet33 (small blind) folded before Flop
+Seat 4: NanoDawn (big blind) folded before Flop
+
+PokerStars Hand #207287983856: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2019/12/20 1:29:55 MSK [2019/12/19 17:29:55 ET]
+Table '2762507411 1' 4-max Seat #3 is the button
+Seat 1: DiggErr555 (560 in chips)
+Seat 2: MandieRin (510 in chips)
+Seat 3: piet33 (510 in chips)
+Seat 4: NanoDawn (420 in chips)
+DiggErr555: posts the ante 10
+MandieRin: posts the ante 10
+piet33: posts the ante 10
+NanoDawn: posts the ante 10
+NanoDawn: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [3h Jd]
+MandieRin: folds
+piet33: raises 450 to 500 and is all-in
+NanoDawn: folds
+DiggErr555: folds
+Uncalled bet (450) returned to piet33
+piet33 collected 165 from pot
+piet33: doesn't show hand
+*** SUMMARY ***
+Total pot 165 | Rake 0
+Seat 1: DiggErr555 (big blind) folded before Flop
+Seat 2: MandieRin folded before Flop (didn't bet)
+Seat 3: piet33 (button) collected (165)
+Seat 4: NanoDawn (small blind) folded before Flop
+
+PokerStars Hand #207287990426: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2019/12/20 1:30:08 MSK [2019/12/19 17:30:08 ET]
+Table '2762507411 1' 4-max Seat #4 is the button
+Seat 1: DiggErr555 (500 in chips)
+Seat 2: MandieRin (500 in chips)
+Seat 3: piet33 (615 in chips)
+Seat 4: NanoDawn (385 in chips)
+DiggErr555: posts the ante 10
+MandieRin: posts the ante 10
+piet33: posts the ante 10
+NanoDawn: posts the ante 10
+DiggErr555: posts small blind 25
+MandieRin: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Ks Qc]
+piet33: folds
+NanoDawn: raises 325 to 375 and is all-in
+DiggErr555: raises 115 to 490 and is all-in
+MandieRin: folds
+Uncalled bet (115) returned to DiggErr555
+*** FLOP *** [Ac 8c 4h]
+*** TURN *** [Ac 8c 4h] [3d]
+*** RIVER *** [Ac 8c 4h 3d] [4c]
+*** SHOW DOWN ***
+DiggErr555: shows [Ks Qc] (a pair of Fours)
+NanoDawn: shows [Ah 5c] (two pair, Aces and Fours)
+NanoDawn collected 840 from pot
+*** SUMMARY ***
+Total pot 840 | Rake 0
+Board [Ac 8c 4h 3d 4c]
+Seat 1: DiggErr555 (small blind) showed [Ks Qc] and lost with a pair of Fours
+Seat 2: MandieRin (big blind) folded before Flop
+Seat 3: piet33 folded before Flop (didn't bet)
+Seat 4: NanoDawn (button) showed [Ah 5c] and won (840) with two pair, Aces and Fours
+
+PokerStars Hand #207288000798: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2019/12/20 1:30:27 MSK [2019/12/19 17:30:27 ET]
+Table '2762507411 1' 4-max Seat #1 is the button
+Seat 1: DiggErr555 (115 in chips)
+Seat 2: MandieRin (440 in chips)
+Seat 3: piet33 (605 in chips)
+Seat 4: NanoDawn (840 in chips)
+DiggErr555: posts the ante 10
+MandieRin: posts the ante 10
+piet33: posts the ante 10
+NanoDawn: posts the ante 10
+MandieRin: posts small blind 25
+piet33: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [2h 8h]
+NanoDawn: folds
+DiggErr555: folds
+MandieRin: raises 380 to 430 and is all-in
+piet33: calls 380
+*** FLOP *** [Jc 9s 3h]
+*** TURN *** [Jc 9s 3h] [6c]
+*** RIVER *** [Jc 9s 3h 6c] [3s]
+*** SHOW DOWN ***
+MandieRin: shows [Ac 9c] (two pair, Nines and Threes)
+piet33: shows [6d 6h] (a full house, Sixes full of Threes)
+piet33 collected 900 from pot
+MandieRin finished the tournament in 4th place
+*** SUMMARY ***
+Total pot 900 | Rake 0
+Board [Jc 9s 3h 6c 3s]
+Seat 1: DiggErr555 (button) folded before Flop (didn't bet)
+Seat 2: MandieRin (small blind) showed [Ac 9c] and lost with two pair, Nines and Threes
+Seat 3: piet33 (big blind) showed [6d 6h] and won (900) with a full house, Sixes full of Threes
+Seat 4: NanoDawn folded before Flop (didn't bet)
+
+PokerStars Hand #207288015564: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2019/12/20 1:30:55 MSK [2019/12/19 17:30:55 ET]
+Table '2762507411 1' 4-max Seat #3 is the button
+Seat 1: DiggErr555 (105 in chips)
+Seat 3: piet33 (1065 in chips)
+Seat 4: NanoDawn (830 in chips)
+DiggErr555: posts the ante 10
+piet33: posts the ante 10
+NanoDawn: posts the ante 10
+NanoDawn: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [5h Qh]
+piet33: calls 50
+NanoDawn: folds
+DiggErr555: raises 45 to 95 and is all-in
+piet33: calls 45
+*** FLOP *** [2s Qs 4d]
+*** TURN *** [2s Qs 4d] [Jc]
+*** RIVER *** [2s Qs 4d Jc] [9s]
+*** SHOW DOWN ***
+DiggErr555: shows [5h Qh] (a pair of Queens)
+piet33: shows [Ac 9d] (a pair of Nines)
+DiggErr555 collected 245 from pot
+*** SUMMARY ***
+Total pot 245 | Rake 0
+Board [2s Qs 4d Jc 9s]
+Seat 1: DiggErr555 (big blind) showed [5h Qh] and won (245) with a pair of Queens
+Seat 3: piet33 (button) showed [Ac 9d] and lost with a pair of Nines
+Seat 4: NanoDawn (small blind) folded before Flop
+
+PokerStars Hand #207288029877: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2019/12/20 1:31:22 MSK [2019/12/19 17:31:22 ET]
+Table '2762507411 1' 4-max Seat #4 is the button
+Seat 1: DiggErr555 (245 in chips)
+Seat 3: piet33 (960 in chips)
+Seat 4: NanoDawn (795 in chips)
+DiggErr555: posts the ante 10
+piet33: posts the ante 10
+NanoDawn: posts the ante 10
+DiggErr555: posts small blind 25
+piet33: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [6c 3s]
+NanoDawn: folds
+DiggErr555: raises 185 to 235 and is all-in
+piet33: folds
+Uncalled bet (185) returned to DiggErr555
+DiggErr555 collected 130 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 130 | Rake 0
+Seat 1: DiggErr555 (small blind) collected (130)
+Seat 3: piet33 (big blind) folded before Flop
+Seat 4: NanoDawn (button) folded before Flop (didn't bet)
+
+PokerStars Hand #207288042592: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2019/12/20 1:31:45 MSK [2019/12/19 17:31:45 ET]
+Table '2762507411 1' 4-max Seat #1 is the button
+Seat 1: DiggErr555 (315 in chips)
+Seat 3: piet33 (900 in chips)
+Seat 4: NanoDawn (785 in chips)
+DiggErr555: posts the ante 10
+piet33: posts the ante 10
+NanoDawn: posts the ante 10
+piet33: posts small blind 25
+NanoDawn: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [7d 4c]
+DiggErr555: folds
+piet33: raises 840 to 890 and is all-in
+NanoDawn: folds
+Uncalled bet (840) returned to piet33
+piet33 collected 130 from pot
+piet33: doesn't show hand
+*** SUMMARY ***
+Total pot 130 | Rake 0
+Seat 1: DiggErr555 (button) folded before Flop (didn't bet)
+Seat 3: piet33 (small blind) collected (130)
+Seat 4: NanoDawn (big blind) folded before Flop
+
+PokerStars Hand #207288052207: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2019/12/20 1:32:03 MSK [2019/12/19 17:32:03 ET]
+Table '2762507411 1' 4-max Seat #3 is the button
+Seat 1: DiggErr555 (305 in chips)
+Seat 3: piet33 (970 in chips)
+Seat 4: NanoDawn (725 in chips)
+DiggErr555: posts the ante 10
+piet33: posts the ante 10
+NanoDawn: posts the ante 10
+NanoDawn: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [3d Ah]
+piet33: folds
+NanoDawn: folds
+Uncalled bet (25) returned to DiggErr555
+DiggErr555 collected 80 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 80 | Rake 0
+Seat 1: DiggErr555 (big blind) collected (80)
+Seat 3: piet33 (button) folded before Flop (didn't bet)
+Seat 4: NanoDawn (small blind) folded before Flop
+
+PokerStars Hand #207288059673: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round II, Level II (50/100) - 2019/12/20 1:32:17 MSK [2019/12/19 17:32:17 ET]
+Table '2762507411 1' 4-max Seat #4 is the button
+Seat 1: DiggErr555 (350 in chips)
+Seat 3: piet33 (960 in chips)
+Seat 4: NanoDawn (690 in chips)
+DiggErr555: posts the ante 20
+piet33: posts the ante 20
+NanoDawn: posts the ante 20
+DiggErr555: posts small blind 50
+piet33: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Kd Td]
+NanoDawn: folds
+DiggErr555: raises 230 to 330 and is all-in
+piet33: calls 230
+*** FLOP *** [Js 4d Th]
+*** TURN *** [Js 4d Th] [6s]
+*** RIVER *** [Js 4d Th 6s] [Ks]
+*** SHOW DOWN ***
+DiggErr555: shows [Kd Td] (two pair, Kings and Tens)
+piet33: shows [8d Ac] (high card Ace)
+DiggErr555 collected 720 from pot
+*** SUMMARY ***
+Total pot 720 | Rake 0
+Board [Js 4d Th 6s Ks]
+Seat 1: DiggErr555 (small blind) showed [Kd Td] and won (720) with two pair, Kings and Tens
+Seat 3: piet33 (big blind) showed [8d Ac] and lost with high card Ace
+Seat 4: NanoDawn (button) folded before Flop (didn't bet)
+
+PokerStars Hand #207288071494: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round II, Level II (50/100) - 2019/12/20 1:32:39 MSK [2019/12/19 17:32:39 ET]
+Table '2762507411 1' 4-max Seat #1 is the button
+Seat 1: DiggErr555 (720 in chips)
+Seat 3: piet33 (610 in chips)
+Seat 4: NanoDawn (670 in chips)
+DiggErr555: posts the ante 20
+piet33: posts the ante 20
+NanoDawn: posts the ante 20
+piet33: posts small blind 50
+NanoDawn: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [7c 9c]
+DiggErr555: folds
+piet33: raises 490 to 590 and is all-in
+NanoDawn: calls 490
+*** FLOP *** [Ks Qh Qs]
+*** TURN *** [Ks Qh Qs] [Kd]
+*** RIVER *** [Ks Qh Qs Kd] [2s]
+*** SHOW DOWN ***
+piet33: shows [Qd Jh] (a full house, Queens full of Kings)
+NanoDawn: shows [Ah 3c] (two pair, Kings and Queens)
+piet33 collected 1240 from pot
+*** SUMMARY ***
+Total pot 1240 | Rake 0
+Board [Ks Qh Qs Kd 2s]
+Seat 1: DiggErr555 (button) folded before Flop (didn't bet)
+Seat 3: piet33 (small blind) showed [Qd Jh] and won (1240) with a full house, Queens full of Kings
+Seat 4: NanoDawn (big blind) showed [Ah 3c] and lost with two pair, Kings and Queens
+
+PokerStars Hand #207288085656: Tournament #2762507411, $26.96+$0.54 USD Hold'em No Limit - Match Round II, Level II (50/100) - 2019/12/20 1:33:06 MSK [2019/12/19 17:33:06 ET]
+Table '2762507411 1' 4-max Seat #3 is the button
+Seat 1: DiggErr555 (700 in chips)
+Seat 3: piet33 (1240 in chips)
+Seat 4: NanoDawn (60 in chips)
+DiggErr555: posts the ante 20
+piet33: posts the ante 20
+NanoDawn: posts the ante 20
+NanoDawn: posts small blind 40 and is all-in
+DiggErr555: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Jd 7c]
+piet33: calls 100
+DiggErr555: checks
+*** FLOP *** [Ad Tc 8c]
+DiggErr555: checks
+piet33: checks
+*** TURN *** [Ad Tc 8c] [3h]
+DiggErr555: checks
+piet33: checks
+*** RIVER *** [Ad Tc 8c 3h] [9s]
+DiggErr555: checks
+piet33: checks
+*** SHOW DOWN ***
+DiggErr555: shows [Jd 7c] (a straight, Seven to Jack)
+piet33: mucks hand
+DiggErr555 collected 120 from side pot
+NanoDawn: mucks hand
+DiggErr555 collected 180 from main pot
+NanoDawn finished the tournament in 3rd place and received $1.36.
+DiggErr555 finished the tournament in 1st place
+DiggErr555 wins an entry to tournament #2757781894
+piet33 finished the tournament in 1st place
+piet33 wins an entry to tournament #2757781894
+*** SUMMARY ***
+Total pot 300 Main pot 180. Side pot 120. | Rake 0
+Board [Ad Tc 8c 3h 9s]
+Seat 1: DiggErr555 (big blind) showed [Jd 7c] and won (300) with a straight, Seven to Jack
+Seat 3: piet33 (button) mucked [9h 6h]
+Seat 4: NanoDawn (small blind) mucked [4h 4c]
