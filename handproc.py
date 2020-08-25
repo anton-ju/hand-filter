@@ -8,6 +8,7 @@ from pathlib import Path
 from xml.dom import minidom
 import json
 import re
+import csv
 
 CWD = Path.cwd()
 DEFAULT_INPIT_DIR = 'input'
@@ -15,7 +16,7 @@ printer = pprint.PrettyPrinter()
 DEFAULT_OUTPUT_DIR = 'output'
 ROUND1_DIR = 'round1'
 ROUND2_DIR = 'round2'
-CONFIG_FILE = 'hand-proc.cfg'
+CONFIG_FILE = 'handproc.cfg'
 
 notes = None
 
@@ -302,6 +303,58 @@ def split(options):
     logging.info(f'Finished: {counter}, skipped: {skipped}')
 
 
+class PSGrandTourHistory(PSHandHistory):
+    BOUNTY_WON_REGEX = "(?P<player>.*) wins \$(?P<bounty>.*) for"
+
+
+def stats(options):
+    # counting statistics and saving in csv file
+
+    try:
+        storage = HandStorage(options.input_dir)
+    except IOError:
+        logging.exception('Invalid input dir')
+        try:
+            storage = HandStorage(CWD.joinpath(DEFAULT_INPIT_DIR))
+        except IOError:
+            logging.exception('Default input dir doesnt exists')
+            return
+
+    csv_columns = ['tid', 'hid', 'player', 'bounty', 'cnt']
+    csv_file = "stats.csv"
+    stats = []
+    total = len(list(storage.read_hand())) #TODO evaluates too long time
+    counter = 0
+    logging.info('...')
+    printProgressBar(counter, total)
+    for txt in storage.read_hand():
+        try:
+            hh = PSGrandTourHistory(txt)
+        except Exception as e:
+            logging.exception("%s " % e)
+            continue
+
+        counter += 1
+        printProgressBar(counter, total)
+        if not pass_filters(hh, options):
+            continue
+
+        bounty_won = hh.bounty_won
+        if bounty_won:
+            tid = hh.tid
+            hid = hh.hid
+            for player, bounty in bounty_won.items():
+                stats.append({'tid': tid, 'hid': hid, 'player': player, 'bounty': bounty, 'cnt': 1})
+
+    try:
+        with open(csv_file, 'w', newline='') as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
+            writer.writeheader()
+            writer.writerows(stats)
+    except IOError:
+        logging.exception("IOError while writing csv file")
+
+
 def add_filter(option, opt_str, value, parser):
     option.values.filters.append(opt_str[2:])
 
@@ -393,6 +446,12 @@ def main():
                   dest="co_fish",
                   help="filter hands if player on CO match fish label in notes file"
                   " [default: %default]")
+    op.add_option("--stats-to-csv",
+                  action="store_true",
+                  default=False,
+                  dest="stats",
+                  help="save hands statistic to csv file stats.csv"
+                       " [default: %default]")
     (options, args) = op.parse_args()
     logging.basicConfig(level=logging.DEBUG,
                         format='[%(asctime)s] %(levelname).1s %(message)s',
@@ -402,14 +461,21 @@ def main():
     logger.addHandler(ch)
 
     global notes
-    notes = load_ps_notes(options.notes)
-    logging.info('Player notes successfully loaded')
+    try:
+        notes = load_ps_notes(options.notes)
+        logging.info('Player notes successfully loaded')
+    except RuntimeError:
+        logging.exception("Notes does not loaded")
     if options.save:
         logging.info('Sorting by positions...')
         sort_by_tournament_position(options)
     elif options.split:
         logging.info('Splitting hand history files...')
         split(options)
+    elif options.stats:
+        logging.info('Counting statistics...')
+        stats(options)
+
     else:
         op.print_help()
 
