@@ -5,6 +5,7 @@ from collections import namedtuple
 from pathlib import Path
 from sat16ev import get_output_dir, get_tournament_id, split_sat_hh, config, add_round1_winner, fix_finishes_round1
 from sat16ev import rename_tournament, change_bi, remove_win_entry_round2, fix_finishes_round2
+from pypokertools.parsers import PSHandHistory
 from utils import get_path_dir_or_create, get_path_dir_or_error
 
 CWD = Path.cwd()
@@ -18,7 +19,16 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
         self.setupUi(self)  # Это нужно для инициализации нашего дизайна
         self.toolButtonInput.clicked.connect(self.set_input_folder)
         self.toolButtonOutput.clicked.connect(self.set_output_folder)
+        self.toolButtonNotes.clicked.connect(self.set_notes)
         self.pushButtonStart.clicked.connect(self.start)
+
+    def set_notes(self):
+        file_name, _ = QFileDialog.getOpenFileName(self,
+                                                   caption="Select Pokerstars Notes file",
+                                                   directory=str(CWD),
+                                                   filter="Xml files (*.xml)")
+        if file_name:
+            self.lineEditNotes.setText(file_name)
 
     def set_input_folder(self):
         directory = QFileDialog.getExistingDirectory(self, "Выберите папку")
@@ -35,12 +45,13 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
     def start(self):
         input_dir = self.lineEditInput.text()
         output_dir = self.lineEditOutput.text()
+        notes_file = self.lineEditNotes.text()
 
         self.statusBar().showMessage(f'Processing hand histories...')
 
         if input_dir.strip() and output_dir.strip():
-            Options = namedtuple('Options', ['input_dir', 'output_dir'])
-            o = Options(input_dir, output_dir)
+            Options = namedtuple('Options', ['input_dir', 'output_dir', 'notes_file'])
+            o = Options(input_dir, output_dir, notes_file)
             if self.radioEv.isChecked():
                 self.fix_hands_for_pt4(o)
 
@@ -54,13 +65,6 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
             return
         output_dir_path = get_path_dir_or_create(options.output_dir)
 
-        # round1_path = output_dir_path.joinpath(config['ROUND1_DIR'])
-        # if not round1_path.exists():
-        #   round1_path.mkdir()
-        # round2_path = output_dir_path.joinpath(config['ROUND2_DIR'])
-        # if not round2_path.exists():
-            # round2_path.mkdir()
-
         file_list = list(input_path.glob('**/*.txt'))
         total = len(file_list)
         counter = 0
@@ -69,8 +73,6 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
         HandWriteEntry= namedtuple('HandWriteEntry', ['root_dir', 'file_name', 'text'])
         round1_path = output_dir_path.joinpath(config['ROUND1_DIR']).joinpath(str(counter))
         round2_path = output_dir_path.joinpath(config['ROUND2_DIR']).joinpath(str(counter))
-        # round1_path.mkdir()
-        # round2_path.mkdir()
         self.progressBar.reset()
         self.progressBar.setRange(0, total)
 
@@ -88,15 +90,18 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
             if round1:
                 text = add_round1_winner(fix_finishes_round1(rename_tournament(round1, prefix)))
                 root_dir_path = round1_path
-                # round1_path.joinpath(prefix + file.name).write_text(round1, encoding='utf-8')
 
             if round2:
                 prefix = config['ROUND2_PREFIX']
                 round2 = change_bi(remove_win_entry_round2(fix_finishes_round2(rename_tournament(round2, prefix))))
                 text = round2.replace("Round II", "Round I")
                 root_dir_path = round2_path
-                # round2_path.joinpath(prefix + file.name).write_text(round2, encoding='utf-8')
 
+            hh = PSHandHistory(text)
+            dd = str(hh.datetime.day)
+            mm = str(hh.datetime.month)
+            yy = str(hh.datetime.year)
+            root_dir_path = root_dir_path.joinpath(yy).joinpath(mm).joinpath(dd)
             entry = HandWriteEntry(root_dir_path, prefix + file.name, text)
             hands_write_query.append(entry)
 
@@ -105,8 +110,6 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
                 self.progressBar.setValue(counter)
                 round1_path = output_dir_path.joinpath(config['ROUND1_DIR']).joinpath(str(counter))
                 round2_path = output_dir_path.joinpath(config['ROUND2_DIR']).joinpath(str(counter))
-                # round1_path.mkdir()
-                # round2_path.mkdir()
         self.progressBar.setValue(total)
         self.save_hands(hands_write_query)
         self.statusBar().showMessage(f'Total hands processed: {counter}, skipped: {skipped}')
@@ -123,6 +126,8 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
             counter += 1
             self.progressBar.setValue(counter)
 
+    def closeEvent(self, a0: QtGui.QCloseEvent) -> None:
+        pass
 
 
 if __name__ == '__main__':

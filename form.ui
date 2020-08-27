@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>249</width>
-    <height>338</height>
+    <height>359</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,7 +20,7 @@
     </property>
     <item>
      <layout class="QGridLayout" name="gridLayout">
-      <item row="6" column="0">
+      <item row="7" column="0">
        <widget class="QRadioButton" name="radioSort">
         <property name="text">
          <string>Sort hands by tournament positions</string>
@@ -30,7 +30,7 @@
       <item row="0" column="0">
        <widget class="QLineEdit" name="lineEditInput"/>
       </item>
-      <item row="10" column="0">
+      <item row="11" column="0">
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
          <widget class="QPushButton" name="pushButtonStart">
@@ -41,7 +41,7 @@
         </item>
        </layout>
       </item>
-      <item row="9" column="0">
+      <item row="10" column="0">
        <widget class="QGroupBox" name="groupBox">
         <property name="title">
          <string>Filters</string>
@@ -123,24 +123,34 @@
         </property>
        </widget>
       </item>
-      <item row="2" column="0">
+      <item row="3" column="0">
        <widget class="QRadioButton" name="radioSplit">
         <property name="text">
          <string>Split satellit hand history files</string>
         </property>
        </widget>
       </item>
-      <item row="7" column="0">
+      <item row="8" column="0">
        <widget class="QRadioButton" name="radioEv">
         <property name="text">
          <string>Fix hands for EV calculating</string>
         </property>
        </widget>
       </item>
-      <item row="8" column="0">
+      <item row="9" column="0">
        <widget class="QRadioButton" name="radioCsv">
         <property name="text">
          <string>Save summary to csv file</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLineEdit" name="lineEditNotes"/>
+      </item>
+      <item row="2" column="1">
+       <widget class="QToolButton" name="toolButtonNotes">
+        <property name="text">
+         <string>notes</string>
         </property>
        </widget>
       </item>
