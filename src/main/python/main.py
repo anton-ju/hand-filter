@@ -6,6 +6,7 @@ from pathlib import Path
 from sat16ev import get_output_dir, get_tournament_id, split_sat_hh, config, add_round1_winner, fix_finishes_round1
 from sat16ev import rename_tournament, change_bi, remove_win_entry_round2, fix_finishes_round2
 from pypokertools.parsers import PSHandHistory
+from pypokertools.storage.hand_storage import HandStorage
 from utils import get_path_dir_or_create, get_path_dir_or_error
 import csv
 
@@ -13,7 +14,7 @@ CWD = Path.cwd()
 
 
 class PSGrandTourHistory(PSHandHistory):
-    BOUNTY_WON_REGEX = "(?P<player>.*) wins \$(?P<bounty>.*) for"
+    BOUNTY_WON_REGEX = "(?P<player>.*) wins \$(?P<bounty>.*) for eliminating "
 
 
 class HandProcApp(QMainWindow, design.Ui_MainWindow):
@@ -62,6 +63,8 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
                 self.fix_hands_for_pt4(o)
             elif self.radioCsv.isChecked():
                 self.stats(o)
+        else:
+            self.statusBar().showMessage("Fill input and output directories!")
 
     def fix_hands_for_pt4(self, options):
         """ change original hand histories to load into pt4
@@ -144,35 +147,33 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
             return
         output_dir_path = get_path_dir_or_create(options.output_dir)
 
-        file_list = list(input_path.glob('**/*.txt'))
-        total = len(file_list)
+        storage = HandStorage(options.input_dir)
+        total = len(list(storage.read_hand()))
         counter = 0
-        skipped = 0
 
+        self.statusBar().showMessage('Calculating...')
         self.progressBar.reset()
         self.progressBar.setRange(0, total)
 
         csv_columns = ['tid', 'hid', 'player', 'bounty', 'cnt']
         csv_file = "stats.csv"
         stats = []
-        self.statusBar().showMessage('Calculating...')
-        for file in file_list:
-            txt = file.read_text(encoding='utf-8')
-            self.progressBar.setValue(counter)
+
+        for txt in storage.read_hand():
+            counter += 1
+            # TODO add filters check
             try:
                 hh = PSGrandTourHistory(txt)
             except Exception as e:
                 self.statusBar().showMessage("%s " % e)
                 continue
-
-            counter += 1
             self.progressBar.setValue(counter)
-            # try:
-            # if not pass_filters(hh, options):
-            #    continue
-            # TODO add filters check
+            try:
+                bounty_won = hh.bounty_won
+            except:
+                self.statusBar().showMessage(hh.hid)
+                return
 
-            bounty_won = hh.bounty_won
             if bounty_won:
                 tid = hh.tid
                 hid = hh.hid
@@ -180,7 +181,7 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
                     stats.append({'tid': tid, 'hid': hid, 'player': player, 'bounty': bounty, 'cnt': 1})
 
         try:
-            with open(csv_file, 'w', newline='',encoding='utf-8') as csvfile:
+            with open(csv_file, 'w', newline='', encoding='utf-8') as csvfile:
                 writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
                 writer.writeheader()
                 writer.writerows(stats)
@@ -191,6 +192,10 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
 
     def closeEvent(self, a0) -> None:
         # TODO save_config to file
+        pass
+
+    def check_input(self) -> None:
+
         pass
 
 
