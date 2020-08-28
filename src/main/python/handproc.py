@@ -96,6 +96,21 @@ def load_config(config_current, config_file):
         logging.error('Invalid config file structure')
 
 
+def save_config(config_current, config_file):
+    try:
+        with open(config_file, 'r') as f:
+            config_json = f.read()
+            if config_json == '':
+                return
+            new_config = json.loads(config_json, encoding='utf-8')
+            if new_config:
+                config_current.update(new_config)
+    except IOError:
+        logging.error('Error opening config file')
+    except json.JSONDecodeError:
+        logging.error('Invalid config file structure')
+
+
 def co_reg_filter(hh):
     for player, pos in hh.positions().items():
         if pos == 'CO' and notes.get(player, 'uu') in config['REG_LABELS']:

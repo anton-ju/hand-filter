@@ -7,8 +7,13 @@ from sat16ev import get_output_dir, get_tournament_id, split_sat_hh, config, add
 from sat16ev import rename_tournament, change_bi, remove_win_entry_round2, fix_finishes_round2
 from pypokertools.parsers import PSHandHistory
 from utils import get_path_dir_or_create, get_path_dir_or_error
+import csv
 
 CWD = Path.cwd()
+
+
+class PSGrandTourHistory(PSHandHistory):
+    BOUNTY_WON_REGEX = "(?P<player>.*) wins \$(?P<bounty>.*) for"
 
 
 class HandProcApp(QMainWindow, design.Ui_MainWindow):
@@ -21,6 +26,7 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
         self.toolButtonOutput.clicked.connect(self.set_output_folder)
         self.toolButtonNotes.clicked.connect(self.set_notes)
         self.pushButtonStart.clicked.connect(self.start)
+        # TODO load_config from config file
 
     def set_notes(self):
         file_name, _ = QFileDialog.getOpenFileName(self,
@@ -54,6 +60,8 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
             o = Options(input_dir, output_dir, notes_file)
             if self.radioEv.isChecked():
                 self.fix_hands_for_pt4(o)
+            elif self.radioCsv.isChecked():
+                self.stats(o)
 
     def fix_hands_for_pt4(self, options):
         """ change original hand histories to load into pt4
@@ -126,7 +134,63 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
             counter += 1
             self.progressBar.setValue(counter)
 
-    def closeEvent(self, a0: QtGui.QCloseEvent) -> None:
+    def stats(self, options):
+        # counting statistics and saving in csv file
+
+        try:
+            input_path = get_path_dir_or_error(options.input_dir)
+        except RuntimeError:
+            self.statusBar().showMessage('Place hand history files in "input" directory')
+            return
+        output_dir_path = get_path_dir_or_create(options.output_dir)
+
+        file_list = list(input_path.glob('**/*.txt'))
+        total = len(file_list)
+        counter = 0
+        skipped = 0
+
+        self.progressBar.reset()
+        self.progressBar.setRange(0, total)
+
+        csv_columns = ['tid', 'hid', 'player', 'bounty', 'cnt']
+        csv_file = "stats.csv"
+        stats = []
+        self.statusBar().showMessage('Calculating...')
+        for file in file_list:
+            txt = file.read_text(encoding='utf-8')
+            self.progressBar.setValue(counter)
+            try:
+                hh = PSGrandTourHistory(txt)
+            except Exception as e:
+                self.statusBar().showMessage("%s " % e)
+                continue
+
+            counter += 1
+            self.progressBar.setValue(counter)
+            # try:
+            # if not pass_filters(hh, options):
+            #    continue
+            # TODO add filters check
+
+            bounty_won = hh.bounty_won
+            if bounty_won:
+                tid = hh.tid
+                hid = hh.hid
+                for player, bounty in bounty_won.items():
+                    stats.append({'tid': tid, 'hid': hid, 'player': player, 'bounty': bounty, 'cnt': 1})
+
+        try:
+            with open(csv_file, 'w', newline='',encoding='utf-8') as csvfile:
+                writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
+                writer.writeheader()
+                writer.writerows(stats)
+        except IOError as e:
+            self.statusBar().showMessage("%s " % e)
+
+        self.statusBar().showMessage("Done!")
+
+    def closeEvent(self, a0) -> None:
+        # TODO save_config to file
         pass
 
 
