@@ -20,7 +20,9 @@ def save_config(config_current, config_file):
         with open(config_file, 'w', encoding='utf-8') as f:
             config_json = json.dumps(config_current)
             if config_json == '':
+                raise RuntimeError('!')
                 return
+            print(config_json)
             f.write(config_json)
     except IOError:
         raise RuntimeError("Config file saving error")

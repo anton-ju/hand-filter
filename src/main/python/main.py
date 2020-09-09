@@ -56,18 +56,21 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
                                                    filter="Xml files (*.xml)")
         if file_name:
             self.lineEditNotes.setText(file_name)
+            self.config["NOTES"] = file_name
 
     def set_input_folder(self):
         directory = QFileDialog.getExistingDirectory(self, "Выберите папку")
 
         if directory:  # не продолжать выполнение, если пользователь не выбрал директорию
             self.lineEditInput.setText(directory)
+            self.config["INPUT"] = directory
 
     def set_output_folder(self):
         directory = QFileDialog.getExistingDirectory(self, "Выберите папку")
 
         if directory:  # не продолжать выполнение, если пользователь не выбрал директорию
             self.lineEditOutput.setText(directory)
+            self.config["OUTPUT"] = directory
 
     def start(self):
         input_dir = self.lineEditInput.text()
@@ -271,7 +274,129 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
         self.statusBar().showMessage(f'Total hands processed: {counter}, skipped: {skipped}')
 
     def sort(self, options):
-        pass
+        # this script filters hh of sats with 4 playrs tables, suits for 4max and for 3max
+
+        # checking input and output directories
+        try:
+            input_path = get_path_dir_or_error(options.input_dir)
+        except RuntimeError:
+            self.statusBar().showMessage('Place hand history files in "input" directory')
+            return
+        output_dir_path = get_path_dir_or_create(options.output_dir)
+
+        storage = HandStorage(input_path)
+        result = []
+        total = len(list(storage.read_hand()))
+        counter = 0
+        skipped = 0
+
+        hands_write_query = []
+        self.progressBar.reset()
+        self.progressBar.setRange(0, total)
+        self.statusBar().showMessage('Sorting hands...')
+        for txt in storage.read_hand():
+            try:
+                hh = PSHandHistory(txt)
+            except Exception as e:
+                self.statusBar().showMessage("%s " % e)
+                continue
+
+            counter += 1
+            self.progressBar.setValue(counter)
+            # TODO add filters
+            # if not pass_filters(hh, options):
+            #     continue
+
+            positions = hh.positions()
+            player_pos = {pos: hh.tournamentPosition(player) for player, pos in positions.items()}
+            # for now only for 4 and 3 max
+            if hh.players_number() == 4:
+                pos_str = str(player_pos['CO']) + str(player_pos['BU']) + str(player_pos['SB']) + str(player_pos['BB'])
+            elif hh.players_number() == 3:
+                pos_str = str(player_pos['BU']) + str(player_pos['SB']) + str(player_pos['BB'])
+            else:
+                continue
+            # for ex. "1234" if CO has 1 stack BU 2 stack SB -3 BB -4
+
+            entry = HandWriteEntry(output_dir_path.joinpath(pos_str), hh.hid + '.txt', txt)
+            hands_write_query.append(entry)
+
+        self.progressBar.setValue(total)
+        self.save_hands(hands_write_query)
+        self.statusBar().showMessage(f'Total hands processed: {counter}, skipped: {skipped}')
+
+    # def co_reg_filter(self, hh):
+    #     for player, pos in hh.positions().items():
+    #         if pos == 'CO' and notes.get(player, 'uu') in config['REG_LABELS']:
+    #             return True
+    #     return False
+    #
+    # def bu_reg_filter(self, hh):
+    #     for player, pos in hh.positions().items():
+    #         if pos == 'BU' and notes.get(player, 'uu') in config['REG_LABELS']:
+    #             return True
+    #     return False
+    #
+    # def sb_reg_filter(self, hh):
+    #     for player, pos in hh.positions().items():
+    #         if pos == 'SB' and notes.get(player, 'uu') in config['REG_LABELS']:
+    #             return True
+    #     return False
+    #
+    # def bb_reg_filter(self, hh):
+    #     for player, pos in hh.positions().items():
+    #         if pos == 'BB' and notes.get(player, 'uu') in config['REG_LABELS']:
+    #             return True
+    #     return False
+    #
+    # def bb_fish_filter(self, hh):
+    #     for player, pos in hh.positions().items():
+    #         if pos == 'BB' and notes.get(player, 'uu') in config['FISH_LABELS']:
+    #             return True
+    #     return False
+    #
+    # def sb_fish_filter(self, hh):
+    #     for player, pos in hh.positions().items():
+    #         if pos == 'SB' and notes.get(player, 'uu') in config['FISH_LABELS']:
+    #             return True
+    #     return False
+    #
+    # def bu_fish_filter(self, hh):
+    #     for player, pos in hh.positions().items():
+    #         if pos == 'BU' and notes.get(player, 'uu') in config['FISH_LABELS']:
+    #             return True
+    #     return False
+    #
+    # def co_fish_filter(self, hh):
+    #     for player, pos in hh.positions().items():
+    #         if pos == 'CO' and notes.get(player, 'uu') in config['FISH_LABELS']:
+    #             return True
+    #     return False
+    #
+    # def pass_filters(self, hh, options):
+    #     """
+    #     check if hand pass filters
+    #     returns: boolean
+    #     """
+    #     passed = []
+    #     if options.co_reg:
+    #         passed.append(co_reg_filter(hh))
+    #     if options.bu_reg:
+    #         passed.append(bu_reg_filter(hh))
+    #     if options.sb_reg:
+    #         passed.append(sb_reg_filter(hh))
+    #     if options.bb_reg:
+    #         passed.append(bb_reg_filter(hh))
+    #
+    #     if options.co_fish:
+    #         passed.append(co_fish_filter(hh))
+    #     if options.bu_fish:
+    #         passed.append(bu_fish_filter(hh))
+    #     if options.sb_fish:
+    #         passed.append(sb_fish_filter(hh))
+    #     if options.bb_fish:
+    #         passed.append(bb_fish_filter(hh))
+    #     return all(passed)
 
     def closeEvent(self, a0) -> None:
         # TODO save_config to file
