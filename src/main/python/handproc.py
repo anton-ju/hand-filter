@@ -91,9 +91,11 @@ def load_config(config_current, config_file):
             if new_config:
                 config_current.update(new_config)
     except IOError:
-        logging.error('Error opening config file')
+        if logging:
+            logging.error('Error opening config file')
     except json.JSONDecodeError:
-        logging.error('Invalid config file structure')
+        if logging:
+            logging.error('Invalid config file structure')
 
 
 def save_config(config_current, config_file):
@@ -106,9 +108,11 @@ def save_config(config_current, config_file):
             if new_config:
                 config_current.update(new_config)
     except IOError:
-        logging.error('Error opening config file')
+        if logging:
+            logging.error('Error opening config file')
     except json.JSONDecodeError:
-        logging.error('Invalid config file structure')
+        if logging:
+            logging.error('Invalid config file structure')
 
 
 def co_reg_filter(hh):
