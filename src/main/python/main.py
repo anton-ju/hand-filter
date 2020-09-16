@@ -43,7 +43,14 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
         self.pushButtonStart.clicked.connect(self.start)
         self.config = dict(config)
         self.config_file = 'handproc.cfg'
-        self.config.update(load_config(self.config_file))
+        try:
+            new_config = load_config(self.config_file)
+            self.config.update(new_config)
+        except RuntimeError:
+            pass
+            # failed to open config
+            self.statusBar().showMessage("Failed to open config file")
+
         self.lineEditInput.setText(self.config.get("INPUT", ''))
         self.lineEditOutput.setText(self.config.get("OUTPUT", ''))
         self.lineEditNotes.setText(self.config.get("NOTES", ''))
@@ -97,39 +104,39 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
         """ change original hand histories to load into pt4
         """
         try:
-            input_path = get_path_dir_or_error(options.input_dir)
+            input_path = get_path_dir_or_error(self.config["INPUT"])
         except RuntimeError:
             self.statusBar().showMessage('Place hand history files in "input" directory')
             return
-        output_dir_path = get_path_dir_or_create(options.output_dir)
+        output_dir_path = get_path_dir_or_create(self.config["OUTPUT"])
 
         file_list = list(input_path.glob('**/*.txt'))
         total = len(file_list)
         counter = 0
         skipped = 0
         hands_write_query = []
-        round1_path = output_dir_path.joinpath(config['ROUND1_DIR']).joinpath(str(counter))
-        round2_path = output_dir_path.joinpath(config['ROUND2_DIR']).joinpath(str(counter))
+        round1_path = output_dir_path.joinpath(self.config['ROUND1_DIR'])
+        round2_path = output_dir_path.joinpath(self.config['ROUND2_DIR'])
         self.progressBar.reset()
         self.progressBar.setRange(0, total)
 
         for file in file_list:
+            counter += 1
             s = file.read_text(encoding='utf-8')
             tid = get_tournament_id(s)
             round1, round2 = split_sat_hh(s)
             if not round1 and not round2:
                 skipped += 1
-                counter += 1
                 continue
             text = ''
             root_dir_path = None
-            prefix = config['ROUND1_PREFIX']
+            prefix = self.config['ROUND1_PREFIX']
             if round1:
                 text = add_round1_winner(fix_finishes_round1(rename_tournament(round1, prefix)))
                 root_dir_path = round1_path
 
             if round2:
-                prefix = config['ROUND2_PREFIX']
+                prefix = self.config['ROUND2_PREFIX']
                 round2 = change_bi(remove_win_entry_round2(fix_finishes_round2(rename_tournament(round2, prefix))))
                 text = round2.replace("Round II", "Round I")
                 root_dir_path = round2_path
@@ -141,12 +148,8 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
             root_dir_path = root_dir_path.joinpath(yy).joinpath(mm).joinpath(dd)
             entry = HandWriteEntry(root_dir_path, prefix + file.name, text)
             hands_write_query.append(entry)
+            self.progressBar.setValue(counter)
 
-            counter += 1
-            if counter % 100 == 0:
-                self.progressBar.setValue(counter)
-                round1_path = output_dir_path.joinpath(config['ROUND1_DIR']).joinpath(str(counter))
-                round2_path = output_dir_path.joinpath(config['ROUND2_DIR']).joinpath(str(counter))
         self.progressBar.setValue(total)
         self.save_hands(hands_write_query)
         self.statusBar().showMessage(f'Total hands processed: {counter}, skipped: {skipped}')
