@@ -1,5 +1,6 @@
 from pathlib import Path
 import json
+from typing import List
 
 
 def load_config(config_file):

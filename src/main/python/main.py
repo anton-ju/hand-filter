@@ -248,26 +248,47 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
             hh = None
             for text in s:
                 try:
+                    # if None or empty string take next element
+                    if not bool(text and text.strip()):
+                        continue
+                    # print(f'text: {text}')
                     hh = PSHandHistory(text)
                     dd = str(hh.datetime.day)
                     mm = str(hh.datetime.month)
                     yy = str(hh.datetime.year)
+                    break
                 except Exception as e:
                     self.statusBar().showMessage(f'{e}')
-                break
 
             if not hh:
                 skipped += 1
                 continue
-            write_round1_path = round1_path.joinpath(yy).joinpath(mm).joinpath(dd)
-            write_round2_path = round2_path.joinpath(yy).joinpath(mm).joinpath(dd)
-            if round1:
+            if bool(round1 and round1.strip()):
+                write_round1_path = round1_path.joinpath(yy).joinpath(mm).joinpath(dd)
                 entry = HandWriteEntry(write_round1_path, file.name, round1)
                 hands_write_query.append(entry)
 
-            if round2:
-                entry = HandWriteEntry(write_round2_path, file.name, round2)
-                hands_write_query.append(entry)
+            if bool(round2 and round2.strip()):
+                # sorting round2 by positions
+                if self.checkBoxSort.isChecked():
+                    hand_list = round2.strip().split('\n\n')
+                    for txt in hand_list:
+                        try:
+                            hh = PSHandHistory(txt)
+                        except Exception as e:
+                            self.statusBar().showMessage("%s " % e)
+                            continue
+                        try:
+                            pos_str = self.get_positions_str(hh)
+                        except RuntimeError:
+                            continue
+                        write_round2_path = round2_path.joinpath(pos_str).joinpath(yy).joinpath(mm).joinpath(dd)
+                        entry = HandWriteEntry(write_round2_path, hh.hid + '.txt', txt)
+                        hands_write_query.append(entry)
+                else:
+                    write_round2_path = round2_path.joinpath(yy).joinpath(mm).joinpath(dd)
+                    entry = HandWriteEntry(write_round2_path, file.name, round2)
+                    hands_write_query.append(entry)
 
             counter += 1
             self.progressBar.setValue(counter)
@@ -309,17 +330,10 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
             # TODO add filters
             # if not pass_filters(hh, options):
             #     continue
-
-            positions = hh.positions()
-            player_pos = {pos: hh.tournamentPosition(player) for player, pos in positions.items()}
-            # for now only for 4 and 3 max
-            if hh.players_number() == 4:
-                pos_str = str(player_pos['CO']) + str(player_pos['BU']) + str(player_pos['SB']) + str(player_pos['BB'])
-            elif hh.players_number() == 3:
-                pos_str = str(player_pos['BU']) + str(player_pos['SB']) + str(player_pos['BB'])
-            else:
+            try:
+                pos_str = self.get_positions_str(hh)
+            except RuntimeError:
                 continue
-            # for ex. "1234" if CO has 1 stack BU 2 stack SB -3 BB -4
 
             entry = HandWriteEntry(output_dir_path.joinpath(pos_str), hh.hid + '.txt', txt)
             hands_write_query.append(entry)
@@ -327,6 +341,25 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
         self.progressBar.setValue(total)
         self.save_hands(hands_write_query)
         self.statusBar().showMessage(f'Total hands processed: {counter}, skipped: {skipped}')
+
+    @staticmethod
+    def get_positions_str(hh):
+        """ hh: parsed hand history instance of HandHistory
+            returns: string with players tournament positions ex. "123" BU - 1, SB - 2, BB - 3.
+        """
+        positions = hh.positions()
+        player_pos = {pos: hh.tournamentPosition(player) for player, pos in positions.items()}
+        # for now only for 4 and 3 max
+        if hh.players_number() == 4:
+            pos_str = str(player_pos['CO']) + str(player_pos['BU']) + str(player_pos['SB']) + str(player_pos['BB'])
+        elif hh.players_number() == 3:
+            pos_str = str(player_pos['BU']) + str(player_pos['SB']) + str(player_pos['BB'])
+        else:
+            raise RuntimeError("Only 3 or 4 players supported")
+        return pos_str
+
+    def split_n_sort(self, options):
+        pass
 
     # def co_reg_filter(self, hh):
     #     for player, pos in hh.positions().items():
