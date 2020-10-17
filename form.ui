@@ -22,6 +22,9 @@
      <layout class="QGridLayout" name="gridLayout">
       <item row="8" column="0">
        <widget class="QRadioButton" name="radioSort">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="text">
          <string>Sort hands by tournament positions</string>
         </property>

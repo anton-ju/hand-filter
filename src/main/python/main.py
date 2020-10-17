@@ -7,11 +7,17 @@ from sat16ev import get_output_dir, get_tournament_id, split_sat_hh, add_round1_
 from sat16ev import rename_tournament, change_bi, remove_win_entry_round2, fix_finishes_round2
 from pypokertools.parsers import PSHandHistory
 from pypokertools.storage.hand_storage import HandStorage
-from utils import get_path_dir_or_create, get_path_dir_or_error, load_config, save_config
+from utils import get_path_dir_or_create, get_path_dir_or_error, load_config, save_config, get_ddmmyy_from_hh
 import csv
+import logging
 
 CWD = Path.cwd()
 HandWriteEntry = namedtuple('HandWriteEntry', ['root_dir', 'file_name', 'text'])
+logging.basicConfig(level=logging.DEBUG,
+                    format='[%(asctime)s] %(levelname).1s %(message)s',
+                    datefmt='%Y.%m.%d %H:%M:%S')
+logger = logging.getLogger(__name__)
+logger.addHandler(logging.FileHandler("handproc.log"))
 
 config = {
     "HERO": 'DiggErr555',
@@ -103,6 +109,7 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
     def fix_hands_for_pt4(self, options):
         """ change original hand histories to load into pt4
         """
+        # checking if there correct input ind output folders
         try:
             input_path = get_path_dir_or_error(self.config["INPUT"])
         except RuntimeError:
@@ -128,26 +135,24 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
             if not round1 and not round2:
                 skipped += 1
                 continue
+            dd, mm, yy = get_ddmmyy_from_hh(round1)
             text = ''
             root_dir_path = None
             prefix = self.config['ROUND1_PREFIX']
-            if round1:
+            if bool(round1 and round1.strip()):
                 text = add_round1_winner(fix_finishes_round1(rename_tournament(round1, prefix)))
-                root_dir_path = round1_path
+                root_dir_path = round1_path.joinpath(yy).joinpath(mm).joinpath(dd)
+                entry = HandWriteEntry(root_dir_path, prefix + file.name, text)
+                hands_write_query.append(entry)
 
-            if round2:
+            if bool(round2 and round2.strip()):
                 prefix = self.config['ROUND2_PREFIX']
                 round2 = change_bi(remove_win_entry_round2(fix_finishes_round2(rename_tournament(round2, prefix))))
                 text = round2.replace("Round II", "Round I")
-                root_dir_path = round2_path
+                root_dir_path = round2_path.joinpath(yy).joinpath(mm).joinpath(dd)
+                entry = HandWriteEntry(root_dir_path, prefix + file.name, text)
+                hands_write_query.append(entry)
 
-            hh = PSHandHistory(text)
-            dd = str(hh.datetime.day)
-            mm = str(hh.datetime.month)
-            yy = str(hh.datetime.year)
-            root_dir_path = root_dir_path.joinpath(yy).joinpath(mm).joinpath(dd)
-            entry = HandWriteEntry(root_dir_path, prefix + file.name, text)
-            hands_write_query.append(entry)
             self.progressBar.setValue(counter)
 
         self.progressBar.setValue(total)
@@ -243,22 +248,7 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
         for file in file_list:
             s = file.read_text(encoding='utf-8')
             round1, round2 = split_sat_hh(s)
-            s = round1.split('\n\n')
-            # determine date and time by first hand in tournament
-            hh = None
-            for text in s:
-                try:
-                    # if None or empty string take next element
-                    if not bool(text and text.strip()):
-                        continue
-                    # print(f'text: {text}')
-                    hh = PSHandHistory(text)
-                    dd = str(hh.datetime.day)
-                    mm = str(hh.datetime.month)
-                    yy = str(hh.datetime.year)
-                    break
-                except Exception as e:
-                    self.statusBar().showMessage(f'{e}')
+            dd, mm, yy = get_ddmmyy_from_hh(round1)
 
             if not hh:
                 skipped += 1

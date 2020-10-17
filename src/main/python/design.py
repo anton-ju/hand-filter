@@ -20,6 +20,7 @@ class Ui_MainWindow(object):
         self.gridLayout = QtWidgets.QGridLayout()
         self.gridLayout.setObjectName("gridLayout")
         self.radioSort = QtWidgets.QRadioButton(self.centralwidget)
+        self.radioSort.setEnabled(False)
         self.radioSort.setObjectName("radioSort")
         self.gridLayout.addWidget(self.radioSort, 8, 0, 1, 1)
         self.lineEditInput = QtWidgets.QLineEdit(self.centralwidget)

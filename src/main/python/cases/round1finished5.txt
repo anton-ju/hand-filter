@@ -1,0 +1,653 @@
+
+
+PokerStars Hand #212783374112: Tournament #2881303874, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/04/26 23:18:25 MSK [2020/04/26 16:18:25 ET]
+Table '2881303874 4' 4-max Seat #1 is the button
+Seat 1: Nikoooo#8 (500 in chips)
+Seat 2: DiggErr555 (500 in chips)
+Seat 3: Shittaboy (500 in chips)
+Seat 4: gAAoChAAo (500 in chips)
+Nikoooo#8: posts the ante 10
+DiggErr555: posts the ante 10
+Shittaboy: posts the ante 10
+gAAoChAAo: posts the ante 10
+DiggErr555: posts small blind 25
+Shittaboy: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [3h Qd]
+gAAoChAAo has timed out
+gAAoChAAo: folds
+gAAoChAAo is sitting out
+Nikoooo#8: folds
+DiggErr555: raises 440 to 490 and is all-in
+Shittaboy: folds
+Uncalled bet (440) returned to DiggErr555
+DiggErr555 collected 140 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 140 | Rake 0
+Seat 1: Nikoooo#8 (button) folded before Flop (didn't bet)
+Seat 2: DiggErr555 (small blind) collected (140)
+Seat 3: Shittaboy (big blind) folded before Flop
+Seat 4: gAAoChAAo folded before Flop (didn't bet)
+
+PokerStars Hand #212783427447: Tournament #2881303874, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/04/26 23:19:04 MSK [2020/04/26 16:19:04 ET]
+Table '2881303874 4' 4-max Seat #2 is the button
+Seat 1: Nikoooo#8 (490 in chips)
+Seat 2: DiggErr555 (580 in chips)
+Seat 3: Shittaboy (440 in chips)
+Seat 4: gAAoChAAo (490 in chips) is sitting out
+Nikoooo#8: posts the ante 10
+DiggErr555: posts the ante 10
+Shittaboy: posts the ante 10
+gAAoChAAo: posts the ante 10
+Shittaboy: posts small blind 25
+gAAoChAAo: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [5s Ad]
+gAAoChAAo has returned
+Nikoooo#8: folds
+DiggErr555: raises 520 to 570 and is all-in
+Shittaboy: folds
+gAAoChAAo: calls 430 and is all-in
+Uncalled bet (90) returned to DiggErr555
+*** FLOP *** [Ah Td Jh]
+*** TURN *** [Ah Td Jh] [8c]
+*** RIVER *** [Ah Td Jh 8c] [Qc]
+*** SHOW DOWN ***
+gAAoChAAo: shows [8s 8d] (three of a kind, Eights)
+DiggErr555: shows [5s Ad] (a pair of Aces)
+gAAoChAAo collected 1025 from pot
+*** SUMMARY ***
+Total pot 1025 | Rake 0
+Board [Ah Td Jh 8c Qc]
+Seat 1: Nikoooo#8 folded before Flop (didn't bet)
+Seat 2: DiggErr555 (button) showed [5s Ad] and lost with a pair of Aces
+Seat 3: Shittaboy (small blind) folded before Flop
+Seat 4: gAAoChAAo (big blind) showed [8s 8d] and won (1025) with three of a kind, Eights
+
+PokerStars Hand #212783459971: Tournament #2881303874, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/04/26 23:19:27 MSK [2020/04/26 16:19:27 ET]
+Table '2881303874 4' 4-max Seat #3 is the button
+Seat 1: Nikoooo#8 (480 in chips)
+Seat 2: DiggErr555 (90 in chips)
+Seat 3: Shittaboy (405 in chips)
+Seat 4: gAAoChAAo (1025 in chips)
+Nikoooo#8: posts the ante 10
+DiggErr555: posts the ante 10
+Shittaboy: posts the ante 10
+gAAoChAAo: posts the ante 10
+gAAoChAAo: posts small blind 25
+Nikoooo#8: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [2c Td]
+DiggErr555: folds
+Shittaboy: folds
+gAAoChAAo: calls 25
+Nikoooo#8: raises 420 to 470 and is all-in
+gAAoChAAo: folds
+Uncalled bet (420) returned to Nikoooo#8
+Nikoooo#8 collected 140 from pot
+Nikoooo#8: doesn't show hand
+*** SUMMARY ***
+Total pot 140 | Rake 0
+Seat 1: Nikoooo#8 (big blind) collected (140)
+Seat 2: DiggErr555 folded before Flop (didn't bet)
+Seat 3: Shittaboy (button) folded before Flop (didn't bet)
+Seat 4: gAAoChAAo (small blind) folded before Flop
+
+PokerStars Hand #212783482948: Tournament #2881303874, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/04/26 23:19:44 MSK [2020/04/26 16:19:44 ET]
+Table '2881303874 4' 4-max Seat #4 is the button
+Seat 1: Nikoooo#8 (560 in chips)
+Seat 2: DiggErr555 (80 in chips)
+Seat 3: Shittaboy (395 in chips)
+Seat 4: gAAoChAAo (965 in chips)
+Nikoooo#8: posts the ante 10
+DiggErr555: posts the ante 10
+Shittaboy: posts the ante 10
+gAAoChAAo: posts the ante 10
+Nikoooo#8: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Jd Jc]
+Shittaboy: folds
+gAAoChAAo: folds
+Nikoooo#8: raises 50 to 100
+DiggErr555: calls 20 and is all-in
+Uncalled bet (30) returned to Nikoooo#8
+*** FLOP *** [2d 7s Qc]
+*** TURN *** [2d 7s Qc] [Ks]
+*** RIVER *** [2d 7s Qc Ks] [As]
+*** SHOW DOWN ***
+Nikoooo#8: shows [7c 8d] (a pair of Sevens)
+DiggErr555: shows [Jd Jc] (a pair of Jacks)
+DiggErr555 collected 180 from pot
+*** SUMMARY ***
+Total pot 180 | Rake 0
+Board [2d 7s Qc Ks As]
+Seat 1: Nikoooo#8 (small blind) showed [7c 8d] and lost with a pair of Sevens
+Seat 2: DiggErr555 (big blind) showed [Jd Jc] and won (180) with a pair of Jacks
+Seat 3: Shittaboy folded before Flop (didn't bet)
+Seat 4: gAAoChAAo (button) folded before Flop (didn't bet)
+
+PokerStars Hand #212783508419: Tournament #2881303874, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/04/26 23:20:03 MSK [2020/04/26 16:20:03 ET]
+Table '2881303874 4' 4-max Seat #1 is the button
+Seat 1: Nikoooo#8 (480 in chips)
+Seat 2: DiggErr555 (180 in chips)
+Seat 3: Shittaboy (385 in chips)
+Seat 4: gAAoChAAo (955 in chips)
+Nikoooo#8: posts the ante 10
+DiggErr555: posts the ante 10
+Shittaboy: posts the ante 10
+gAAoChAAo: posts the ante 10
+DiggErr555: posts small blind 25
+Shittaboy: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Tc 3c]
+gAAoChAAo: folds
+Nikoooo#8: folds
+DiggErr555: raises 120 to 170 and is all-in
+Shittaboy: calls 120
+*** FLOP *** [Ac 5s 5c]
+*** TURN *** [Ac 5s 5c] [6c]
+*** RIVER *** [Ac 5s 5c 6c] [7d]
+*** SHOW DOWN ***
+DiggErr555: shows [Tc 3c] (a flush, Ace high)
+Shittaboy: shows [Qd Kd] (a pair of Fives)
+DiggErr555 collected 380 from pot
+*** SUMMARY ***
+Total pot 380 | Rake 0
+Board [Ac 5s 5c 6c 7d]
+Seat 1: Nikoooo#8 (button) folded before Flop (didn't bet)
+Seat 2: DiggErr555 (small blind) showed [Tc 3c] and won (380) with a flush, Ace high
+Seat 3: Shittaboy (big blind) showed [Qd Kd] and lost with a pair of Fives
+Seat 4: gAAoChAAo folded before Flop (didn't bet)
+
+PokerStars Hand #212783533704: Tournament #2881303874, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/04/26 23:20:22 MSK [2020/04/26 16:20:22 ET]
+Table '2881303874 4' 4-max Seat #2 is the button
+Seat 1: Nikoooo#8 (470 in chips)
+Seat 2: DiggErr555 (380 in chips)
+Seat 3: Shittaboy (205 in chips)
+Seat 4: gAAoChAAo (945 in chips)
+Nikoooo#8: posts the ante 10
+DiggErr555: posts the ante 10
+Shittaboy: posts the ante 10
+gAAoChAAo: posts the ante 10
+Shittaboy: posts small blind 25
+gAAoChAAo: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [3h 4d]
+Nikoooo#8: folds
+DiggErr555: folds
+Shittaboy: folds
+Uncalled bet (25) returned to gAAoChAAo
+gAAoChAAo collected 90 from pot
+gAAoChAAo: doesn't show hand
+*** SUMMARY ***
+Total pot 90 | Rake 0
+Seat 1: Nikoooo#8 folded before Flop (didn't bet)
+Seat 2: DiggErr555 (button) folded before Flop (didn't bet)
+Seat 3: Shittaboy (small blind) folded before Flop
+Seat 4: gAAoChAAo (big blind) collected (90)
+
+PokerStars Hand #212783550318: Tournament #2881303874, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/04/26 23:20:34 MSK [2020/04/26 16:20:34 ET]
+Table '2881303874 4' 4-max Seat #3 is the button
+Seat 1: Nikoooo#8 (460 in chips)
+Seat 2: DiggErr555 (370 in chips)
+Seat 3: Shittaboy (170 in chips)
+Seat 4: gAAoChAAo (1000 in chips)
+Nikoooo#8: posts the ante 10
+DiggErr555: posts the ante 10
+Shittaboy: posts the ante 10
+gAAoChAAo: posts the ante 10
+gAAoChAAo: posts small blind 25
+Nikoooo#8: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Th Js]
+DiggErr555: raises 310 to 360 and is all-in
+Shittaboy: folds
+gAAoChAAo: folds
+Nikoooo#8: folds
+Uncalled bet (310) returned to DiggErr555
+DiggErr555 collected 165 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 165 | Rake 0
+Seat 1: Nikoooo#8 (big blind) folded before Flop
+Seat 2: DiggErr555 collected (165)
+Seat 3: Shittaboy (button) folded before Flop (didn't bet)
+Seat 4: gAAoChAAo (small blind) folded before Flop
+
+PokerStars Hand #212783566360: Tournament #2881303874, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/04/26 23:20:46 MSK [2020/04/26 16:20:46 ET]
+Table '2881303874 4' 4-max Seat #4 is the button
+Seat 1: Nikoooo#8 (400 in chips)
+Seat 2: DiggErr555 (475 in chips)
+Seat 3: Shittaboy (160 in chips)
+Seat 4: gAAoChAAo (965 in chips)
+Nikoooo#8: posts the ante 10
+DiggErr555: posts the ante 10
+Shittaboy: posts the ante 10
+gAAoChAAo: posts the ante 10
+Nikoooo#8: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [3s 4h]
+Shittaboy: raises 50 to 100
+gAAoChAAo: folds
+Nikoooo#8: raises 290 to 390 and is all-in
+DiggErr555: folds
+Shittaboy: calls 50 and is all-in
+Uncalled bet (240) returned to Nikoooo#8
+*** FLOP *** [6h 8s 9h]
+*** TURN *** [6h 8s 9h] [Ks]
+*** RIVER *** [6h 8s 9h Ks] [8c]
+*** SHOW DOWN ***
+Nikoooo#8: shows [Jd Qs] (a pair of Eights)
+Shittaboy: shows [3h Qh] (a pair of Eights - lower kicker)
+Nikoooo#8 collected 390 from pot
+Shittaboy finished the tournament in 9th place
+*** SUMMARY ***
+Total pot 390 | Rake 0
+Board [6h 8s 9h Ks 8c]
+Seat 1: Nikoooo#8 (small blind) showed [Jd Qs] and won (390) with a pair of Eights
+Seat 2: DiggErr555 (big blind) folded before Flop
+Seat 3: Shittaboy showed [3h Qh] and lost with a pair of Eights
+Seat 4: gAAoChAAo (button) folded before Flop (didn't bet)
+
+PokerStars Hand #212783593411: Tournament #2881303874, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/04/26 23:21:06 MSK [2020/04/26 16:21:06 ET]
+Table '2881303874 4' 4-max Seat #1 is the button
+Seat 1: Nikoooo#8 (630 in chips)
+Seat 2: DiggErr555 (415 in chips)
+Seat 4: gAAoChAAo (955 in chips)
+Nikoooo#8: posts the ante 10
+DiggErr555: posts the ante 10
+gAAoChAAo: posts the ante 10
+DiggErr555: posts small blind 25
+gAAoChAAo: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [9h 2c]
+Nikoooo#8: raises 570 to 620 and is all-in
+DiggErr555: folds
+gAAoChAAo: folds
+Uncalled bet (570) returned to Nikoooo#8
+Nikoooo#8 collected 155 from pot
+Nikoooo#8: doesn't show hand
+*** SUMMARY ***
+Total pot 155 | Rake 0
+Seat 1: Nikoooo#8 (button) collected (155)
+Seat 2: DiggErr555 (small blind) folded before Flop
+Seat 4: gAAoChAAo (big blind) folded before Flop
+
+PokerStars Hand #212783612275: Tournament #2881303874, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/04/26 23:21:19 MSK [2020/04/26 16:21:19 ET]
+Table '2881303874 4' 4-max Seat #2 is the button
+Seat 1: Nikoooo#8 (725 in chips)
+Seat 2: DiggErr555 (380 in chips)
+Seat 4: gAAoChAAo (895 in chips)
+Nikoooo#8: posts the ante 10
+DiggErr555: posts the ante 10
+gAAoChAAo: posts the ante 10
+gAAoChAAo: posts small blind 25
+Nikoooo#8: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Qc Jc]
+DiggErr555: raises 320 to 370 and is all-in
+gAAoChAAo: folds
+Nikoooo#8: folds
+Uncalled bet (320) returned to DiggErr555
+DiggErr555 collected 155 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 155 | Rake 0
+Seat 1: Nikoooo#8 (big blind) folded before Flop
+Seat 2: DiggErr555 (button) collected (155)
+Seat 4: gAAoChAAo (small blind) folded before Flop
+
+PokerStars Hand #212783633827: Tournament #2881303874, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/04/26 23:21:32 MSK [2020/04/26 16:21:32 ET]
+Table '2881303874 4' 4-max Seat #4 is the button
+Seat 1: Nikoooo#8 (665 in chips)
+Seat 2: DiggErr555 (475 in chips)
+Seat 4: gAAoChAAo (860 in chips)
+Nikoooo#8: posts the ante 20
+DiggErr555: posts the ante 20
+gAAoChAAo: posts the ante 20
+Nikoooo#8: posts small blind 50
+DiggErr555: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [4d 6c]
+gAAoChAAo: raises 740 to 840 and is all-in
+Nikoooo#8: folds
+DiggErr555: folds
+Uncalled bet (740) returned to gAAoChAAo
+gAAoChAAo collected 310 from pot
+*** SUMMARY ***
+Total pot 310 | Rake 0
+Seat 1: Nikoooo#8 (small blind) folded before Flop
+Seat 2: DiggErr555 (big blind) folded before Flop
+Seat 4: gAAoChAAo (button) collected (310)
+
+PokerStars Hand #212783646155: Tournament #2881303874, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/04/26 23:21:41 MSK [2020/04/26 16:21:41 ET]
+Table '2881303874 4' 4-max Seat #1 is the button
+Seat 1: Nikoooo#8 (595 in chips)
+Seat 2: DiggErr555 (355 in chips)
+Seat 4: gAAoChAAo (1050 in chips)
+Nikoooo#8: posts the ante 20
+DiggErr555: posts the ante 20
+gAAoChAAo: posts the ante 20
+DiggErr555: posts small blind 50
+gAAoChAAo: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [7d 3d]
+Nikoooo#8: folds
+DiggErr555: raises 235 to 335 and is all-in
+gAAoChAAo: calls 235
+*** FLOP *** [2c 4h 9d]
+*** TURN *** [2c 4h 9d] [5c]
+*** RIVER *** [2c 4h 9d 5c] [7h]
+*** SHOW DOWN ***
+DiggErr555: shows [7d 3d] (a pair of Sevens)
+gAAoChAAo: shows [5d 6h] (a pair of Fives)
+DiggErr555 collected 730 from pot
+*** SUMMARY ***
+Total pot 730 | Rake 0
+Board [2c 4h 9d 5c 7h]
+Seat 1: Nikoooo#8 (button) folded before Flop (didn't bet)
+Seat 2: DiggErr555 (small blind) showed [7d 3d] and won (730) with a pair of Sevens
+Seat 4: gAAoChAAo (big blind) showed [5d 6h] and lost with a pair of Fives
+
+PokerStars Hand #212783668016: Tournament #2881303874, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/04/26 23:21:57 MSK [2020/04/26 16:21:57 ET]
+Table '2881303874 4' 4-max Seat #2 is the button
+Seat 1: Nikoooo#8 (575 in chips)
+Seat 2: DiggErr555 (730 in chips)
+Seat 4: gAAoChAAo (695 in chips)
+Nikoooo#8: posts the ante 20
+DiggErr555: posts the ante 20
+gAAoChAAo: posts the ante 20
+gAAoChAAo: posts small blind 50
+Nikoooo#8: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [4s 4h]
+DiggErr555: raises 610 to 710 and is all-in
+gAAoChAAo: folds
+Nikoooo#8: folds
+Uncalled bet (610) returned to DiggErr555
+DiggErr555 collected 310 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 310 | Rake 0
+Seat 1: Nikoooo#8 (big blind) folded before Flop
+Seat 2: DiggErr555 (button) collected (310)
+Seat 4: gAAoChAAo (small blind) folded before Flop
+
+PokerStars Hand #212783684829: Tournament #2881303874, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/04/26 23:22:10 MSK [2020/04/26 16:22:10 ET]
+Table '2881303874 4' 4-max Seat #4 is the button
+Seat 1: Nikoooo#8 (455 in chips)
+Seat 2: DiggErr555 (920 in chips)
+Seat 4: gAAoChAAo (625 in chips)
+Nikoooo#8: posts the ante 20
+DiggErr555: posts the ante 20
+gAAoChAAo: posts the ante 20
+Nikoooo#8: posts small blind 50
+DiggErr555: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [6c Jd]
+gAAoChAAo: folds
+Nikoooo#8: folds
+Uncalled bet (50) returned to DiggErr555
+DiggErr555 collected 160 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 160 | Rake 0
+Seat 1: Nikoooo#8 (small blind) folded before Flop
+Seat 2: DiggErr555 (big blind) collected (160)
+Seat 4: gAAoChAAo (button) folded before Flop (didn't bet)
+
+PokerStars Hand #212783693739: Tournament #2881303874, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/04/26 23:22:16 MSK [2020/04/26 16:22:16 ET]
+Table '2881303874 4' 4-max Seat #1 is the button
+Seat 1: Nikoooo#8 (385 in chips)
+Seat 2: DiggErr555 (1010 in chips)
+Seat 4: gAAoChAAo (605 in chips)
+Nikoooo#8: posts the ante 20
+DiggErr555: posts the ante 20
+gAAoChAAo: posts the ante 20
+DiggErr555: posts small blind 50
+gAAoChAAo: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Jh 9d]
+Nikoooo#8: folds
+DiggErr555: raises 890 to 990 and is all-in
+gAAoChAAo: calls 485 and is all-in
+Uncalled bet (405) returned to DiggErr555
+*** FLOP *** [Th 5c 4h]
+*** TURN *** [Th 5c 4h] [4c]
+*** RIVER *** [Th 5c 4h 4c] [6s]
+*** SHOW DOWN ***
+DiggErr555: shows [Jh 9d] (a pair of Fours)
+gAAoChAAo: shows [Qc 3h] (a pair of Fours - Queen kicker)
+gAAoChAAo collected 1230 from pot
+*** SUMMARY ***
+Total pot 1230 | Rake 0
+Board [Th 5c 4h 4c 6s]
+Seat 1: Nikoooo#8 (button) folded before Flop (didn't bet)
+Seat 2: DiggErr555 (small blind) showed [Jh 9d] and lost with a pair of Fours
+Seat 4: gAAoChAAo (big blind) showed [Qc 3h] and won (1230) with a pair of Fours
+
+PokerStars Hand #212783720110: Tournament #2881303874, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/04/26 23:22:32 MSK [2020/04/26 16:22:32 ET]
+Table '2881303874 4' 4-max Seat #2 is the button
+Seat 1: Nikoooo#8 (365 in chips)
+Seat 2: DiggErr555 (405 in chips)
+Seat 4: gAAoChAAo (1230 in chips)
+Nikoooo#8: posts the ante 20
+DiggErr555: posts the ante 20
+gAAoChAAo: posts the ante 20
+gAAoChAAo: posts small blind 50
+Nikoooo#8: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Ah 2c]
+DiggErr555: raises 285 to 385 and is all-in
+gAAoChAAo: raises 285 to 670
+Nikoooo#8: folds
+Uncalled bet (285) returned to gAAoChAAo
+*** FLOP *** [Ac 6c 5h]
+*** TURN *** [Ac 6c 5h] [2s]
+*** RIVER *** [Ac 6c 5h 2s] [9c]
+*** SHOW DOWN ***
+gAAoChAAo: shows [3c Kd] (high card Ace)
+DiggErr555: shows [Ah 2c] (two pair, Aces and Deuces)
+DiggErr555 collected 930 from pot
+*** SUMMARY ***
+Total pot 930 | Rake 0
+Board [Ac 6c 5h 2s 9c]
+Seat 1: Nikoooo#8 (big blind) folded before Flop
+Seat 2: DiggErr555 (button) showed [Ah 2c] and won (930) with two pair, Aces and Deuces
+Seat 4: gAAoChAAo (small blind) showed [3c Kd] and lost with high card Ace
+
+PokerStars Hand #212783742338: Tournament #2881303874, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/04/26 23:22:48 MSK [2020/04/26 16:22:48 ET]
+Table '2881303874 4' 4-max Seat #4 is the button
+Seat 1: Nikoooo#8 (245 in chips)
+Seat 2: DiggErr555 (930 in chips)
+Seat 4: gAAoChAAo (825 in chips)
+Nikoooo#8: posts the ante 20
+DiggErr555: posts the ante 20
+gAAoChAAo: posts the ante 20
+Nikoooo#8: posts small blind 50
+DiggErr555: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Kd Qd]
+gAAoChAAo: folds
+Nikoooo#8: raises 125 to 225 and is all-in
+DiggErr555: calls 125
+*** FLOP *** [7d 3s 9s]
+*** TURN *** [7d 3s 9s] [Jc]
+*** RIVER *** [7d 3s 9s Jc] [6s]
+*** SHOW DOWN ***
+Nikoooo#8: shows [3c 5c] (a pair of Threes)
+DiggErr555: shows [Kd Qd] (high card King)
+Nikoooo#8 collected 510 from pot
+*** SUMMARY ***
+Total pot 510 | Rake 0
+Board [7d 3s 9s Jc 6s]
+Seat 1: Nikoooo#8 (small blind) showed [3c 5c] and won (510) with a pair of Threes
+Seat 2: DiggErr555 (big blind) showed [Kd Qd] and lost with high card King
+Seat 4: gAAoChAAo (button) folded before Flop (didn't bet)
+
+PokerStars Hand #212783765320: Tournament #2881303874, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/04/26 23:23:06 MSK [2020/04/26 16:23:06 ET]
+Table '2881303874 4' 4-max Seat #1 is the button
+Seat 1: Nikoooo#8 (510 in chips)
+Seat 2: DiggErr555 (685 in chips)
+Seat 4: gAAoChAAo (805 in chips)
+Nikoooo#8: posts the ante 20
+DiggErr555: posts the ante 20
+gAAoChAAo: posts the ante 20
+DiggErr555: posts small blind 50
+gAAoChAAo: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Jh Ah]
+Nikoooo#8: raises 390 to 490 and is all-in
+DiggErr555: raises 175 to 665 and is all-in
+gAAoChAAo: folds
+Uncalled bet (175) returned to DiggErr555
+*** FLOP *** [As 9h 3c]
+*** TURN *** [As 9h 3c] [2c]
+*** RIVER *** [As 9h 3c 2c] [9d]
+*** SHOW DOWN ***
+DiggErr555: shows [Jh Ah] (two pair, Aces and Nines)
+Nikoooo#8: shows [4s Ks] (a pair of Nines)
+DiggErr555 collected 1140 from pot
+Nikoooo#8 finished the tournament in 7th place
+*** SUMMARY ***
+Total pot 1140 | Rake 0
+Board [As 9h 3c 2c 9d]
+Seat 1: Nikoooo#8 (button) showed [4s Ks] and lost with a pair of Nines
+Seat 2: DiggErr555 (small blind) showed [Jh Ah] and won (1140) with two pair, Aces and Nines
+Seat 4: gAAoChAAo (big blind) folded before Flop
+
+PokerStars Hand #212783794693: Tournament #2881303874, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/04/26 23:23:27 MSK [2020/04/26 16:23:27 ET]
+Table '2881303874 4' 4-max Seat #4 is the button
+Seat 2: DiggErr555 (1315 in chips)
+Seat 4: gAAoChAAo (685 in chips)
+DiggErr555: posts the ante 20
+gAAoChAAo: posts the ante 20
+gAAoChAAo: posts small blind 50
+DiggErr555: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [7c Jh]
+gAAoChAAo: folds
+Uncalled bet (50) returned to DiggErr555
+DiggErr555 collected 140 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 140 | Rake 0
+Seat 2: DiggErr555 (big blind) collected (140)
+Seat 4: gAAoChAAo (button) (small blind) folded before Flop
+
+PokerStars Hand #212783806134: Tournament #2881303874, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/04/26 23:23:35 MSK [2020/04/26 16:23:35 ET]
+Table '2881303874 4' 4-max Seat #2 is the button
+Seat 2: DiggErr555 (1385 in chips)
+Seat 4: gAAoChAAo (615 in chips)
+DiggErr555: posts the ante 20
+gAAoChAAo: posts the ante 20
+DiggErr555: posts small blind 50
+gAAoChAAo: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [3c 8h]
+DiggErr555: folds
+Uncalled bet (50) returned to gAAoChAAo
+gAAoChAAo collected 140 from pot
+*** SUMMARY ***
+Total pot 140 | Rake 0
+Seat 2: DiggErr555 (button) (small blind) folded before Flop
+Seat 4: gAAoChAAo (big blind) collected (140)
+
+PokerStars Hand #212783813283: Tournament #2881303874, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/04/26 23:23:40 MSK [2020/04/26 16:23:40 ET]
+Table '2881303874 4' 4-max Seat #4 is the button
+Seat 2: DiggErr555 (1315 in chips)
+Seat 4: gAAoChAAo (685 in chips)
+DiggErr555: posts the ante 20
+gAAoChAAo: posts the ante 20
+gAAoChAAo: posts small blind 50
+DiggErr555: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Qh 9d]
+gAAoChAAo: raises 565 to 665 and is all-in
+DiggErr555: calls 565
+*** FLOP *** [9s Ac Kc]
+*** TURN *** [9s Ac Kc] [Kh]
+*** RIVER *** [9s Ac Kc Kh] [As]
+*** SHOW DOWN ***
+DiggErr555: shows [Qh 9d] (two pair, Aces and Kings)
+gAAoChAAo: shows [Qc 8h] (two pair, Aces and Kings)
+DiggErr555 collected 685 from pot
+gAAoChAAo collected 685 from pot
+*** SUMMARY ***
+Total pot 1370 | Rake 0
+Board [9s Ac Kc Kh As]
+Seat 2: DiggErr555 (big blind) showed [Qh 9d] and won (685) with two pair, Aces and Kings
+Seat 4: gAAoChAAo (button) (small blind) showed [Qc 8h] and won (685) with two pair, Aces and Kings
+
+PokerStars Hand #212783832237: Tournament #2881303874, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/04/26 23:23:55 MSK [2020/04/26 16:23:55 ET]
+Table '2881303874 4' 4-max Seat #2 is the button
+Seat 2: DiggErr555 (1315 in chips)
+Seat 4: gAAoChAAo (685 in chips)
+DiggErr555: posts the ante 20
+gAAoChAAo: posts the ante 20
+DiggErr555: posts small blind 50
+gAAoChAAo: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [2h 7c]
+DiggErr555: folds
+Uncalled bet (50) returned to gAAoChAAo
+gAAoChAAo collected 140 from pot
+gAAoChAAo: doesn't show hand
+*** SUMMARY ***
+Total pot 140 | Rake 0
+Seat 2: DiggErr555 (button) (small blind) folded before Flop
+Seat 4: gAAoChAAo (big blind) collected (140)
+
+PokerStars Hand #212783848343: Tournament #2881303874, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/04/26 23:24:06 MSK [2020/04/26 16:24:06 ET]
+Table '2881303874 4' 4-max Seat #4 is the button
+Seat 2: DiggErr555 (1245 in chips)
+Seat 4: gAAoChAAo (755 in chips)
+DiggErr555: posts the ante 20
+gAAoChAAo: posts the ante 20
+gAAoChAAo: posts small blind 50
+DiggErr555: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [3d Qc]
+gAAoChAAo: raises 635 to 735 and is all-in
+DiggErr555: calls 635
+*** FLOP *** [9c 2c Jd]
+*** TURN *** [9c 2c Jd] [Kc]
+*** RIVER *** [9c 2c Jd Kc] [As]
+*** SHOW DOWN ***
+DiggErr555: shows [3d Qc] (high card Ace)
+gAAoChAAo: shows [Ac 9h] (two pair, Aces and Nines)
+gAAoChAAo collected 1510 from pot
+*** SUMMARY ***
+Total pot 1510 | Rake 0
+Board [9c 2c Jd Kc As]
+Seat 2: DiggErr555 (big blind) showed [3d Qc] and lost with high card Ace
+Seat 4: gAAoChAAo (button) (small blind) showed [Ac 9h] and won (1510) with two pair, Aces and Nines
+
+PokerStars Hand #212783879498: Tournament #2881303874, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level III (100/200) - 2020/04/26 23:24:29 MSK [2020/04/26 16:24:29 ET]
+Table '2881303874 4' 4-max Seat #2 is the button
+Seat 2: DiggErr555 (490 in chips)
+Seat 4: gAAoChAAo (1510 in chips)
+DiggErr555: posts the ante 40
+gAAoChAAo: posts the ante 40
+DiggErr555: posts small blind 100
+gAAoChAAo: posts big blind 200
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Ts 8s]
+DiggErr555: raises 250 to 450 and is all-in
+gAAoChAAo: calls 250
+*** FLOP *** [6s 4c Jd]
+*** TURN *** [6s 4c Jd] [As]
+*** RIVER *** [6s 4c Jd As] [5h]
+*** SHOW DOWN ***
+gAAoChAAo: shows [2d Ah] (a pair of Aces)
+DiggErr555: shows [Ts 8s] (high card Ace)
+gAAoChAAo collected 980 from pot
+DiggErr555 finished the tournament in 5th place
+*** SUMMARY ***
+Total pot 980 | Rake 0
+Board [6s 4c Jd As 5h]
+Seat 2: DiggErr555 (button) (small blind) showed [Ts 8s] and lost with high card Ace
+Seat 4: gAAoChAAo (big blind) showed [2d Ah] and won (980) with a pair of Aces

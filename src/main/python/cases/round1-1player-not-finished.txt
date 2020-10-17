@@ -1,0 +1,444 @@
+
+PokerStars Hand #213711662083: Tournament #2901419737, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/12 0:22:01 MSK [2020/05/11 17:22:01 ET]
+Table '2901419737 2' 4-max Seat #1 is the button
+Seat 1: theshortdwarf (500 in chips)
+Seat 2: anime22 (500 in chips)
+Seat 3: arthuriflues (500 in chips)
+Seat 4: DiggErr555 (500 in chips)
+theshortdwarf: posts the ante 10
+anime22: posts the ante 10
+arthuriflues: posts the ante 10
+DiggErr555: posts the ante 10
+anime22: posts small blind 25
+arthuriflues: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [9s 7c]
+DiggErr555: folds
+theshortdwarf: folds
+anime22: folds
+Uncalled bet (25) returned to arthuriflues
+arthuriflues collected 90 from pot
+arthuriflues: doesn't show hand
+*** SUMMARY ***
+Total pot 90 | Rake 0
+Seat 1: theshortdwarf (button) folded before Flop (didn't bet)
+Seat 2: anime22 (small blind) folded before Flop
+Seat 3: arthuriflues (big blind) collected (90)
+Seat 4: DiggErr555 folded before Flop (didn't bet)
+
+PokerStars Hand #213711675511: Tournament #2901419737, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/12 0:22:14 MSK [2020/05/11 17:22:14 ET]
+Table '2901419737 2' 4-max Seat #2 is the button
+Seat 1: theshortdwarf (490 in chips)
+Seat 2: anime22 (465 in chips)
+Seat 3: arthuriflues (555 in chips)
+Seat 4: DiggErr555 (490 in chips)
+theshortdwarf: posts the ante 10
+anime22: posts the ante 10
+arthuriflues: posts the ante 10
+DiggErr555: posts the ante 10
+arthuriflues: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [8s 4d]
+theshortdwarf: raises 50 to 100
+anime22: raises 355 to 455 and is all-in
+arthuriflues: folds
+DiggErr555: folds
+theshortdwarf: calls 355
+*** FLOP *** [Qd Qs Td]
+*** TURN *** [Qd Qs Td] [9d]
+*** RIVER *** [Qd Qs Td 9d] [3d]
+*** SHOW DOWN ***
+theshortdwarf: shows [Kh Qh] (three of a kind, Queens)
+anime22: shows [As 2d] (a flush, Queen high)
+anime22 collected 1025 from pot
+*** SUMMARY ***
+Total pot 1025 | Rake 0
+Board [Qd Qs Td 9d 3d]
+Seat 1: theshortdwarf showed [Kh Qh] and lost with three of a kind, Queens
+Seat 2: anime22 (button) showed [As 2d] and won (1025) with a flush, Queen high
+Seat 3: arthuriflues (small blind) folded before Flop
+Seat 4: DiggErr555 (big blind) folded before Flop
+
+PokerStars Hand #213711733826: Tournament #2901419737, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/12 0:23:08 MSK [2020/05/11 17:23:08 ET]
+Table '2901419737 2' 4-max Seat #4 is the button
+Seat 2: anime22 (1015 in chips)
+Seat 3: arthuriflues (510 in chips)
+Seat 4: DiggErr555 (475 in chips)
+anime22: posts the ante 10
+arthuriflues: posts the ante 10
+DiggErr555: posts the ante 10
+anime22: posts small blind 25
+arthuriflues: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Td 5c]
+DiggErr555: folds
+anime22: folds
+Uncalled bet (25) returned to arthuriflues
+arthuriflues collected 80 from pot
+arthuriflues: doesn't show hand
+*** SUMMARY ***
+Total pot 80 | Rake 0
+Seat 2: anime22 (small blind) folded before Flop
+Seat 3: arthuriflues (big blind) collected (80)
+Seat 4: DiggErr555 (button) folded before Flop (didn't bet)
+
+PokerStars Hand #213711741044: Tournament #2901419737, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/12 0:23:15 MSK [2020/05/11 17:23:15 ET]
+Table '2901419737 2' 4-max Seat #2 is the button
+Seat 2: anime22 (980 in chips)
+Seat 3: arthuriflues (555 in chips)
+Seat 4: DiggErr555 (465 in chips)
+anime22: posts the ante 10
+arthuriflues: posts the ante 10
+DiggErr555: posts the ante 10
+arthuriflues: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [2c Jd]
+anime22: folds
+arthuriflues: folds
+Uncalled bet (25) returned to DiggErr555
+DiggErr555 collected 80 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 80 | Rake 0
+Seat 2: anime22 (button) folded before Flop (didn't bet)
+Seat 3: arthuriflues (small blind) folded before Flop
+Seat 4: DiggErr555 (big blind) collected (80)
+
+PokerStars Hand #213711749136: Tournament #2901419737, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/12 0:23:22 MSK [2020/05/11 17:23:22 ET]
+Table '2901419737 2' 4-max Seat #3 is the button
+Seat 2: anime22 (970 in chips)
+Seat 3: arthuriflues (520 in chips)
+Seat 4: DiggErr555 (510 in chips)
+anime22: posts the ante 10
+arthuriflues: posts the ante 10
+DiggErr555: posts the ante 10
+DiggErr555: posts small blind 25
+anime22: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [As Ah]
+arthuriflues: raises 460 to 510 and is all-in
+DiggErr555: calls 475 and is all-in
+anime22: calls 460
+*** FLOP *** [3h 2c Tc]
+*** TURN *** [3h 2c Tc] [2h]
+*** RIVER *** [3h 2c Tc 2h] [9h]
+*** SHOW DOWN ***
+anime22: shows [Qh Jd] (a pair of Deuces)
+arthuriflues: shows [7h 7d] (two pair, Sevens and Deuces)
+arthuriflues collected 20 from side pot
+DiggErr555: shows [As Ah] (two pair, Aces and Deuces)
+DiggErr555 collected 1530 from main pot
+*** SUMMARY ***
+Total pot 1550 Main pot 1530. Side pot 20. | Rake 0
+Board [3h 2c Tc 2h 9h]
+Seat 2: anime22 (big blind) showed [Qh Jd] and lost with a pair of Deuces
+Seat 3: arthuriflues (button) showed [7h 7d] and won (20) with two pair, Sevens and Deuces
+Seat 4: DiggErr555 (small blind) showed [As Ah] and won (1530) with two pair, Aces and Deuces
+
+PokerStars Hand #213711773239: Tournament #2901419737, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/12 0:23:45 MSK [2020/05/11 17:23:45 ET]
+Table '2901419737 2' 4-max Seat #4 is the button
+Seat 2: anime22 (450 in chips)
+Seat 3: arthuriflues (20 in chips)
+Seat 4: DiggErr555 (1530 in chips)
+anime22: posts the ante 10
+arthuriflues: posts the ante 10
+DiggErr555: posts the ante 10
+anime22: posts small blind 25
+arthuriflues: posts big blind 10 and is all-in
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Qh Qc]
+DiggErr555: raises 1495 to 1520 and is all-in
+anime22: calls 415 and is all-in
+Uncalled bet (1080) returned to DiggErr555
+*** FLOP *** [8s 5c 4c]
+*** TURN *** [8s 5c 4c] [8h]
+*** RIVER *** [8s 5c 4c 8h] [7h]
+*** SHOW DOWN ***
+anime22: shows [8c 9s] (three of a kind, Eights)
+DiggErr555: shows [Qh Qc] (two pair, Queens and Eights)
+anime22 collected 860 from side pot
+arthuriflues: shows [9d 6h] (a straight, Five to Nine)
+arthuriflues collected 60 from main pot
+*** SUMMARY ***
+Total pot 920 Main pot 60. Side pot 860. | Rake 0
+Board [8s 5c 4c 8h 7h]
+Seat 2: anime22 (small blind) showed [8c 9s] and won (860) with three of a kind, Eights
+Seat 3: arthuriflues (big blind) showed [9d 6h] and won (60) with a straight, Five to Nine
+Seat 4: DiggErr555 (button) showed [Qh Qc] and lost with two pair, Queens and Eights
+
+PokerStars Hand #213711792922: Tournament #2901419737, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/12 0:24:03 MSK [2020/05/11 17:24:03 ET]
+Table '2901419737 2' 4-max Seat #2 is the button
+Seat 2: anime22 (860 in chips)
+Seat 3: arthuriflues (60 in chips)
+Seat 4: DiggErr555 (1080 in chips)
+anime22: posts the ante 10
+arthuriflues: posts the ante 10
+DiggErr555: posts the ante 10
+arthuriflues: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [8s 7s]
+anime22: folds
+arthuriflues: calls 25 and is all-in
+*** FLOP *** [Ah 2d Qd]
+*** TURN *** [Ah 2d Qd] [4h]
+*** RIVER *** [Ah 2d Qd 4h] [3d]
+*** SHOW DOWN ***
+arthuriflues: shows [Ad 8c] (a pair of Aces)
+DiggErr555: shows [8s 7s] (high card Ace)
+arthuriflues collected 130 from pot
+*** SUMMARY ***
+Total pot 130 | Rake 0
+Board [Ah 2d Qd 4h 3d]
+Seat 2: anime22 (button) folded before Flop (didn't bet)
+Seat 3: arthuriflues (small blind) showed [Ad 8c] and won (130) with a pair of Aces
+Seat 4: DiggErr555 (big blind) showed [8s 7s] and lost with high card Ace
+
+PokerStars Hand #213711817004: Tournament #2901419737, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/12 0:24:26 MSK [2020/05/11 17:24:26 ET]
+Table '2901419737 2' 4-max Seat #3 is the button
+Seat 2: anime22 (850 in chips)
+Seat 3: arthuriflues (130 in chips)
+Seat 4: DiggErr555 (1020 in chips)
+anime22: posts the ante 10
+arthuriflues: posts the ante 10
+DiggErr555: posts the ante 10
+DiggErr555: posts small blind 25
+anime22: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [3s 7s]
+arthuriflues: folds
+DiggErr555: calls 25
+anime22: checks
+*** FLOP *** [9c Ad Qh]
+DiggErr555: checks
+anime22: checks
+*** TURN *** [9c Ad Qh] [Jd]
+DiggErr555: checks
+anime22: bets 50
+DiggErr555: folds
+Uncalled bet (50) returned to anime22
+anime22 collected 130 from pot
+anime22: doesn't show hand
+*** SUMMARY ***
+Total pot 130 | Rake 0
+Board [9c Ad Qh Jd]
+Seat 2: anime22 (big blind) collected (130)
+Seat 3: arthuriflues (button) folded before Flop (didn't bet)
+Seat 4: DiggErr555 (small blind) folded on the Turn
+
+PokerStars Hand #213711835138: Tournament #2901419737, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/12 0:24:43 MSK [2020/05/11 17:24:43 ET]
+Table '2901419737 2' 4-max Seat #4 is the button
+Seat 2: anime22 (920 in chips)
+Seat 3: arthuriflues (120 in chips)
+Seat 4: DiggErr555 (960 in chips)
+anime22: posts the ante 10
+arthuriflues: posts the ante 10
+DiggErr555: posts the ante 10
+anime22: posts small blind 25
+arthuriflues: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [8h Jc]
+DiggErr555: folds
+anime22: folds
+Uncalled bet (25) returned to arthuriflues
+arthuriflues collected 80 from pot
+arthuriflues: doesn't show hand
+*** SUMMARY ***
+Total pot 80 | Rake 0
+Seat 2: anime22 (small blind) folded before Flop
+Seat 3: arthuriflues (big blind) collected (80)
+Seat 4: DiggErr555 (button) folded before Flop (didn't bet)
+
+PokerStars Hand #213711840392: Tournament #2901419737, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/12 0:24:48 MSK [2020/05/11 17:24:48 ET]
+Table '2901419737 2' 4-max Seat #2 is the button
+Seat 2: anime22 (885 in chips)
+Seat 3: arthuriflues (165 in chips)
+Seat 4: DiggErr555 (950 in chips)
+anime22: posts the ante 10
+arthuriflues: posts the ante 10
+DiggErr555: posts the ante 10
+arthuriflues: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Kc Qd]
+anime22: folds
+arthuriflues: folds
+Uncalled bet (25) returned to DiggErr555
+DiggErr555 collected 80 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 80 | Rake 0
+Seat 2: anime22 (button) folded before Flop (didn't bet)
+Seat 3: arthuriflues (small blind) folded before Flop
+Seat 4: DiggErr555 (big blind) collected (80)
+
+PokerStars Hand #213711852860: Tournament #2901419737, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/12 0:25:00 MSK [2020/05/11 17:25:00 ET]
+Table '2901419737 2' 4-max Seat #3 is the button
+Seat 2: anime22 (875 in chips)
+Seat 3: arthuriflues (130 in chips)
+Seat 4: DiggErr555 (995 in chips)
+anime22: posts the ante 10
+arthuriflues: posts the ante 10
+DiggErr555: posts the ante 10
+DiggErr555: posts small blind 25
+anime22: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [7h Js]
+arthuriflues: raises 70 to 120 and is all-in
+DiggErr555: folds
+anime22: calls 70
+*** FLOP *** [4c Tc 8c]
+*** TURN *** [4c Tc 8c] [5d]
+*** RIVER *** [4c Tc 8c 5d] [8s]
+*** SHOW DOWN ***
+anime22: shows [Jd 3d] (a pair of Eights)
+arthuriflues: shows [Ks 5h] (two pair, Eights and Fives)
+arthuriflues collected 295 from pot
+*** SUMMARY ***
+Total pot 295 | Rake 0
+Board [4c Tc 8c 5d 8s]
+Seat 2: anime22 (big blind) showed [Jd 3d] and lost with a pair of Eights
+Seat 3: arthuriflues (button) showed [Ks 5h] and won (295) with two pair, Eights and Fives
+Seat 4: DiggErr555 (small blind) folded before Flop
+
+PokerStars Hand #213711875366: Tournament #2901419737, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/05/12 0:25:21 MSK [2020/05/11 17:25:21 ET]
+Table '2901419737 2' 4-max Seat #4 is the button
+Seat 2: anime22 (745 in chips)
+Seat 3: arthuriflues (295 in chips)
+Seat 4: DiggErr555 (960 in chips)
+anime22: posts the ante 20
+arthuriflues: posts the ante 20
+DiggErr555: posts the ante 20
+anime22: posts small blind 50
+arthuriflues: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [9c 3s]
+DiggErr555: folds
+anime22: folds
+Uncalled bet (50) returned to arthuriflues
+arthuriflues collected 160 from pot
+arthuriflues: doesn't show hand
+*** SUMMARY ***
+Total pot 160 | Rake 0
+Seat 2: anime22 (small blind) folded before Flop
+Seat 3: arthuriflues (big blind) collected (160)
+Seat 4: DiggErr555 (button) folded before Flop (didn't bet)
+
+PokerStars Hand #213711890342: Tournament #2901419737, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/05/12 0:25:35 MSK [2020/05/11 17:25:35 ET]
+Table '2901419737 2' 4-max Seat #2 is the button
+Seat 2: anime22 (675 in chips)
+Seat 3: arthuriflues (385 in chips)
+Seat 4: DiggErr555 (940 in chips)
+anime22: posts the ante 20
+arthuriflues: posts the ante 20
+DiggErr555: posts the ante 20
+arthuriflues: posts small blind 50
+DiggErr555: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [6s 2c]
+anime22: raises 555 to 655 and is all-in
+arthuriflues: folds
+DiggErr555: folds
+Uncalled bet (555) returned to anime22
+anime22 collected 310 from pot
+anime22: doesn't show hand
+*** SUMMARY ***
+Total pot 310 | Rake 0
+Seat 2: anime22 (button) collected (310)
+Seat 3: arthuriflues (small blind) folded before Flop
+Seat 4: DiggErr555 (big blind) folded before Flop
+
+PokerStars Hand #213711913545: Tournament #2901419737, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/05/12 0:25:50 MSK [2020/05/11 17:25:50 ET]
+Table '2901419737 2' 4-max Seat #3 is the button
+Seat 2: anime22 (865 in chips)
+Seat 3: arthuriflues (315 in chips)
+Seat 4: DiggErr555 (820 in chips)
+anime22: posts the ante 20
+arthuriflues: posts the ante 20
+DiggErr555: posts the ante 20
+DiggErr555: posts small blind 50
+anime22: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [5c 6s]
+arthuriflues: raises 195 to 295 and is all-in
+DiggErr555: folds
+anime22: calls 195
+*** FLOP *** [6h 2c 7h]
+*** TURN *** [6h 2c 7h] [5s]
+*** RIVER *** [6h 2c 7h 5s] [Kh]
+*** SHOW DOWN ***
+anime22: shows [Qs Tc] (high card King)
+arthuriflues: shows [9d 9s] (a pair of Nines)
+arthuriflues collected 700 from pot
+*** SUMMARY ***
+Total pot 700 | Rake 0
+Board [6h 2c 7h 5s Kh]
+Seat 2: anime22 (big blind) showed [Qs Tc] and lost with high card King
+Seat 3: arthuriflues (button) showed [9d 9s] and won (700) with a pair of Nines
+Seat 4: DiggErr555 (small blind) folded before Flop
+
+PokerStars Hand #213711931060: Tournament #2901419737, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/05/12 0:26:07 MSK [2020/05/11 17:26:07 ET]
+Table '2901419737 2' 4-max Seat #4 is the button
+Seat 2: anime22 (550 in chips)
+Seat 3: arthuriflues (700 in chips)
+Seat 4: DiggErr555 (750 in chips)
+anime22: posts the ante 20
+arthuriflues: posts the ante 20
+DiggErr555: posts the ante 20
+anime22: posts small blind 50
+arthuriflues: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Jc 8d]
+DiggErr555: raises 630 to 730 and is all-in
+anime22: calls 480 and is all-in
+arthuriflues: folds
+Uncalled bet (200) returned to DiggErr555
+*** FLOP *** [3d 6d Kh]
+*** TURN *** [3d 6d Kh] [6h]
+*** RIVER *** [3d 6d Kh 6h] [7h]
+*** SHOW DOWN ***
+anime22: shows [Tc Qc] (a pair of Sixes)
+DiggErr555: shows [Jc 8d] (a pair of Sixes - lower kicker)
+anime22 collected 1220 from pot
+*** SUMMARY ***
+Total pot 1220 | Rake 0
+Board [3d 6d Kh 6h 7h]
+Seat 2: anime22 (small blind) showed [Tc Qc] and won (1220) with a pair of Sixes
+Seat 3: arthuriflues (big blind) folded before Flop
+Seat 4: DiggErr555 (button) showed [Jc 8d] and lost with a pair of Sixes
+
+PokerStars Hand #213711950343: Tournament #2901419737, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/05/12 0:26:25 MSK [2020/05/11 17:26:25 ET]
+Table '2901419737 2' 4-max Seat #2 is the button
+Seat 2: anime22 (1220 in chips)
+Seat 3: arthuriflues (580 in chips)
+Seat 4: DiggErr555 (200 in chips)
+anime22: posts the ante 20
+arthuriflues: posts the ante 20
+DiggErr555: posts the ante 20
+arthuriflues: posts small blind 50
+DiggErr555: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [6h 2d]
+anime22: raises 1100 to 1200 and is all-in
+arthuriflues: calls 510 and is all-in
+DiggErr555: calls 80 and is all-in
+Uncalled bet (640) returned to anime22
+*** FLOP *** [Qd 7d Jh]
+*** TURN *** [Qd 7d Jh] [8d]
+*** RIVER *** [Qd 7d Jh 8d] [3s]
+*** SHOW DOWN ***
+arthuriflues: shows [Kh Ac] (high card Ace)
+anime22: shows [7h 7s] (three of a kind, Sevens)
+anime22 collected 760 from side pot
+DiggErr555: shows [6h 2d] (high card Queen)
+anime22 collected 600 from main pot
+arthuriflues finished the tournament in 6th place
+DiggErr555 finished the tournament in 7th place
+*** SUMMARY ***
+Total pot 1360 Main pot 600. Side pot 760. | Rake 0
+Board [Qd 7d Jh 8d 3s]
+Seat 2: anime22 (button) showed [7h 7s] and won (1360) with three of a kind, Sevens
+Seat 3: arthuriflues (small blind) showed [Kh Ac] and lost with high card Ace
+Seat 4: DiggErr555 (big blind) showed [6h 2d] and lost with high card Queen

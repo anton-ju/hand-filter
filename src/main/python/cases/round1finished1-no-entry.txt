@@ -1,0 +1,343 @@
+
+
+PokerStars Hand #214236320458: Tournament #2912345672, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/21 20:59:09 MSK [2020/05/21 13:59:09 ET]
+Table '2912345672 1' 4-max Seat #1 is the button
+Seat 1: DiggErr555 (500 in chips)
+Seat 2: mornja (500 in chips)
+Seat 3: vidinha16 (500 in chips)
+Seat 4: u.hoeneß87 (500 in chips)
+DiggErr555: posts the ante 10
+mornja: posts the ante 10
+vidinha16: posts the ante 10
+u.hoeneß87: posts the ante 10
+mornja: posts small blind 25
+vidinha16: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Qc Kh]
+u.hoeneß87: folds
+DiggErr555: raises 440 to 490 and is all-in
+mornja: calls 465 and is all-in
+vidinha16: folds
+*** FLOP *** [6d 9h 8s]
+*** TURN *** [6d 9h 8s] [Th]
+*** RIVER *** [6d 9h 8s Th] [Jc]
+*** SHOW DOWN ***
+mornja: shows [Kd Qd] (a straight, Nine to King)
+DiggErr555: shows [Qc Kh] (a straight, Nine to King)
+mornja collected 535 from pot
+DiggErr555 collected 535 from pot
+*** SUMMARY ***
+Total pot 1070 | Rake 0
+Board [6d 9h 8s Th Jc]
+Seat 1: DiggErr555 (button) showed [Qc Kh] and won (535) with a straight, Nine to King
+Seat 2: mornja (small blind) showed [Kd Qd] and won (535) with a straight, Nine to King
+Seat 3: vidinha16 (big blind) folded before Flop
+Seat 4: u.hoeneß87 folded before Flop (didn't bet)
+
+PokerStars Hand #214236335761: Tournament #2912345672, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/21 20:59:30 MSK [2020/05/21 13:59:30 ET]
+Table '2912345672 1' 4-max Seat #2 is the button
+Seat 1: DiggErr555 (535 in chips)
+Seat 2: mornja (535 in chips)
+Seat 3: vidinha16 (440 in chips)
+Seat 4: u.hoeneß87 (490 in chips)
+DiggErr555: posts the ante 10
+mornja: posts the ante 10
+vidinha16: posts the ante 10
+u.hoeneß87: posts the ante 10
+vidinha16: posts small blind 25
+u.hoeneß87: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Jh 4h]
+DiggErr555: folds
+mornja: raises 475 to 525 and is all-in
+vidinha16: folds
+u.hoeneß87: folds
+Uncalled bet (475) returned to mornja
+mornja collected 165 from pot
+mornja: doesn't show hand
+*** SUMMARY ***
+Total pot 165 | Rake 0
+Seat 1: DiggErr555 folded before Flop (didn't bet)
+Seat 2: mornja (button) collected (165)
+Seat 3: vidinha16 (small blind) folded before Flop
+Seat 4: u.hoeneß87 (big blind) folded before Flop
+
+PokerStars Hand #214236346422: Tournament #2912345672, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/21 20:59:49 MSK [2020/05/21 13:59:49 ET]
+Table '2912345672 1' 4-max Seat #3 is the button
+Seat 1: DiggErr555 (525 in chips)
+Seat 2: mornja (640 in chips)
+Seat 3: vidinha16 (405 in chips)
+Seat 4: u.hoeneß87 (430 in chips)
+DiggErr555: posts the ante 10
+mornja: posts the ante 10
+vidinha16: posts the ante 10
+u.hoeneß87: posts the ante 10
+u.hoeneß87: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [8c Jd]
+mornja: folds
+vidinha16: raises 345 to 395 and is all-in
+u.hoeneß87: raises 25 to 420 and is all-in
+DiggErr555: folds
+Uncalled bet (25) returned to u.hoeneß87
+*** FLOP *** [3h 2h Tc]
+*** TURN *** [3h 2h Tc] [3c]
+*** RIVER *** [3h 2h Tc 3c] [6d]
+*** SHOW DOWN ***
+u.hoeneß87: shows [7h Qh] (a pair of Threes)
+vidinha16: shows [6c Ah] (two pair, Sixes and Threes)
+vidinha16 collected 880 from pot
+*** SUMMARY ***
+Total pot 880 | Rake 0
+Board [3h 2h Tc 3c 6d]
+Seat 1: DiggErr555 (big blind) folded before Flop
+Seat 2: mornja folded before Flop (didn't bet)
+Seat 3: vidinha16 (button) showed [6c Ah] and won (880) with two pair, Sixes and Threes
+Seat 4: u.hoeneß87 (small blind) showed [7h Qh] and lost with a pair of Threes
+
+PokerStars Hand #214236356561: Tournament #2912345672, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/21 21:00:06 MSK [2020/05/21 14:00:06 ET]
+Table '2912345672 1' 4-max Seat #4 is the button
+Seat 1: DiggErr555 (465 in chips)
+Seat 2: mornja (630 in chips)
+Seat 3: vidinha16 (880 in chips)
+Seat 4: u.hoeneß87 (25 in chips)
+DiggErr555: posts the ante 10
+mornja: posts the ante 10
+vidinha16: posts the ante 10
+u.hoeneß87: posts the ante 10
+DiggErr555: posts small blind 25
+mornja: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Jh 8d]
+vidinha16: folds
+u.hoeneß87: calls 15 and is all-in
+DiggErr555: raises 405 to 455 and is all-in
+mornja: folds
+Uncalled bet (405) returned to DiggErr555
+*** FLOP *** [Tc 2d 3h]
+*** TURN *** [Tc 2d 3h] [6s]
+*** RIVER *** [Tc 2d 3h 6s] [4s]
+*** SHOW DOWN ***
+DiggErr555: shows [Jh 8d] (high card Jack)
+DiggErr555 collected 70 from side pot
+u.hoeneß87: shows [2h Kd] (a pair of Deuces)
+u.hoeneß87 collected 85 from main pot
+*** SUMMARY ***
+Total pot 155 Main pot 85. Side pot 70. | Rake 0
+Board [Tc 2d 3h 6s 4s]
+Seat 1: DiggErr555 (small blind) showed [Jh 8d] and won (70) with high card Jack
+Seat 2: mornja (big blind) folded before Flop
+Seat 3: vidinha16 folded before Flop (didn't bet)
+Seat 4: u.hoeneß87 (button) showed [2h Kd] and won (85) with a pair of Deuces
+
+PokerStars Hand #214236371787: Tournament #2912345672, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/21 21:00:31 MSK [2020/05/21 14:00:31 ET]
+Table '2912345672 1' 4-max Seat #1 is the button
+Seat 1: DiggErr555 (475 in chips)
+Seat 2: mornja (570 in chips)
+Seat 3: vidinha16 (870 in chips)
+Seat 4: u.hoeneß87 (85 in chips)
+DiggErr555: posts the ante 10
+mornja: posts the ante 10
+vidinha16: posts the ante 10
+u.hoeneß87: posts the ante 10
+mornja: posts small blind 25
+vidinha16: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [8s Kh]
+u.hoeneß87: folds
+DiggErr555: raises 415 to 465 and is all-in
+mornja: folds
+vidinha16: folds
+Uncalled bet (415) returned to DiggErr555
+DiggErr555 collected 165 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 165 | Rake 0
+Seat 1: DiggErr555 (button) collected (165)
+Seat 2: mornja (small blind) folded before Flop
+Seat 3: vidinha16 (big blind) folded before Flop
+Seat 4: u.hoeneß87 folded before Flop (didn't bet)
+
+PokerStars Hand #214236382349: Tournament #2912345672, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/21 21:00:48 MSK [2020/05/21 14:00:48 ET]
+Table '2912345672 1' 4-max Seat #2 is the button
+Seat 1: DiggErr555 (580 in chips)
+Seat 2: mornja (535 in chips)
+Seat 3: vidinha16 (810 in chips)
+Seat 4: u.hoeneß87 (75 in chips)
+DiggErr555: posts the ante 10
+mornja: posts the ante 10
+vidinha16: posts the ante 10
+u.hoeneß87: posts the ante 10
+vidinha16: posts small blind 25
+u.hoeneß87: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [2d 6d]
+DiggErr555: folds
+mornja: folds
+vidinha16: raises 750 to 800 and is all-in
+u.hoeneß87: calls 15 and is all-in
+Uncalled bet (735) returned to vidinha16
+*** FLOP *** [As 8d 4d]
+*** TURN *** [As 8d 4d] [Ad]
+*** RIVER *** [As 8d 4d Ad] [6c]
+*** SHOW DOWN ***
+vidinha16: shows [Td Jd] (a flush, Ace high)
+u.hoeneß87: shows [7c 8h] (two pair, Aces and Eights)
+vidinha16 collected 170 from pot
+u.hoeneß87 finished the tournament in 10th place
+*** SUMMARY ***
+Total pot 170 | Rake 0
+Board [As 8d 4d Ad 6c]
+Seat 1: DiggErr555 folded before Flop (didn't bet)
+Seat 2: mornja (button) folded before Flop (didn't bet)
+Seat 3: vidinha16 (small blind) showed [Td Jd] and won (170) with a flush, Ace high
+Seat 4: u.hoeneß87 (big blind) showed [7c 8h] and lost with two pair, Aces and Eights
+
+PokerStars Hand #214236398671: Tournament #2912345672, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/21 21:01:13 MSK [2020/05/21 14:01:13 ET]
+Table '2912345672 1' 4-max Seat #3 is the button
+Seat 1: DiggErr555 (570 in chips)
+Seat 2: mornja (525 in chips)
+Seat 3: vidinha16 (905 in chips)
+DiggErr555: posts the ante 10
+mornja: posts the ante 10
+vidinha16: posts the ante 10
+DiggErr555: posts small blind 25
+mornja: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [2s 6s]
+vidinha16: raises 845 to 895 and is all-in
+DiggErr555: folds
+mornja: calls 465 and is all-in
+Uncalled bet (380) returned to vidinha16
+*** FLOP *** [Th Jd 8d]
+*** TURN *** [Th Jd 8d] [4d]
+*** RIVER *** [Th Jd 8d 4d] [Jc]
+*** SHOW DOWN ***
+mornja: shows [Ad 7d] (a flush, Ace high)
+vidinha16: shows [Qh Ah] (a pair of Jacks)
+mornja collected 1085 from pot
+*** SUMMARY ***
+Total pot 1085 | Rake 0
+Board [Th Jd 8d 4d Jc]
+Seat 1: DiggErr555 (small blind) folded before Flop
+Seat 2: mornja (big blind) showed [Ad 7d] and won (1085) with a flush, Ace high
+Seat 3: vidinha16 (button) showed [Qh Ah] and lost with a pair of Jacks
+
+PokerStars Hand #214236414374: Tournament #2912345672, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/21 21:01:36 MSK [2020/05/21 14:01:36 ET]
+Table '2912345672 1' 4-max Seat #1 is the button
+Seat 1: DiggErr555 (535 in chips)
+Seat 2: mornja (1085 in chips)
+Seat 3: vidinha16 (380 in chips)
+DiggErr555: posts the ante 10
+mornja: posts the ante 10
+vidinha16: posts the ante 10
+mornja: posts small blind 25
+vidinha16: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Tc Kh]
+DiggErr555: raises 475 to 525 and is all-in
+mornja: folds
+vidinha16: calls 320 and is all-in
+Uncalled bet (155) returned to DiggErr555
+*** FLOP *** [Ts Qd Ks]
+*** TURN *** [Ts Qd Ks] [5h]
+*** RIVER *** [Ts Qd Ks 5h] [2s]
+*** SHOW DOWN ***
+vidinha16: shows [9d 9h] (a pair of Nines)
+DiggErr555: shows [Tc Kh] (two pair, Kings and Tens)
+DiggErr555 collected 795 from pot
+vidinha16 finished the tournament in 9th place
+*** SUMMARY ***
+Total pot 795 | Rake 0
+Board [Ts Qd Ks 5h 2s]
+Seat 1: DiggErr555 (button) showed [Tc Kh] and won (795) with two pair, Kings and Tens
+Seat 2: mornja (small blind) folded before Flop
+Seat 3: vidinha16 (big blind) showed [9d 9h] and lost with a pair of Nines
+
+PokerStars Hand #214236428924: Tournament #2912345672, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/21 21:01:56 MSK [2020/05/21 14:01:56 ET]
+Table '2912345672 1' 4-max Seat #2 is the button
+Seat 1: DiggErr555 (950 in chips)
+Seat 2: mornja (1050 in chips)
+DiggErr555: posts the ante 10
+mornja: posts the ante 10
+mornja: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [5h 9c]
+mornja: folds
+Uncalled bet (25) returned to DiggErr555
+DiggErr555 collected 70 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 70 | Rake 0
+Seat 1: DiggErr555 (big blind) collected (70)
+Seat 2: mornja (button) (small blind) folded before Flop
+
+PokerStars Hand #214236431387: Tournament #2912345672, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/21 21:02:00 MSK [2020/05/21 14:02:00 ET]
+Table '2912345672 1' 4-max Seat #1 is the button
+Seat 1: DiggErr555 (985 in chips)
+Seat 2: mornja (1015 in chips)
+DiggErr555: posts the ante 10
+mornja: posts the ante 10
+DiggErr555: posts small blind 25
+mornja: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [6c Ac]
+DiggErr555: raises 925 to 975 and is all-in
+mornja: folds
+Uncalled bet (925) returned to DiggErr555
+DiggErr555 collected 120 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 120 | Rake 0
+Seat 1: DiggErr555 (button) (small blind) collected (120)
+Seat 2: mornja (big blind) folded before Flop
+
+PokerStars Hand #214236441718: Tournament #2912345672, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/05/21 21:02:13 MSK [2020/05/21 14:02:13 ET]
+Table '2912345672 1' 4-max Seat #2 is the button
+Seat 1: DiggErr555 (1045 in chips)
+Seat 2: mornja (955 in chips)
+DiggErr555: posts the ante 20
+mornja: posts the ante 20
+mornja: posts small blind 50
+DiggErr555: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [5s 9s]
+mornja: folds
+Uncalled bet (50) returned to DiggErr555
+DiggErr555 collected 140 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 140 | Rake 0
+Seat 1: DiggErr555 (big blind) collected (140)
+Seat 2: mornja (button) (small blind) folded before Flop
+
+PokerStars Hand #214236445243: Tournament #2912345672, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/05/21 21:02:18 MSK [2020/05/21 14:02:18 ET]
+Table '2912345672 1' 4-max Seat #1 is the button
+Seat 1: DiggErr555 (1115 in chips)
+Seat 2: mornja (885 in chips)
+DiggErr555: posts the ante 20
+mornja: posts the ante 20
+DiggErr555: posts small blind 50
+mornja: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Th Ts]
+DiggErr555: calls 50
+mornja: checks
+*** FLOP *** [7s 7h 2s]
+mornja: checks
+DiggErr555: bets 100
+mornja: raises 665 to 765 and is all-in
+DiggErr555: calls 665
+*** TURN *** [7s 7h 2s] [6d]
+*** RIVER *** [7s 7h 2s 6d] [Js]
+*** SHOW DOWN ***
+mornja: shows [Qc 2c] (two pair, Sevens and Deuces)
+DiggErr555: shows [Th Ts] (two pair, Tens and Sevens)
+DiggErr555 collected 1770 from pot
+*** SUMMARY ***
+Total pot 1770 | Rake 0
+Board [7s 7h 2s 6d Js]
+Seat 1: DiggErr555 (button) (small blind) showed [Th Ts] and won (1770) with two pair, Tens and Sevens
+Seat 2: mornja (big blind) showed [Qc 2c] and lost with two pair, Sevens and Deuces

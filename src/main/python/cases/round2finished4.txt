@@ -1,0 +1,151 @@
+
+
+PokerStars Hand #212769246042: Tournament #2881090242, $14.71+$0.29 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/04/26 20:02:14 MSK [2020/04/26 13:02:14 ET]
+Table '2881090242 1' 4-max Seat #1 is the button
+Seat 1: Anderson9898 (500 in chips)
+Seat 2: Broggi1986 (500 in chips)
+Seat 3: DiggErr555 (500 in chips)
+Seat 4: monaay bags (500 in chips)
+Anderson9898: posts the ante 10
+Broggi1986: posts the ante 10
+DiggErr555: posts the ante 10
+monaay bags: posts the ante 10
+Broggi1986: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [2d Th]
+monaay bags: folds
+Anderson9898: folds
+Broggi1986: folds
+Uncalled bet (25) returned to DiggErr555
+DiggErr555 collected 90 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 90 | Rake 0
+Seat 1: Anderson9898 (button) folded before Flop (didn't bet)
+Seat 2: Broggi1986 (small blind) folded before Flop
+Seat 3: DiggErr555 (big blind) collected (90)
+Seat 4: monaay bags folded before Flop (didn't bet)
+
+PokerStars Hand #212769252163: Tournament #2881090242, $14.71+$0.29 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/04/26 20:02:20 MSK [2020/04/26 13:02:20 ET]
+Table '2881090242 1' 4-max Seat #2 is the button
+Seat 1: Anderson9898 (490 in chips)
+Seat 2: Broggi1986 (465 in chips)
+Seat 3: DiggErr555 (555 in chips)
+Seat 4: monaay bags (490 in chips)
+Anderson9898: posts the ante 10
+Broggi1986: posts the ante 10
+DiggErr555: posts the ante 10
+monaay bags: posts the ante 10
+DiggErr555: posts small blind 25
+monaay bags: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [9d 2h]
+Anderson9898: folds
+Broggi1986: folds
+DiggErr555: raises 495 to 545 and is all-in
+monaay bags: calls 430 and is all-in
+Uncalled bet (65) returned to DiggErr555
+*** FLOP *** [Kh 7s 3c]
+*** TURN *** [Kh 7s 3c] [4s]
+*** RIVER *** [Kh 7s 3c 4s] [6c]
+*** SHOW DOWN ***
+DiggErr555: shows [9d 2h] (high card King)
+monaay bags: shows [As Js] (high card Ace)
+monaay bags collected 1000 from pot
+*** SUMMARY ***
+Total pot 1000 | Rake 0
+Board [Kh 7s 3c 4s 6c]
+Seat 1: Anderson9898 folded before Flop (didn't bet)
+Seat 2: Broggi1986 (button) folded before Flop (didn't bet)
+Seat 3: DiggErr555 (small blind) showed [9d 2h] and lost with high card King
+Seat 4: monaay bags (big blind) showed [As Js] and won (1000) with high card Ace
+
+PokerStars Hand #212769274014: Tournament #2881090242, $14.71+$0.29 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/04/26 20:02:42 MSK [2020/04/26 13:02:42 ET]
+Table '2881090242 1' 4-max Seat #3 is the button
+Seat 1: Anderson9898 (480 in chips)
+Seat 2: Broggi1986 (455 in chips)
+Seat 3: DiggErr555 (65 in chips)
+Seat 4: monaay bags (1000 in chips)
+Anderson9898: posts the ante 10
+Broggi1986: posts the ante 10
+DiggErr555: posts the ante 10
+monaay bags: posts the ante 10
+monaay bags: posts small blind 25
+Anderson9898: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Ts 7d]
+Broggi1986: folds
+DiggErr555: folds
+monaay bags: raises 940 to 990 and is all-in
+Anderson9898: folds
+Uncalled bet (940) returned to monaay bags
+monaay bags collected 140 from pot
+monaay bags: doesn't show hand
+*** SUMMARY ***
+Total pot 140 | Rake 0
+Seat 1: Anderson9898 (big blind) folded before Flop
+Seat 2: Broggi1986 folded before Flop (didn't bet)
+Seat 3: DiggErr555 (button) folded before Flop (didn't bet)
+Seat 4: monaay bags (small blind) collected (140)
+
+PokerStars Hand #212769288236: Tournament #2881090242, $14.71+$0.29 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/04/26 20:02:57 MSK [2020/04/26 13:02:57 ET]
+Table '2881090242 1' 4-max Seat #4 is the button
+Seat 1: Anderson9898 (420 in chips)
+Seat 2: Broggi1986 (445 in chips)
+Seat 3: DiggErr555 (55 in chips)
+Seat 4: monaay bags (1080 in chips)
+Anderson9898: posts the ante 10
+Broggi1986: posts the ante 10
+DiggErr555: posts the ante 10
+monaay bags: posts the ante 10
+Anderson9898: posts small blind 25
+Broggi1986: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [7c 9d]
+DiggErr555: folds
+monaay bags: raises 1020 to 1070 and is all-in
+Anderson9898: folds
+Broggi1986: folds
+Uncalled bet (1020) returned to monaay bags
+monaay bags collected 165 from pot
+monaay bags: doesn't show hand
+*** SUMMARY ***
+Total pot 165 | Rake 0
+Seat 1: Anderson9898 (small blind) folded before Flop
+Seat 2: Broggi1986 (big blind) folded before Flop
+Seat 3: DiggErr555 folded before Flop (didn't bet)
+Seat 4: monaay bags (button) collected (165)
+
+PokerStars Hand #212769300222: Tournament #2881090242, $14.71+$0.29 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/04/26 20:03:08 MSK [2020/04/26 13:03:08 ET]
+Table '2881090242 1' 4-max Seat #1 is the button
+Seat 1: Anderson9898 (385 in chips)
+Seat 2: Broggi1986 (385 in chips)
+Seat 3: DiggErr555 (45 in chips)
+Seat 4: monaay bags (1185 in chips)
+Anderson9898: posts the ante 10
+Broggi1986: posts the ante 10
+DiggErr555: posts the ante 10
+monaay bags: posts the ante 10
+Broggi1986: posts small blind 25
+DiggErr555: posts big blind 35 and is all-in
+*** HOLE CARDS ***
+Dealt to DiggErr555 [2c 8s]
+monaay bags: folds
+Anderson9898: folds
+Broggi1986: calls 10
+*** FLOP *** [7h 5c As]
+*** TURN *** [7h 5c As] [4h]
+*** RIVER *** [7h 5c As 4h] [9d]
+*** SHOW DOWN ***
+Broggi1986: shows [Qh 9c] (a pair of Nines)
+DiggErr555: shows [2c 8s] (high card Ace)
+Broggi1986 collected 110 from pot
+DiggErr555 finished the tournament in 4th place
+*** SUMMARY ***
+Total pot 110 | Rake 0
+Board [7h 5c As 4h 9d]
+Seat 1: Anderson9898 (button) folded before Flop (didn't bet)
+Seat 2: Broggi1986 (small blind) showed [Qh 9c] and won (110) with a pair of Nines
+Seat 3: DiggErr555 (big blind) showed [2c 8s] and lost with high card Ace
+Seat 4: monaay bags folded before Flop (didn't bet)

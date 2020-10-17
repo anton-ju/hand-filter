@@ -1,0 +1,1 @@
+pyinstaller --noconfirm --onefile --noconsole --hiddenimport "pkg_resources.py2_warn"  "Z:/cloud/SkyDrive/python-projects/hand-filter/src/main/python/main.py"

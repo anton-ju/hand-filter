@@ -1,0 +1,666 @@
+
+
+PokerStars Hand #214235411714: Tournament #2912325808, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/21 20:38:53 MSK [2020/05/21 13:38:53 ET]
+Table '2912325808 3' 4-max Seat #1 is the button
+Seat 1: Rikimoro (500 in chips)
+Seat 2: RQQQueiroz (500 in chips)
+Seat 3: DiggErr555 (500 in chips)
+Seat 4: mornja (500 in chips)
+Rikimoro: posts the ante 10
+RQQQueiroz: posts the ante 10
+DiggErr555: posts the ante 10
+mornja: posts the ante 10
+RQQQueiroz: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Tc Qd]
+mornja: raises 440 to 490 and is all-in
+Rikimoro: folds
+RQQQueiroz: calls 465 and is all-in
+DiggErr555: folds
+*** FLOP *** [3c Qs Ts]
+*** TURN *** [3c Qs Ts] [Qh]
+*** RIVER *** [3c Qs Ts Qh] [5s]
+*** SHOW DOWN ***
+RQQQueiroz: shows [8h Td] (two pair, Queens and Tens)
+mornja: shows [7h Th] (two pair, Queens and Tens - lower kicker)
+RQQQueiroz collected 1070 from pot
+mornja finished the tournament in 16th place
+*** SUMMARY ***
+Total pot 1070 | Rake 0
+Board [3c Qs Ts Qh 5s]
+Seat 1: Rikimoro (button) folded before Flop (didn't bet)
+Seat 2: RQQQueiroz (small blind) showed [8h Td] and won (1070) with two pair, Queens and Tens
+Seat 3: DiggErr555 (big blind) folded before Flop
+Seat 4: mornja showed [7h Th] and lost with two pair, Queens and Tens
+
+PokerStars Hand #214235433446: Tournament #2912325808, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/21 20:39:21 MSK [2020/05/21 13:39:21 ET]
+Table '2912325808 3' 4-max Seat #2 is the button
+Seat 1: Rikimoro (490 in chips)
+Seat 2: RQQQueiroz (1070 in chips)
+Seat 3: DiggErr555 (440 in chips)
+Rikimoro: posts the ante 10
+RQQQueiroz: posts the ante 10
+DiggErr555: posts the ante 10
+DiggErr555: posts small blind 25
+Rikimoro: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [7s 7c]
+RQQQueiroz: folds
+DiggErr555: raises 380 to 430 and is all-in
+Rikimoro: calls 380
+*** FLOP *** [9c Kh 3h]
+*** TURN *** [9c Kh 3h] [Ah]
+*** RIVER *** [9c Kh 3h Ah] [Ac]
+*** SHOW DOWN ***
+DiggErr555: shows [7s 7c] (two pair, Aces and Sevens)
+Rikimoro: shows [5h 5c] (two pair, Aces and Fives)
+DiggErr555 collected 890 from pot
+*** SUMMARY ***
+Total pot 890 | Rake 0
+Board [9c Kh 3h Ah Ac]
+Seat 1: Rikimoro (big blind) showed [5h 5c] and lost with two pair, Aces and Fives
+Seat 2: RQQQueiroz (button) folded before Flop (didn't bet)
+Seat 3: DiggErr555 (small blind) showed [7s 7c] and won (890) with two pair, Aces and Sevens
+
+PokerStars Hand #214235450511: Tournament #2912325808, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/21 20:39:42 MSK [2020/05/21 13:39:42 ET]
+Table '2912325808 3' 4-max Seat #3 is the button
+Seat 1: Rikimoro (50 in chips)
+Seat 2: RQQQueiroz (1060 in chips)
+Seat 3: DiggErr555 (890 in chips)
+Rikimoro: posts the ante 10
+RQQQueiroz: posts the ante 10
+DiggErr555: posts the ante 10
+Rikimoro: posts small blind 25
+RQQQueiroz: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Qc Tc]
+DiggErr555: raises 50 to 100
+Rikimoro: calls 15 and is all-in
+RQQQueiroz: raises 950 to 1050 and is all-in
+DiggErr555: folds
+Uncalled bet (950) returned to RQQQueiroz
+*** FLOP *** [8s 9h 7c]
+*** TURN *** [8s 9h 7c] [9s]
+*** RIVER *** [8s 9h 7c 9s] [Ts]
+*** SHOW DOWN ***
+RQQQueiroz: shows [2c Ad] (a pair of Nines)
+RQQQueiroz collected 120 from side pot
+Rikimoro: shows [Qs 7s] (a flush, Queen high)
+Rikimoro collected 150 from main pot
+*** SUMMARY ***
+Total pot 270 Main pot 150. Side pot 120. | Rake 0
+Board [8s 9h 7c 9s Ts]
+Seat 1: Rikimoro (small blind) showed [Qs 7s] and won (150) with a flush, Queen high
+Seat 2: RQQQueiroz (big blind) showed [2c Ad] and won (120) with a pair of Nines
+Seat 3: DiggErr555 (button) folded before Flop
+
+PokerStars Hand #214235475772: Tournament #2912325808, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/21 20:40:14 MSK [2020/05/21 13:40:14 ET]
+Table '2912325808 3' 4-max Seat #1 is the button
+Seat 1: Rikimoro (150 in chips)
+Seat 2: RQQQueiroz (1070 in chips)
+Seat 3: DiggErr555 (780 in chips)
+Rikimoro: posts the ante 10
+RQQQueiroz: posts the ante 10
+DiggErr555: posts the ante 10
+RQQQueiroz: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [4h As]
+Rikimoro: folds
+RQQQueiroz: raises 1010 to 1060 and is all-in
+DiggErr555: calls 720 and is all-in
+Uncalled bet (290) returned to RQQQueiroz
+*** FLOP *** [Ac 5h 7s]
+*** TURN *** [Ac 5h 7s] [Kd]
+*** RIVER *** [Ac 5h 7s Kd] [8s]
+*** SHOW DOWN ***
+RQQQueiroz: shows [Ks 6s] (a pair of Kings)
+DiggErr555: shows [4h As] (a pair of Aces)
+DiggErr555 collected 1570 from pot
+*** SUMMARY ***
+Total pot 1570 | Rake 0
+Board [Ac 5h 7s Kd 8s]
+Seat 1: Rikimoro (button) folded before Flop (didn't bet)
+Seat 2: RQQQueiroz (small blind) showed [Ks 6s] and lost with a pair of Kings
+Seat 3: DiggErr555 (big blind) showed [4h As] and won (1570) with a pair of Aces
+
+PokerStars Hand #214235504828: Tournament #2912325808, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/21 20:40:50 MSK [2020/05/21 13:40:50 ET]
+Table '2912325808 3' 4-max Seat #2 is the button
+Seat 1: Rikimoro (140 in chips)
+Seat 2: RQQQueiroz (290 in chips)
+Seat 3: DiggErr555 (1570 in chips)
+Rikimoro: posts the ante 10
+RQQQueiroz: posts the ante 10
+DiggErr555: posts the ante 10
+DiggErr555: posts small blind 25
+Rikimoro: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [5c 4h]
+RQQQueiroz: raises 230 to 280 and is all-in
+DiggErr555: folds
+Rikimoro: calls 80 and is all-in
+Uncalled bet (150) returned to RQQQueiroz
+*** FLOP *** [8c Jc 2s]
+*** TURN *** [8c Jc 2s] [2d]
+*** RIVER *** [8c Jc 2s 2d] [5s]
+*** SHOW DOWN ***
+Rikimoro: shows [9h 8h] (two pair, Eights and Deuces)
+RQQQueiroz: shows [8s Td] (two pair, Eights and Deuces)
+Rikimoro collected 158 from pot
+RQQQueiroz collected 157 from pot
+*** SUMMARY ***
+Total pot 315 | Rake 0
+Board [8c Jc 2s 2d 5s]
+Seat 1: Rikimoro (big blind) showed [9h 8h] and won (158) with two pair, Eights and Deuces
+Seat 2: RQQQueiroz (button) showed [8s Td] and won (157) with two pair, Eights and Deuces
+Seat 3: DiggErr555 (small blind) folded before Flop
+
+PokerStars Hand #214235517934: Tournament #2912325808, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/21 20:41:06 MSK [2020/05/21 13:41:06 ET]
+Table '2912325808 3' 4-max Seat #3 is the button
+Seat 1: Rikimoro (158 in chips)
+Seat 2: RQQQueiroz (307 in chips)
+Seat 3: DiggErr555 (1535 in chips)
+Rikimoro: posts the ante 10
+RQQQueiroz: posts the ante 10
+DiggErr555: posts the ante 10
+Rikimoro: posts small blind 25
+RQQQueiroz: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [6h 5d]
+DiggErr555: folds
+Rikimoro: raises 98 to 148 and is all-in
+RQQQueiroz: calls 98
+*** FLOP *** [Ah 8s 4h]
+*** TURN *** [Ah 8s 4h] [Jd]
+*** RIVER *** [Ah 8s 4h Jd] [Qh]
+*** SHOW DOWN ***
+Rikimoro: shows [Qc 2s] (a pair of Queens)
+RQQQueiroz: shows [5h Ks] (high card Ace)
+Rikimoro collected 326 from pot
+*** SUMMARY ***
+Total pot 326 | Rake 0
+Board [Ah 8s 4h Jd Qh]
+Seat 1: Rikimoro (small blind) showed [Qc 2s] and won (326) with a pair of Queens
+Seat 2: RQQQueiroz (big blind) showed [5h Ks] and lost with high card Ace
+Seat 3: DiggErr555 (button) folded before Flop (didn't bet)
+
+PokerStars Hand #214235543413: Tournament #2912325808, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/21 20:41:38 MSK [2020/05/21 13:41:38 ET]
+Table '2912325808 3' 4-max Seat #1 is the button
+Seat 1: Rikimoro (326 in chips)
+Seat 2: RQQQueiroz (149 in chips)
+Seat 3: DiggErr555 (1525 in chips)
+Rikimoro: posts the ante 10
+RQQQueiroz: posts the ante 10
+DiggErr555: posts the ante 10
+RQQQueiroz: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [8c 6s]
+Rikimoro: raises 266 to 316 and is all-in
+RQQQueiroz: calls 114 and is all-in
+DiggErr555: folds
+Uncalled bet (177) returned to Rikimoro
+*** FLOP *** [5c Kh 2h]
+*** TURN *** [5c Kh 2h] [Ac]
+*** RIVER *** [5c Kh 2h Ac] [Jh]
+*** SHOW DOWN ***
+RQQQueiroz: shows [9h 9s] (a pair of Nines)
+Rikimoro: shows [7d Ah] (a pair of Aces)
+Rikimoro collected 358 from pot
+RQQQueiroz finished the tournament in 11th place
+*** SUMMARY ***
+Total pot 358 | Rake 0
+Board [5c Kh 2h Ac Jh]
+Seat 1: Rikimoro (button) showed [7d Ah] and won (358) with a pair of Aces
+Seat 2: RQQQueiroz (small blind) showed [9h 9s] and lost with a pair of Nines
+Seat 3: DiggErr555 (big blind) folded before Flop
+
+PokerStars Hand #214235561342: Tournament #2912325808, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/05/21 20:42:01 MSK [2020/05/21 13:42:01 ET]
+Table '2912325808 3' 4-max Seat #3 is the button
+Seat 1: Rikimoro (535 in chips)
+Seat 3: DiggErr555 (1465 in chips)
+Rikimoro: posts the ante 20
+DiggErr555: posts the ante 20
+DiggErr555: posts small blind 50
+Rikimoro: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Ks Ts]
+DiggErr555: raises 1345 to 1445 and is all-in
+Rikimoro: calls 415 and is all-in
+Uncalled bet (930) returned to DiggErr555
+*** FLOP *** [4h 8h 4d]
+*** TURN *** [4h 8h 4d] [2h]
+*** RIVER *** [4h 8h 4d 2h] [7h]
+*** SHOW DOWN ***
+Rikimoro: shows [Jd 6d] (a pair of Fours)
+DiggErr555: shows [Ks Ts] (a pair of Fours - King kicker)
+DiggErr555 collected 1070 from pot
+Rikimoro finished the tournament in 9th place
+*** SUMMARY ***
+Total pot 1070 | Rake 0
+Board [4h 8h 4d 2h 7h]
+Seat 1: Rikimoro (big blind) showed [Jd 6d] and lost with a pair of Fours
+Seat 3: DiggErr555 (button) (small blind) showed [Ks Ts] and won (1070) with a pair of Fours
+
+PokerStars Hand #214235681348: Tournament #2912325808, $7.36+$0.14 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/05/21 20:44:31 MSK [2020/05/21 13:44:31 ET]
+Table '2912325808 1' 4-max Seat #3 is the button
+Seat 1: LasVirusx (500 in chips)
+Seat 2: 197707 (500 in chips)
+Seat 3: DiggErr555 (500 in chips)
+Seat 4: bartjhu01 (500 in chips)
+LasVirusx: posts the ante 10
+197707: posts the ante 10
+DiggErr555: posts the ante 10
+bartjhu01: posts the ante 10
+bartjhu01: posts small blind 25
+LasVirusx: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Js 2d]
+197707: folds
+DiggErr555: folds
+bartjhu01: calls 25
+LasVirusx: checks
+*** FLOP *** [4c 7d Kh]
+bartjhu01: bets 50
+LasVirusx: folds
+Uncalled bet (50) returned to bartjhu01
+bartjhu01 collected 140 from pot
+bartjhu01: doesn't show hand
+*** SUMMARY ***
+Total pot 140 | Rake 0
+Board [4c 7d Kh]
+Seat 1: LasVirusx (big blind) folded on the Flop
+Seat 2: 197707 folded before Flop (didn't bet)
+Seat 3: DiggErr555 (button) folded before Flop (didn't bet)
+Seat 4: bartjhu01 (small blind) collected (140)
+
+PokerStars Hand #214235707668: Tournament #2912325808, $7.36+$0.14 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/05/21 20:45:04 MSK [2020/05/21 13:45:04 ET]
+Table '2912325808 1' 4-max Seat #4 is the button
+Seat 1: LasVirusx (440 in chips)
+Seat 2: 197707 (490 in chips)
+Seat 3: DiggErr555 (490 in chips)
+Seat 4: bartjhu01 (580 in chips)
+LasVirusx: posts the ante 10
+197707: posts the ante 10
+DiggErr555: posts the ante 10
+bartjhu01: posts the ante 10
+LasVirusx: posts small blind 25
+197707: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [5s Ah]
+DiggErr555: folds
+bartjhu01: folds
+LasVirusx: raises 380 to 430 and is all-in
+197707: calls 380
+*** FLOP *** [4h 2h Jd]
+*** TURN *** [4h 2h Jd] [7s]
+*** RIVER *** [4h 2h Jd 7s] [6s]
+*** SHOW DOWN ***
+LasVirusx: shows [Jh Kh] (a pair of Jacks)
+197707: shows [Ac 7h] (a pair of Sevens)
+LasVirusx collected 900 from pot
+*** SUMMARY ***
+Total pot 900 | Rake 0
+Board [4h 2h Jd 7s 6s]
+Seat 1: LasVirusx (small blind) showed [Jh Kh] and won (900) with a pair of Jacks
+Seat 2: 197707 (big blind) showed [Ac 7h] and lost with a pair of Sevens
+Seat 3: DiggErr555 folded before Flop (didn't bet)
+Seat 4: bartjhu01 (button) folded before Flop (didn't bet)
+
+PokerStars Hand #214235734004: Tournament #2912325808, $7.36+$0.14 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/05/21 20:45:37 MSK [2020/05/21 13:45:37 ET]
+Table '2912325808 1' 4-max Seat #1 is the button
+Seat 1: LasVirusx (900 in chips)
+Seat 2: 197707 (50 in chips)
+Seat 3: DiggErr555 (480 in chips)
+Seat 4: bartjhu01 (570 in chips)
+LasVirusx: posts the ante 10
+197707: posts the ante 10
+DiggErr555: posts the ante 10
+bartjhu01: posts the ante 10
+197707: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Qh 2c]
+bartjhu01: raises 510 to 560 and is all-in
+LasVirusx: folds
+197707: calls 15 and is all-in
+DiggErr555: folds
+Uncalled bet (510) returned to bartjhu01
+*** FLOP *** [6s 6d 4c]
+*** TURN *** [6s 6d 4c] [9h]
+*** RIVER *** [6s 6d 4c 9h] [Qd]
+*** SHOW DOWN ***
+bartjhu01: shows [9d Jd] (two pair, Nines and Sixes)
+bartjhu01 collected 20 from side pot
+197707: shows [Jh 9c] (two pair, Nines and Sixes)
+197707 collected 80 from main pot
+bartjhu01 collected 80 from main pot
+*** SUMMARY ***
+Total pot 180 Main pot 160. Side pot 20. | Rake 0
+Board [6s 6d 4c 9h Qd]
+Seat 1: LasVirusx (button) folded before Flop (didn't bet)
+Seat 2: 197707 (small blind) showed [Jh 9c] and won (80) with two pair, Nines and Sixes
+Seat 3: DiggErr555 (big blind) folded before Flop
+Seat 4: bartjhu01 showed [9d Jd] and won (100) with two pair, Nines and Sixes
+
+PokerStars Hand #214235757992: Tournament #2912325808, $7.36+$0.14 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/05/21 20:46:07 MSK [2020/05/21 13:46:07 ET]
+Table '2912325808 1' 4-max Seat #2 is the button
+Seat 1: LasVirusx (890 in chips)
+Seat 2: 197707 (80 in chips)
+Seat 3: DiggErr555 (420 in chips)
+Seat 4: bartjhu01 (610 in chips)
+LasVirusx: posts the ante 10
+197707: posts the ante 10
+DiggErr555: posts the ante 10
+bartjhu01: posts the ante 10
+DiggErr555: posts small blind 25
+bartjhu01: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [7d 8h]
+LasVirusx: folds
+197707: raises 20 to 70 and is all-in
+DiggErr555: folds
+bartjhu01: calls 20
+*** FLOP *** [2h 9d Qd]
+*** TURN *** [2h 9d Qd] [9s]
+*** RIVER *** [2h 9d Qd 9s] [7s]
+*** SHOW DOWN ***
+bartjhu01: shows [Tc 7h] (two pair, Nines and Sevens)
+197707: shows [5c Qs] (two pair, Queens and Nines)
+197707 collected 205 from pot
+*** SUMMARY ***
+Total pot 205 | Rake 0
+Board [2h 9d Qd 9s 7s]
+Seat 1: LasVirusx folded before Flop (didn't bet)
+Seat 2: 197707 (button) showed [5c Qs] and won (205) with two pair, Queens and Nines
+Seat 3: DiggErr555 (small blind) folded before Flop
+Seat 4: bartjhu01 (big blind) showed [Tc 7h] and lost with two pair, Nines and Sevens
+
+PokerStars Hand #214235774687: Tournament #2912325808, $7.36+$0.14 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/05/21 20:46:28 MSK [2020/05/21 13:46:28 ET]
+Table '2912325808 1' 4-max Seat #3 is the button
+Seat 1: LasVirusx (880 in chips)
+Seat 2: 197707 (205 in chips)
+Seat 3: DiggErr555 (385 in chips)
+Seat 4: bartjhu01 (530 in chips)
+LasVirusx: posts the ante 10
+197707: posts the ante 10
+DiggErr555: posts the ante 10
+bartjhu01: posts the ante 10
+bartjhu01: posts small blind 25
+LasVirusx: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Kd 7s]
+197707: raises 145 to 195 and is all-in
+DiggErr555: folds
+bartjhu01: folds
+LasVirusx: calls 145
+*** FLOP *** [4h Ad 9h]
+*** TURN *** [4h Ad 9h] [Jc]
+*** RIVER *** [4h Ad 9h Jc] [2c]
+*** SHOW DOWN ***
+LasVirusx: shows [3s 3c] (a pair of Threes)
+197707: shows [7d 7c] (a pair of Sevens)
+197707 collected 455 from pot
+*** SUMMARY ***
+Total pot 455 | Rake 0
+Board [4h Ad 9h Jc 2c]
+Seat 1: LasVirusx (big blind) showed [3s 3c] and lost with a pair of Threes
+Seat 2: 197707 showed [7d 7c] and won (455) with a pair of Sevens
+Seat 3: DiggErr555 (button) folded before Flop (didn't bet)
+Seat 4: bartjhu01 (small blind) folded before Flop
+
+PokerStars Hand #214235787264: Tournament #2912325808, $7.36+$0.14 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/05/21 20:46:44 MSK [2020/05/21 13:46:44 ET]
+Table '2912325808 1' 4-max Seat #4 is the button
+Seat 1: LasVirusx (675 in chips)
+Seat 2: 197707 (455 in chips)
+Seat 3: DiggErr555 (375 in chips)
+Seat 4: bartjhu01 (495 in chips)
+LasVirusx: posts the ante 10
+197707: posts the ante 10
+DiggErr555: posts the ante 10
+bartjhu01: posts the ante 10
+LasVirusx: posts small blind 25
+197707: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [3s 4h]
+DiggErr555: folds
+bartjhu01: folds
+LasVirusx: folds
+Uncalled bet (25) returned to 197707
+197707 collected 90 from pot
+197707: doesn't show hand
+*** SUMMARY ***
+Total pot 90 | Rake 0
+Seat 1: LasVirusx (small blind) folded before Flop
+Seat 2: 197707 (big blind) collected (90)
+Seat 3: DiggErr555 folded before Flop (didn't bet)
+Seat 4: bartjhu01 (button) folded before Flop (didn't bet)
+
+PokerStars Hand #214235795170: Tournament #2912325808, $7.36+$0.14 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/05/21 20:46:54 MSK [2020/05/21 13:46:54 ET]
+Table '2912325808 1' 4-max Seat #1 is the button
+Seat 1: LasVirusx (640 in chips)
+Seat 2: 197707 (510 in chips)
+Seat 3: DiggErr555 (365 in chips)
+Seat 4: bartjhu01 (485 in chips)
+LasVirusx: posts the ante 10
+197707: posts the ante 10
+DiggErr555: posts the ante 10
+bartjhu01: posts the ante 10
+197707: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [9s As]
+bartjhu01: folds
+LasVirusx: raises 580 to 630 and is all-in
+197707: folds
+DiggErr555: calls 305 and is all-in
+Uncalled bet (275) returned to LasVirusx
+*** FLOP *** [2c Ac 5c]
+*** TURN *** [2c Ac 5c] [4d]
+*** RIVER *** [2c Ac 5c 4d] [Td]
+*** SHOW DOWN ***
+DiggErr555: shows [9s As] (a pair of Aces)
+LasVirusx: shows [6h Ah] (a pair of Aces - lower kicker)
+DiggErr555 collected 775 from pot
+*** SUMMARY ***
+Total pot 775 | Rake 0
+Board [2c Ac 5c 4d Td]
+Seat 1: LasVirusx (button) showed [6h Ah] and lost with a pair of Aces
+Seat 2: 197707 (small blind) folded before Flop
+Seat 3: DiggErr555 (big blind) showed [9s As] and won (775) with a pair of Aces
+Seat 4: bartjhu01 folded before Flop (didn't bet)
+
+PokerStars Hand #214235813560: Tournament #2912325808, $7.36+$0.14 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/05/21 20:47:17 MSK [2020/05/21 13:47:17 ET]
+Table '2912325808 1' 4-max Seat #2 is the button
+Seat 1: LasVirusx (275 in chips)
+Seat 2: 197707 (475 in chips)
+Seat 3: DiggErr555 (775 in chips)
+Seat 4: bartjhu01 (475 in chips)
+LasVirusx: posts the ante 10
+197707: posts the ante 10
+DiggErr555: posts the ante 10
+bartjhu01: posts the ante 10
+DiggErr555: posts small blind 25
+bartjhu01: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [8h 6h]
+LasVirusx: folds
+197707: folds
+DiggErr555: raises 715 to 765 and is all-in
+bartjhu01: calls 415 and is all-in
+Uncalled bet (300) returned to DiggErr555
+*** FLOP *** [6s 3d Ac]
+*** TURN *** [6s 3d Ac] [Js]
+*** RIVER *** [6s 3d Ac Js] [As]
+*** SHOW DOWN ***
+DiggErr555: shows [8h 6h] (two pair, Aces and Sixes)
+bartjhu01: shows [Jd Qd] (two pair, Aces and Jacks)
+bartjhu01 collected 970 from pot
+*** SUMMARY ***
+Total pot 970 | Rake 0
+Board [6s 3d Ac Js As]
+Seat 1: LasVirusx folded before Flop (didn't bet)
+Seat 2: 197707 (button) folded before Flop (didn't bet)
+Seat 3: DiggErr555 (small blind) showed [8h 6h] and lost with two pair, Aces and Sixes
+Seat 4: bartjhu01 (big blind) showed [Jd Qd] and won (970) with two pair, Aces and Jacks
+
+PokerStars Hand #214235834911: Tournament #2912325808, $7.36+$0.14 USD Hold'em No Limit - Match Round II, Level II (50/100) - 2020/05/21 20:47:44 MSK [2020/05/21 13:47:44 ET]
+Table '2912325808 1' 4-max Seat #3 is the button
+Seat 1: LasVirusx (265 in chips)
+Seat 2: 197707 (465 in chips)
+Seat 3: DiggErr555 (300 in chips)
+Seat 4: bartjhu01 (970 in chips)
+LasVirusx: posts the ante 20
+197707: posts the ante 20
+DiggErr555: posts the ante 20
+bartjhu01: posts the ante 20
+bartjhu01: posts small blind 50
+LasVirusx: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Ks Kd]
+197707: folds
+DiggErr555: raises 180 to 280 and is all-in
+bartjhu01: raises 180 to 460
+LasVirusx: folds
+Uncalled bet (180) returned to bartjhu01
+*** FLOP *** [4d Ts 4c]
+*** TURN *** [4d Ts 4c] [Js]
+*** RIVER *** [4d Ts 4c Js] [Th]
+*** SHOW DOWN ***
+bartjhu01: shows [2c Ad] (two pair, Tens and Fours)
+DiggErr555: shows [Ks Kd] (two pair, Kings and Tens)
+DiggErr555 collected 740 from pot
+*** SUMMARY ***
+Total pot 740 | Rake 0
+Board [4d Ts 4c Js Th]
+Seat 1: LasVirusx (big blind) folded before Flop
+Seat 2: 197707 folded before Flop (didn't bet)
+Seat 3: DiggErr555 (button) showed [Ks Kd] and won (740) with two pair, Kings and Tens
+Seat 4: bartjhu01 (small blind) showed [2c Ad] and lost with two pair, Tens and Fours
+
+PokerStars Hand #214235859210: Tournament #2912325808, $7.36+$0.14 USD Hold'em No Limit - Match Round II, Level II (50/100) - 2020/05/21 20:48:14 MSK [2020/05/21 13:48:14 ET]
+Table '2912325808 1' 4-max Seat #4 is the button
+Seat 1: LasVirusx (145 in chips)
+Seat 2: 197707 (445 in chips)
+Seat 3: DiggErr555 (740 in chips)
+Seat 4: bartjhu01 (670 in chips)
+LasVirusx: posts the ante 20
+197707: posts the ante 20
+DiggErr555: posts the ante 20
+bartjhu01: posts the ante 20
+LasVirusx: posts small blind 50
+197707: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [5d 4d]
+DiggErr555: folds
+bartjhu01: folds
+LasVirusx: raises 25 to 125 and is all-in
+197707: calls 25
+*** FLOP *** [Jc 6d Ah]
+*** TURN *** [Jc 6d Ah] [Ks]
+*** RIVER *** [Jc 6d Ah Ks] [8h]
+*** SHOW DOWN ***
+LasVirusx: shows [Ac 6c] (two pair, Aces and Sixes)
+197707: shows [4c Td] (high card Ace)
+LasVirusx collected 330 from pot
+*** SUMMARY ***
+Total pot 330 | Rake 0
+Board [Jc 6d Ah Ks 8h]
+Seat 1: LasVirusx (small blind) showed [Ac 6c] and won (330) with two pair, Aces and Sixes
+Seat 2: 197707 (big blind) showed [4c Td] and lost with high card Ace
+Seat 3: DiggErr555 folded before Flop (didn't bet)
+Seat 4: bartjhu01 (button) folded before Flop (didn't bet)
+
+PokerStars Hand #214235877145: Tournament #2912325808, $7.36+$0.14 USD Hold'em No Limit - Match Round II, Level II (50/100) - 2020/05/21 20:48:37 MSK [2020/05/21 13:48:37 ET]
+Table '2912325808 1' 4-max Seat #1 is the button
+Seat 1: LasVirusx (330 in chips)
+Seat 2: 197707 (300 in chips)
+Seat 3: DiggErr555 (720 in chips)
+Seat 4: bartjhu01 (650 in chips)
+LasVirusx: posts the ante 20
+197707: posts the ante 20
+DiggErr555: posts the ante 20
+bartjhu01: posts the ante 20
+197707: posts small blind 50
+DiggErr555: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [8d 2s]
+bartjhu01: folds
+LasVirusx: folds
+197707: raises 180 to 280 and is all-in
+DiggErr555: calls 180
+*** FLOP *** [Tc Td 8c]
+*** TURN *** [Tc Td 8c] [Js]
+*** RIVER *** [Tc Td 8c Js] [8s]
+*** SHOW DOWN ***
+197707: shows [Ah Ks] (two pair, Tens and Eights)
+DiggErr555: shows [8d 2s] (a full house, Eights full of Tens)
+DiggErr555 collected 640 from pot
+197707 finished the tournament in 4th place
+*** SUMMARY ***
+Total pot 640 | Rake 0
+Board [Tc Td 8c Js 8s]
+Seat 1: LasVirusx (button) folded before Flop (didn't bet)
+Seat 2: 197707 (small blind) showed [Ah Ks] and lost with two pair, Tens and Eights
+Seat 3: DiggErr555 (big blind) showed [8d 2s] and won (640) with a full house, Eights full of Tens
+Seat 4: bartjhu01 folded before Flop (didn't bet)
+
+PokerStars Hand #214235898000: Tournament #2912325808, $7.36+$0.14 USD Hold'em No Limit - Match Round II, Level II (50/100) - 2020/05/21 20:49:03 MSK [2020/05/21 13:49:03 ET]
+Table '2912325808 1' 4-max Seat #3 is the button
+Seat 1: LasVirusx (310 in chips)
+Seat 3: DiggErr555 (1060 in chips)
+Seat 4: bartjhu01 (630 in chips)
+LasVirusx: posts the ante 20
+DiggErr555: posts the ante 20
+bartjhu01: posts the ante 20
+bartjhu01: posts small blind 50
+LasVirusx: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Ks Jc]
+DiggErr555: folds
+bartjhu01: folds
+Uncalled bet (50) returned to LasVirusx
+LasVirusx collected 160 from pot
+LasVirusx: doesn't show hand
+*** SUMMARY ***
+Total pot 160 | Rake 0
+Seat 1: LasVirusx (big blind) collected (160)
+Seat 3: DiggErr555 (button) folded before Flop (didn't bet)
+Seat 4: bartjhu01 (small blind) folded before Flop
+
+PokerStars Hand #214235918339: Tournament #2912325808, $7.36+$0.14 USD Hold'em No Limit - Match Round II, Level II (50/100) - 2020/05/21 20:49:28 MSK [2020/05/21 13:49:28 ET]
+Table '2912325808 1' 4-max Seat #4 is the button
+Seat 1: LasVirusx (400 in chips)
+Seat 3: DiggErr555 (1040 in chips)
+Seat 4: bartjhu01 (560 in chips)
+LasVirusx: posts the ante 20
+DiggErr555: posts the ante 20
+bartjhu01: posts the ante 20
+LasVirusx: posts small blind 50
+DiggErr555: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Ad As]
+bartjhu01: raises 440 to 540 and is all-in
+LasVirusx: calls 330 and is all-in
+DiggErr555: calls 440
+*** FLOP *** [8s Qd 2s]
+*** TURN *** [8s Qd 2s] [7s]
+*** RIVER *** [8s Qd 2s 7s] [3h]
+*** SHOW DOWN ***
+DiggErr555: shows [Ad As] (a pair of Aces)
+bartjhu01: shows [Qc Kh] (a pair of Queens)
+DiggErr555 collected 320 from side pot
+LasVirusx: shows [5s 5d] (a pair of Fives)
+DiggErr555 collected 1200 from main pot
+bartjhu01 finished the tournament in 2nd place
+bartjhu01 wins an entry to tournament #2905385859
+LasVirusx finished the tournament in 3rd place and received $7.76.
+DiggErr555 wins the tournament - congratulations!
+DiggErr555 wins an entry to tournament #2905385859
+*** SUMMARY ***
+Total pot 1520 Main pot 1200. Side pot 320. | Rake 0
+Board [8s Qd 2s 7s 3h]
+Seat 1: LasVirusx (small blind) showed [5s 5d] and lost with a pair of Fives
+Seat 3: DiggErr555 (big blind) showed [Ad As] and won (1520) with a pair of Aces
+Seat 4: bartjhu01 (button) showed [Qc Kh] and lost with a pair of Queens

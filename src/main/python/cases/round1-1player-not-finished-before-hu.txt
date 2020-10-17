@@ -1,0 +1,302 @@
+
+
+PokerStars Hand #213161229258: Tournament #2890128540, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/02 23:47:40 MSK [2020/05/02 16:47:40 ET]
+Table '2890128540 4' 4-max Seat #1 is the button
+Seat 1: DiggErr555 (500 in chips)
+Seat 2: Kallemydia (500 in chips)
+Seat 3: rossoblu1909 (500 in chips) is sitting out
+Seat 4: pzpm (500 in chips)
+DiggErr555: posts the ante 10
+Kallemydia: posts the ante 10
+rossoblu1909: posts the ante 10
+pzpm: posts the ante 10
+Kallemydia: posts small blind 25
+rossoblu1909: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [3s 4c]
+pzpm: raises 440 to 490 and is all-in
+rossoblu1909 has returned
+DiggErr555: folds
+Kallemydia: folds
+rossoblu1909: calls 440 and is all-in
+*** FLOP *** [7h 3h 4h]
+*** TURN *** [7h 3h 4h] [Ah]
+*** RIVER *** [7h 3h 4h Ah] [5s]
+*** SHOW DOWN ***
+rossoblu1909: shows [Ks 9s] (high card Ace)
+pzpm: shows [As 6d] (a straight, Three to Seven)
+pzpm collected 1045 from pot
+rossoblu1909 finished the tournament in 15th place
+*** SUMMARY ***
+Total pot 1045 | Rake 0
+Board [7h 3h 4h Ah 5s]
+Seat 1: DiggErr555 (button) folded before Flop (didn't bet)
+Seat 2: Kallemydia (small blind) folded before Flop
+Seat 3: rossoblu1909 (big blind) showed [Ks 9s] and lost with high card Ace
+Seat 4: pzpm showed [As 6d] and won (1045) with a straight, Three to Seven
+
+PokerStars Hand #213161259711: Tournament #2890128540, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/02 23:48:03 MSK [2020/05/02 16:48:03 ET]
+Table '2890128540 4' 4-max Seat #2 is the button
+Seat 1: DiggErr555 (490 in chips)
+Seat 2: Kallemydia (465 in chips)
+Seat 4: pzpm (1045 in chips)
+DiggErr555: posts the ante 10
+Kallemydia: posts the ante 10
+pzpm: posts the ante 10
+pzpm: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [5c 6c]
+Kallemydia: folds
+pzpm: raises 985 to 1035 and is all-in
+DiggErr555: folds
+Uncalled bet (985) returned to pzpm
+pzpm collected 130 from pot
+pzpm: doesn't show hand
+*** SUMMARY ***
+Total pot 130 | Rake 0
+Seat 1: DiggErr555 (big blind) folded before Flop
+Seat 2: Kallemydia (button) folded before Flop (didn't bet)
+Seat 4: pzpm (small blind) collected (130)
+
+PokerStars Hand #213161279173: Tournament #2890128540, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/02 23:48:19 MSK [2020/05/02 16:48:19 ET]
+Table '2890128540 4' 4-max Seat #4 is the button
+Seat 1: DiggErr555 (430 in chips)
+Seat 2: Kallemydia (455 in chips)
+Seat 4: pzpm (1115 in chips)
+DiggErr555: posts the ante 10
+Kallemydia: posts the ante 10
+pzpm: posts the ante 10
+DiggErr555: posts small blind 25
+Kallemydia: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [4h 6s]
+pzpm: raises 1055 to 1105 and is all-in
+DiggErr555: folds
+Kallemydia: calls 395 and is all-in
+Uncalled bet (660) returned to pzpm
+*** FLOP *** [3d 9h 5h]
+*** TURN *** [3d 9h 5h] [9s]
+*** RIVER *** [3d 9h 5h 9s] [6d]
+*** SHOW DOWN ***
+Kallemydia: shows [Qd 7d] (a pair of Nines)
+pzpm: shows [Th As] (a pair of Nines - Ace kicker)
+pzpm collected 945 from pot
+*** SUMMARY ***
+Total pot 945 | Rake 0
+Board [3d 9h 5h 9s 6d]
+Seat 1: DiggErr555 (small blind) folded before Flop
+Seat 2: Kallemydia (big blind) showed [Qd 7d] and lost with a pair of Nines
+Seat 4: pzpm (button) showed [Th As] and won (945) with a pair of Nines
+
+PokerStars Hand #213161311365: Tournament #2890128540, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/02 23:48:44 MSK [2020/05/02 16:48:44 ET]
+Table '2890128540 4' 4-max Seat #1 is the button
+Seat 1: DiggErr555 (395 in chips)
+Seat 4: pzpm (1605 in chips)
+DiggErr555: posts the ante 10
+pzpm: posts the ante 10
+DiggErr555: posts small blind 25
+pzpm: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Qc 4c]
+DiggErr555: raises 335 to 385 and is all-in
+pzpm: calls 335
+*** FLOP *** [Ah Qs 7s]
+*** TURN *** [Ah Qs 7s] [2s]
+*** RIVER *** [Ah Qs 7s 2s] [6d]
+*** SHOW DOWN ***
+pzpm: shows [Jh 9s] (high card Ace)
+DiggErr555: shows [Qc 4c] (a pair of Queens)
+DiggErr555 collected 790 from pot
+*** SUMMARY ***
+Total pot 790 | Rake 0
+Board [Ah Qs 7s 2s 6d]
+Seat 1: DiggErr555 (button) (small blind) showed [Qc 4c] and won (790) with a pair of Queens
+Seat 4: pzpm (big blind) showed [Jh 9s] and lost with high card Ace
+
+PokerStars Hand #213161336165: Tournament #2890128540, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/02 23:49:04 MSK [2020/05/02 16:49:04 ET]
+Table '2890128540 4' 4-max Seat #4 is the button
+Seat 1: DiggErr555 (790 in chips)
+Seat 4: pzpm (1210 in chips)
+DiggErr555: posts the ante 10
+pzpm: posts the ante 10
+pzpm: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Ts 9d]
+pzpm: calls 25
+DiggErr555: raises 730 to 780 and is all-in
+pzpm: folds
+Uncalled bet (730) returned to DiggErr555
+DiggErr555 collected 120 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 120 | Rake 0
+Seat 1: DiggErr555 (big blind) collected (120)
+Seat 4: pzpm (button) (small blind) folded before Flop
+
+PokerStars Hand #213161371864: Tournament #2890128540, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/02 23:49:28 MSK [2020/05/02 16:49:28 ET]
+Table '2890128540 4' 4-max Seat #1 is the button
+Seat 1: DiggErr555 (850 in chips)
+Seat 4: pzpm (1150 in chips)
+DiggErr555: posts the ante 10
+pzpm: posts the ante 10
+DiggErr555: posts small blind 25
+pzpm: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [5s 6d]
+DiggErr555: raises 50 to 100
+pzpm: folds
+Uncalled bet (50) returned to DiggErr555
+DiggErr555 collected 120 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 120 | Rake 0
+Seat 1: DiggErr555 (button) (small blind) collected (120)
+Seat 4: pzpm (big blind) folded before Flop
+
+PokerStars Hand #213161388667: Tournament #2890128540, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/02 23:49:41 MSK [2020/05/02 16:49:41 ET]
+Table '2890128540 4' 4-max Seat #4 is the button
+Seat 1: DiggErr555 (910 in chips)
+Seat 4: pzpm (1090 in chips)
+DiggErr555: posts the ante 10
+pzpm: posts the ante 10
+pzpm: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [9h Jd]
+pzpm: calls 25
+DiggErr555: raises 100 to 150
+pzpm: folds
+Uncalled bet (100) returned to DiggErr555
+DiggErr555 collected 120 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 120 | Rake 0
+Seat 1: DiggErr555 (big blind) collected (120)
+Seat 4: pzpm (button) (small blind) folded before Flop
+
+PokerStars Hand #213161412138: Tournament #2890128540, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/02 23:49:59 MSK [2020/05/02 16:49:59 ET]
+Table '2890128540 4' 4-max Seat #1 is the button
+Seat 1: DiggErr555 (970 in chips)
+Seat 4: pzpm (1030 in chips)
+DiggErr555: posts the ante 10
+pzpm: posts the ante 10
+DiggErr555: posts small blind 25
+pzpm: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [7s 5d]
+DiggErr555: calls 25
+pzpm: checks
+*** FLOP *** [5c Tc Ac]
+pzpm: checks
+DiggErr555: bets 50
+pzpm: folds
+Uncalled bet (50) returned to DiggErr555
+DiggErr555 collected 120 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 120 | Rake 0
+Board [5c Tc Ac]
+Seat 1: DiggErr555 (button) (small blind) collected (120)
+Seat 4: pzpm (big blind) folded on the Flop
+
+PokerStars Hand #213161447269: Tournament #2890128540, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/05/02 23:50:26 MSK [2020/05/02 16:50:26 ET]
+Table '2890128540 4' 4-max Seat #4 is the button
+Seat 1: DiggErr555 (1030 in chips)
+Seat 4: pzpm (970 in chips)
+DiggErr555: posts the ante 10
+pzpm: posts the ante 10
+pzpm: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [8h As]
+pzpm: calls 25
+DiggErr555: raises 970 to 1020 and is all-in
+pzpm: folds
+Uncalled bet (970) returned to DiggErr555
+DiggErr555 collected 120 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 120 | Rake 0
+Seat 1: DiggErr555 (big blind) collected (120)
+Seat 4: pzpm (button) (small blind) folded before Flop
+
+PokerStars Hand #213161477144: Tournament #2890128540, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/05/02 23:50:49 MSK [2020/05/02 16:50:49 ET]
+Table '2890128540 4' 4-max Seat #1 is the button
+Seat 1: DiggErr555 (1090 in chips)
+Seat 4: pzpm (910 in chips)
+DiggErr555: posts the ante 20
+pzpm: posts the ante 20
+DiggErr555: posts small blind 50
+pzpm: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [9d Jc]
+DiggErr555: raises 970 to 1070 and is all-in
+pzpm: calls 790 and is all-in
+Uncalled bet (180) returned to DiggErr555
+*** FLOP *** [As 8s 6c]
+*** TURN *** [As 8s 6c] [6s]
+*** RIVER *** [As 8s 6c 6s] [Qs]
+*** SHOW DOWN ***
+pzpm: shows [Ts Tc] (a flush, Ace high)
+DiggErr555: shows [9d Jc] (a pair of Sixes)
+pzpm collected 1820 from pot
+*** SUMMARY ***
+Total pot 1820 | Rake 0
+Board [As 8s 6c 6s Qs]
+Seat 1: DiggErr555 (button) (small blind) showed [9d Jc] and lost with a pair of Sixes
+Seat 4: pzpm (big blind) showed [Ts Tc] and won (1820) with a flush, Ace high
+
+PokerStars Hand #213161501738: Tournament #2890128540, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/05/02 23:51:09 MSK [2020/05/02 16:51:09 ET]
+Table '2890128540 4' 4-max Seat #4 is the button
+Seat 1: DiggErr555 (180 in chips)
+Seat 4: pzpm (1820 in chips)
+DiggErr555: posts the ante 20
+pzpm: posts the ante 20
+pzpm: posts small blind 50
+DiggErr555: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [2d 4c]
+pzpm: raises 100 to 200
+DiggErr555: calls 60 and is all-in
+Uncalled bet (40) returned to pzpm
+*** FLOP *** [Qs 7s 8d]
+*** TURN *** [Qs 7s 8d] [7h]
+*** RIVER *** [Qs 7s 8d 7h] [6c]
+*** SHOW DOWN ***
+DiggErr555: shows [2d 4c] (a pair of Sevens)
+pzpm: shows [5s 3d] (a pair of Sevens)
+DiggErr555 collected 180 from pot
+pzpm collected 180 from pot
+*** SUMMARY ***
+Total pot 360 | Rake 0
+Board [Qs 7s 8d 7h 6c]
+Seat 1: DiggErr555 (big blind) showed [2d 4c] and won (180) with a pair of Sevens
+Seat 4: pzpm (button) (small blind) showed [5s 3d] and won (180) with a pair of Sevens
+
+PokerStars Hand #213161524311: Tournament #2890128540, $7.36+$0.14 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/05/02 23:51:26 MSK [2020/05/02 16:51:26 ET]
+Table '2890128540 4' 4-max Seat #1 is the button
+Seat 1: DiggErr555 (180 in chips)
+Seat 4: pzpm (1820 in chips)
+DiggErr555: posts the ante 20
+pzpm: posts the ante 20
+DiggErr555: posts small blind 50
+pzpm: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [2d Qs]
+DiggErr555: raises 60 to 160 and is all-in
+pzpm: calls 60
+*** FLOP *** [Kh Jc 8c]
+*** TURN *** [Kh Jc 8c] [4c]
+*** RIVER *** [Kh Jc 8c 4c] [4h]
+*** SHOW DOWN ***
+pzpm: shows [Ah 7s] (a pair of Fours)
+DiggErr555: shows [2d Qs] (a pair of Fours - lower kicker)
+pzpm collected 360 from pot
+DiggErr555 finished the tournament in 6th place
+*** SUMMARY ***
+Total pot 360 | Rake 0
+Board [Kh Jc 8c 4c 4h]
+Seat 1: DiggErr555 (button) (small blind) showed [2d Qs] and lost with a pair of Fours
+Seat 4: pzpm (big blind) showed [Ah 7s] and won (360) with a pair of Fours

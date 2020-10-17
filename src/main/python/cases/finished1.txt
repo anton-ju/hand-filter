@@ -1,0 +1,697 @@
+
+
+PokerStars Hand #212771602913: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/04/26 20:38:28 MSK [2020/04/26 13:38:28 ET]
+Table '2881133193 3' 4-max Seat #1 is the button
+Seat 1: Nunnboi (500 in chips)
+Seat 2: polousov1987 (500 in chips)
+Seat 3: TimRU177 (500 in chips)
+Seat 4: DiggErr555 (500 in chips)
+Nunnboi: posts the ante 10
+polousov1987: posts the ante 10
+TimRU177: posts the ante 10
+DiggErr555: posts the ante 10
+polousov1987: posts small blind 25
+TimRU177: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Jh Th]
+DiggErr555: raises 440 to 490 and is all-in
+Nunnboi: folds
+polousov1987: folds
+TimRU177: folds
+Uncalled bet (440) returned to DiggErr555
+DiggErr555 collected 165 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 165 | Rake 0
+Seat 1: Nunnboi (button) folded before Flop (didn't bet)
+Seat 2: polousov1987 (small blind) folded before Flop
+Seat 3: TimRU177 (big blind) folded before Flop
+Seat 4: DiggErr555 collected (165)
+
+PokerStars Hand #212771617474: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/04/26 20:38:41 MSK [2020/04/26 13:38:41 ET]
+Table '2881133193 3' 4-max Seat #2 is the button
+Seat 1: Nunnboi (490 in chips)
+Seat 2: polousov1987 (465 in chips)
+Seat 3: TimRU177 (440 in chips)
+Seat 4: DiggErr555 (605 in chips)
+Nunnboi: posts the ante 10
+polousov1987: posts the ante 10
+TimRU177: posts the ante 10
+DiggErr555: posts the ante 10
+TimRU177: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [5d 6h]
+Nunnboi: raises 430 to 480 and is all-in
+polousov1987: calls 455 and is all-in
+TimRU177: folds
+DiggErr555: folds
+Uncalled bet (25) returned to Nunnboi
+*** FLOP *** [4h 3c As]
+*** TURN *** [4h 3c As] [9s]
+*** RIVER *** [4h 3c As 9s] [9c]
+*** SHOW DOWN ***
+Nunnboi: shows [9h Th] (three of a kind, Nines)
+polousov1987: shows [Kc Ac] (two pair, Aces and Nines)
+Nunnboi collected 1025 from pot
+polousov1987 finished the tournament in 15th place
+*** SUMMARY ***
+Total pot 1025 | Rake 0
+Board [4h 3c As 9s 9c]
+Seat 1: Nunnboi showed [9h Th] and won (1025) with three of a kind, Nines
+Seat 2: polousov1987 (button) showed [Kc Ac] and lost with two pair, Aces and Nines
+Seat 3: TimRU177 (small blind) folded before Flop
+Seat 4: DiggErr555 (big blind) folded before Flop
+
+PokerStars Hand #212771635572: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/04/26 20:38:58 MSK [2020/04/26 13:38:58 ET]
+Table '2881133193 3' 4-max Seat #3 is the button
+Seat 1: Nunnboi (1050 in chips)
+Seat 3: TimRU177 (405 in chips)
+Seat 4: DiggErr555 (545 in chips)
+Nunnboi: posts the ante 10
+TimRU177: posts the ante 10
+DiggErr555: posts the ante 10
+DiggErr555: posts small blind 25
+Nunnboi: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [6s Ks]
+TimRU177: raises 345 to 395 and is all-in
+DiggErr555: folds
+Nunnboi: calls 345
+*** FLOP *** [9s Jd Jc]
+*** TURN *** [9s Jd Jc] [9d]
+*** RIVER *** [9s Jd Jc 9d] [5d]
+*** SHOW DOWN ***
+Nunnboi: shows [Qc Qd] (two pair, Queens and Jacks)
+TimRU177: shows [7s Ac] (two pair, Jacks and Nines)
+Nunnboi collected 845 from pot
+TimRU177 finished the tournament in 14th place
+*** SUMMARY ***
+Total pot 845 | Rake 0
+Board [9s Jd Jc 9d 5d]
+Seat 1: Nunnboi (big blind) showed [Qc Qd] and won (845) with two pair, Queens and Jacks
+Seat 3: TimRU177 (button) showed [7s Ac] and lost with two pair, Jacks and Nines
+Seat 4: DiggErr555 (small blind) folded before Flop
+
+PokerStars Hand #212771655282: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/04/26 20:39:15 MSK [2020/04/26 13:39:15 ET]
+Table '2881133193 3' 4-max Seat #1 is the button
+Seat 1: Nunnboi (1490 in chips)
+Seat 4: DiggErr555 (510 in chips)
+Nunnboi: posts the ante 10
+DiggErr555: posts the ante 10
+Nunnboi: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Qs 7d]
+Nunnboi: calls 25
+DiggErr555: raises 450 to 500 and is all-in
+Nunnboi: folds
+Uncalled bet (450) returned to DiggErr555
+DiggErr555 collected 120 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 120 | Rake 0
+Seat 1: Nunnboi (button) (small blind) folded before Flop
+Seat 4: DiggErr555 (big blind) collected (120)
+
+PokerStars Hand #212771662575: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/04/26 20:39:22 MSK [2020/04/26 13:39:22 ET]
+Table '2881133193 3' 4-max Seat #4 is the button
+Seat 1: Nunnboi (1430 in chips)
+Seat 4: DiggErr555 (570 in chips)
+Nunnboi: posts the ante 10
+DiggErr555: posts the ante 10
+DiggErr555: posts small blind 25
+Nunnboi: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Kh Qh]
+DiggErr555: raises 510 to 560 and is all-in
+Nunnboi: folds
+Uncalled bet (510) returned to DiggErr555
+DiggErr555 collected 120 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 120 | Rake 0
+Seat 1: Nunnboi (big blind) folded before Flop
+Seat 4: DiggErr555 (button) (small blind) collected (120)
+
+PokerStars Hand #212771669789: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/04/26 20:39:28 MSK [2020/04/26 13:39:28 ET]
+Table '2881133193 3' 4-max Seat #1 is the button
+Seat 1: Nunnboi (1370 in chips)
+Seat 4: DiggErr555 (630 in chips)
+Nunnboi: posts the ante 10
+DiggErr555: posts the ante 10
+Nunnboi: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [5h 2d]
+Nunnboi: raises 1310 to 1360 and is all-in
+DiggErr555: folds
+Uncalled bet (1310) returned to Nunnboi
+Nunnboi collected 120 from pot
+*** SUMMARY ***
+Total pot 120 | Rake 0
+Seat 1: Nunnboi (button) (small blind) collected (120)
+Seat 4: DiggErr555 (big blind) folded before Flop
+
+PokerStars Hand #212771676086: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/04/26 20:39:34 MSK [2020/04/26 13:39:34 ET]
+Table '2881133193 3' 4-max Seat #4 is the button
+Seat 1: Nunnboi (1430 in chips)
+Seat 4: DiggErr555 (570 in chips)
+Nunnboi: posts the ante 10
+DiggErr555: posts the ante 10
+DiggErr555: posts small blind 25
+Nunnboi: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [6d 7h]
+DiggErr555: calls 25
+Nunnboi: checks
+*** FLOP *** [Ks 8s 8d]
+Nunnboi: checks
+DiggErr555: bets 50
+Nunnboi: folds
+Uncalled bet (50) returned to DiggErr555
+DiggErr555 collected 120 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 120 | Rake 0
+Board [Ks 8s 8d]
+Seat 1: Nunnboi (big blind) folded on the Flop
+Seat 4: DiggErr555 (button) (small blind) collected (120)
+
+PokerStars Hand #212771701994: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/04/26 20:39:56 MSK [2020/04/26 13:39:56 ET]
+Table '2881133193 3' 4-max Seat #1 is the button
+Seat 1: Nunnboi (1370 in chips)
+Seat 4: DiggErr555 (630 in chips)
+Nunnboi: posts the ante 10
+DiggErr555: posts the ante 10
+Nunnboi: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [6h Th]
+Nunnboi: raises 1310 to 1360 and is all-in
+DiggErr555: folds
+Uncalled bet (1310) returned to Nunnboi
+Nunnboi collected 120 from pot
+Nunnboi: doesn't show hand
+*** SUMMARY ***
+Total pot 120 | Rake 0
+Seat 1: Nunnboi (button) (small blind) collected (120)
+Seat 4: DiggErr555 (big blind) folded before Flop
+
+PokerStars Hand #212771709055: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/04/26 20:40:03 MSK [2020/04/26 13:40:03 ET]
+Table '2881133193 3' 4-max Seat #4 is the button
+Seat 1: Nunnboi (1430 in chips)
+Seat 4: DiggErr555 (570 in chips)
+Nunnboi: posts the ante 10
+DiggErr555: posts the ante 10
+DiggErr555: posts small blind 25
+Nunnboi: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Kh 8c]
+DiggErr555: raises 510 to 560 and is all-in
+Nunnboi: calls 510
+*** FLOP *** [6s 6c 9d]
+*** TURN *** [6s 6c 9d] [Jc]
+*** RIVER *** [6s 6c 9d Jc] [Ks]
+*** SHOW DOWN ***
+Nunnboi: shows [Ts 9s] (two pair, Nines and Sixes)
+DiggErr555: shows [Kh 8c] (two pair, Kings and Sixes)
+DiggErr555 collected 1140 from pot
+*** SUMMARY ***
+Total pot 1140 | Rake 0
+Board [6s 6c 9d Jc Ks]
+Seat 1: Nunnboi (big blind) showed [Ts 9s] and lost with two pair, Nines and Sixes
+Seat 4: DiggErr555 (button) (small blind) showed [Kh 8c] and won (1140) with two pair, Kings and Sixes
+
+PokerStars Hand #212771723761: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/04/26 20:40:16 MSK [2020/04/26 13:40:16 ET]
+Table '2881133193 3' 4-max Seat #1 is the button
+Seat 1: Nunnboi (860 in chips)
+Seat 4: DiggErr555 (1140 in chips)
+Nunnboi: posts the ante 10
+DiggErr555: posts the ante 10
+Nunnboi: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [6s 2s]
+Nunnboi: raises 800 to 850 and is all-in
+DiggErr555: folds
+Uncalled bet (800) returned to Nunnboi
+Nunnboi collected 120 from pot
+*** SUMMARY ***
+Total pot 120 | Rake 0
+Seat 1: Nunnboi (button) (small blind) collected (120)
+Seat 4: DiggErr555 (big blind) folded before Flop
+
+PokerStars Hand #212771738532: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/04/26 20:40:30 MSK [2020/04/26 13:40:30 ET]
+Table '2881133193 3' 4-max Seat #4 is the button
+Seat 1: Nunnboi (920 in chips)
+Seat 4: DiggErr555 (1080 in chips)
+Nunnboi: posts the ante 10
+DiggErr555: posts the ante 10
+DiggErr555: posts small blind 25
+Nunnboi: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [8s 2d]
+DiggErr555: raises 50 to 100
+Nunnboi: calls 50
+*** FLOP *** [3d 6s 9h]
+Nunnboi: checks
+DiggErr555: bets 77
+Nunnboi: folds
+Uncalled bet (77) returned to DiggErr555
+DiggErr555 collected 220 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 220 | Rake 0
+Board [3d 6s 9h]
+Seat 1: Nunnboi (big blind) folded on the Flop
+Seat 4: DiggErr555 (button) (small blind) collected (220)
+
+PokerStars Hand #212771762433: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/04/26 20:40:52 MSK [2020/04/26 13:40:52 ET]
+Table '2881133193 3' 4-max Seat #1 is the button
+Seat 1: Nunnboi (810 in chips)
+Seat 4: DiggErr555 (1190 in chips)
+Nunnboi: posts the ante 10
+DiggErr555: posts the ante 10
+Nunnboi: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Ac 3s]
+Nunnboi: raises 750 to 800 and is all-in
+DiggErr555: folds
+Uncalled bet (750) returned to Nunnboi
+Nunnboi collected 120 from pot
+Nunnboi: doesn't show hand
+*** SUMMARY ***
+Total pot 120 | Rake 0
+Seat 1: Nunnboi (button) (small blind) collected (120)
+Seat 4: DiggErr555 (big blind) folded before Flop
+
+PokerStars Hand #212771771671: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/04/26 20:41:00 MSK [2020/04/26 13:41:00 ET]
+Table '2881133193 3' 4-max Seat #4 is the button
+Seat 1: Nunnboi (870 in chips)
+Seat 4: DiggErr555 (1130 in chips)
+Nunnboi: posts the ante 10
+DiggErr555: posts the ante 10
+DiggErr555: posts small blind 25
+Nunnboi: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Ks 2s]
+DiggErr555: calls 25
+Nunnboi: checks
+*** FLOP *** [7c 9h 3c]
+Nunnboi: checks
+DiggErr555: checks
+*** TURN *** [7c 9h 3c] [8h]
+Nunnboi: bets 100
+DiggErr555: folds
+Uncalled bet (100) returned to Nunnboi
+Nunnboi collected 120 from pot
+*** SUMMARY ***
+Total pot 120 | Rake 0
+Board [7c 9h 3c 8h]
+Seat 1: Nunnboi (big blind) collected (120)
+Seat 4: DiggErr555 (button) (small blind) folded on the Turn
+
+PokerStars Hand #212771796183: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/04/26 20:41:23 MSK [2020/04/26 13:41:23 ET]
+Table '2881133193 3' 4-max Seat #1 is the button
+Seat 1: Nunnboi (930 in chips)
+Seat 4: DiggErr555 (1070 in chips)
+Nunnboi: posts the ante 10
+DiggErr555: posts the ante 10
+Nunnboi: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Kc 2h]
+Nunnboi: raises 870 to 920 and is all-in
+DiggErr555: folds
+Uncalled bet (870) returned to Nunnboi
+Nunnboi collected 120 from pot
+*** SUMMARY ***
+Total pot 120 | Rake 0
+Seat 1: Nunnboi (button) (small blind) collected (120)
+Seat 4: DiggErr555 (big blind) folded before Flop
+
+PokerStars Hand #212771813291: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/04/26 20:41:39 MSK [2020/04/26 13:41:39 ET]
+Table '2881133193 3' 4-max Seat #4 is the button
+Seat 1: Nunnboi (990 in chips)
+Seat 4: DiggErr555 (1010 in chips)
+Nunnboi: posts the ante 20
+DiggErr555: posts the ante 20
+DiggErr555: posts small blind 50
+Nunnboi: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Ts 7c]
+DiggErr555: raises 890 to 990 and is all-in
+Nunnboi: folds
+Uncalled bet (890) returned to DiggErr555
+DiggErr555 collected 240 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 240 | Rake 0
+Seat 1: Nunnboi (big blind) folded before Flop
+Seat 4: DiggErr555 (button) (small blind) collected (240)
+
+PokerStars Hand #212771818784: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level II (50/100) - 2020/04/26 20:41:45 MSK [2020/04/26 13:41:45 ET]
+Table '2881133193 3' 4-max Seat #1 is the button
+Seat 1: Nunnboi (870 in chips)
+Seat 4: DiggErr555 (1130 in chips)
+Nunnboi: posts the ante 20
+DiggErr555: posts the ante 20
+Nunnboi: posts small blind 50
+DiggErr555: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [8s Qd]
+Nunnboi: raises 750 to 850 and is all-in
+DiggErr555: calls 750
+*** FLOP *** [7d Th 4c]
+*** TURN *** [7d Th 4c] [Qh]
+*** RIVER *** [7d Th 4c Qh] [Td]
+*** SHOW DOWN ***
+DiggErr555: shows [8s Qd] (two pair, Queens and Tens)
+Nunnboi: shows [Kc Jd] (a pair of Tens)
+DiggErr555 collected 1740 from pot
+Nunnboi finished the tournament in 8th place
+*** SUMMARY ***
+Total pot 1740 | Rake 0
+Board [7d Th 4c Qh Td]
+Seat 1: Nunnboi (button) (small blind) showed [Kc Jd] and lost with a pair of Tens
+Seat 4: DiggErr555 (big blind) showed [8s Qd] and won (1740) with two pair, Queens and Tens
+
+PokerStars Hand #212772006791: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/04/26 20:44:34 MSK [2020/04/26 13:44:34 ET]
+Table '2881133193 1' 4-max Seat #3 is the button
+Seat 1: PrincePoker (500 in chips)
+Seat 2: sobo998 (500 in chips)
+Seat 3: DiggErr555 (500 in chips)
+Seat 4: Gselweckle (500 in chips)
+PrincePoker: posts the ante 10
+sobo998: posts the ante 10
+DiggErr555: posts the ante 10
+Gselweckle: posts the ante 10
+Gselweckle: posts small blind 25
+PrincePoker: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Td 5d]
+sobo998: folds
+DiggErr555: folds
+Gselweckle: raises 440 to 490 and is all-in
+PrincePoker: folds
+Uncalled bet (440) returned to Gselweckle
+Gselweckle collected 140 from pot
+*** SUMMARY ***
+Total pot 140 | Rake 0
+Seat 1: PrincePoker (big blind) folded before Flop
+Seat 2: sobo998 folded before Flop (didn't bet)
+Seat 3: DiggErr555 (button) folded before Flop (didn't bet)
+Seat 4: Gselweckle (small blind) collected (140)
+
+PokerStars Hand #212772026043: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/04/26 20:44:51 MSK [2020/04/26 13:44:51 ET]
+Table '2881133193 1' 4-max Seat #4 is the button
+Seat 1: PrincePoker (440 in chips)
+Seat 2: sobo998 (490 in chips)
+Seat 3: DiggErr555 (490 in chips)
+Seat 4: Gselweckle (580 in chips)
+PrincePoker: posts the ante 10
+sobo998: posts the ante 10
+DiggErr555: posts the ante 10
+Gselweckle: posts the ante 10
+PrincePoker: posts small blind 25
+sobo998: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Tc Kc]
+DiggErr555: raises 430 to 480 and is all-in
+Gselweckle: folds
+PrincePoker: folds
+sobo998: calls 430 and is all-in
+*** FLOP *** [Ks Qs Qh]
+*** TURN *** [Ks Qs Qh] [5c]
+*** RIVER *** [Ks Qs Qh 5c] [9d]
+*** SHOW DOWN ***
+sobo998: shows [8h 8d] (two pair, Queens and Eights)
+DiggErr555: shows [Tc Kc] (two pair, Kings and Queens)
+DiggErr555 collected 1025 from pot
+sobo998 finished the tournament in 4th place
+*** SUMMARY ***
+Total pot 1025 | Rake 0
+Board [Ks Qs Qh 5c 9d]
+Seat 1: PrincePoker (small blind) folded before Flop
+Seat 2: sobo998 (big blind) showed [8h 8d] and lost with two pair, Queens and Eights
+Seat 3: DiggErr555 showed [Tc Kc] and won (1025) with two pair, Kings and Queens
+Seat 4: Gselweckle (button) folded before Flop (didn't bet)
+
+PokerStars Hand #212772058717: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/04/26 20:45:21 MSK [2020/04/26 13:45:21 ET]
+Table '2881133193 1' 4-max Seat #1 is the button
+Seat 1: PrincePoker (405 in chips)
+Seat 3: DiggErr555 (1025 in chips)
+Seat 4: Gselweckle (570 in chips)
+PrincePoker: posts the ante 10
+DiggErr555: posts the ante 10
+Gselweckle: posts the ante 10
+DiggErr555: posts small blind 25
+Gselweckle: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [3d Js]
+PrincePoker: folds
+DiggErr555: raises 965 to 1015 and is all-in
+Gselweckle: folds
+Uncalled bet (965) returned to DiggErr555
+DiggErr555 collected 130 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 130 | Rake 0
+Seat 1: PrincePoker (button) folded before Flop (didn't bet)
+Seat 3: DiggErr555 (small blind) collected (130)
+Seat 4: Gselweckle (big blind) folded before Flop
+
+PokerStars Hand #212772071342: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/04/26 20:45:33 MSK [2020/04/26 13:45:33 ET]
+Table '2881133193 1' 4-max Seat #3 is the button
+Seat 1: PrincePoker (395 in chips)
+Seat 3: DiggErr555 (1095 in chips)
+Seat 4: Gselweckle (510 in chips)
+PrincePoker: posts the ante 10
+DiggErr555: posts the ante 10
+Gselweckle: posts the ante 10
+Gselweckle: posts small blind 25
+PrincePoker: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [6s 6h]
+DiggErr555: raises 1035 to 1085 and is all-in
+Gselweckle: folds
+PrincePoker: folds
+Uncalled bet (1035) returned to DiggErr555
+DiggErr555 collected 155 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 155 | Rake 0
+Seat 1: PrincePoker (big blind) folded before Flop
+Seat 3: DiggErr555 (button) collected (155)
+Seat 4: Gselweckle (small blind) folded before Flop
+
+PokerStars Hand #212772087355: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/04/26 20:45:47 MSK [2020/04/26 13:45:47 ET]
+Table '2881133193 1' 4-max Seat #4 is the button
+Seat 1: PrincePoker (335 in chips)
+Seat 3: DiggErr555 (1190 in chips)
+Seat 4: Gselweckle (475 in chips)
+PrincePoker: posts the ante 10
+DiggErr555: posts the ante 10
+Gselweckle: posts the ante 10
+PrincePoker: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Js Th]
+Gselweckle: raises 415 to 465 and is all-in
+PrincePoker: folds
+DiggErr555: folds
+Uncalled bet (415) returned to Gselweckle
+Gselweckle collected 155 from pot
+*** SUMMARY ***
+Total pot 155 | Rake 0
+Seat 1: PrincePoker (small blind) folded before Flop
+Seat 3: DiggErr555 (big blind) folded before Flop
+Seat 4: Gselweckle (button) collected (155)
+
+PokerStars Hand #212772113075: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/04/26 20:46:11 MSK [2020/04/26 13:46:11 ET]
+Table '2881133193 1' 4-max Seat #1 is the button
+Seat 1: PrincePoker (300 in chips)
+Seat 3: DiggErr555 (1130 in chips)
+Seat 4: Gselweckle (570 in chips)
+PrincePoker: posts the ante 10
+DiggErr555: posts the ante 10
+Gselweckle: posts the ante 10
+DiggErr555: posts small blind 25
+Gselweckle: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Jh 4h]
+PrincePoker: folds
+DiggErr555: raises 1070 to 1120 and is all-in
+Gselweckle: folds
+Uncalled bet (1070) returned to DiggErr555
+DiggErr555 collected 130 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 130 | Rake 0
+Seat 1: PrincePoker (button) folded before Flop (didn't bet)
+Seat 3: DiggErr555 (small blind) collected (130)
+Seat 4: Gselweckle (big blind) folded before Flop
+
+PokerStars Hand #212772129386: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/04/26 20:46:26 MSK [2020/04/26 13:46:26 ET]
+Table '2881133193 1' 4-max Seat #3 is the button
+Seat 1: PrincePoker (290 in chips)
+Seat 3: DiggErr555 (1200 in chips)
+Seat 4: Gselweckle (510 in chips)
+PrincePoker: posts the ante 10
+DiggErr555: posts the ante 10
+Gselweckle: posts the ante 10
+Gselweckle: posts small blind 25
+PrincePoker: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Kc 4c]
+DiggErr555: folds
+Gselweckle: raises 450 to 500 and is all-in
+PrincePoker: folds
+Uncalled bet (450) returned to Gselweckle
+Gselweckle collected 130 from pot
+Gselweckle: doesn't show hand
+*** SUMMARY ***
+Total pot 130 | Rake 0
+Seat 1: PrincePoker (big blind) folded before Flop
+Seat 3: DiggErr555 (button) folded before Flop (didn't bet)
+Seat 4: Gselweckle (small blind) collected (130)
+
+PokerStars Hand #212772153559: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/04/26 20:46:49 MSK [2020/04/26 13:46:49 ET]
+Table '2881133193 1' 4-max Seat #4 is the button
+Seat 1: PrincePoker (230 in chips)
+Seat 3: DiggErr555 (1190 in chips)
+Seat 4: Gselweckle (580 in chips)
+PrincePoker: posts the ante 10
+DiggErr555: posts the ante 10
+Gselweckle: posts the ante 10
+PrincePoker: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Ks Tc]
+Gselweckle: raises 520 to 570 and is all-in
+PrincePoker: folds
+DiggErr555: folds
+Uncalled bet (520) returned to Gselweckle
+Gselweckle collected 155 from pot
+Gselweckle: doesn't show hand
+*** SUMMARY ***
+Total pot 155 | Rake 0
+Seat 1: PrincePoker (small blind) folded before Flop
+Seat 3: DiggErr555 (big blind) folded before Flop
+Seat 4: Gselweckle (button) collected (155)
+
+PokerStars Hand #212772168815: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/04/26 20:47:03 MSK [2020/04/26 13:47:03 ET]
+Table '2881133193 1' 4-max Seat #1 is the button
+Seat 1: PrincePoker (195 in chips)
+Seat 3: DiggErr555 (1130 in chips)
+Seat 4: Gselweckle (675 in chips)
+PrincePoker: posts the ante 10
+DiggErr555: posts the ante 10
+Gselweckle: posts the ante 10
+DiggErr555: posts small blind 25
+Gselweckle: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [9c 3h]
+PrincePoker: raises 135 to 185 and is all-in
+DiggErr555: folds
+Gselweckle: folds
+Uncalled bet (135) returned to PrincePoker
+PrincePoker collected 155 from pot
+PrincePoker: doesn't show hand
+*** SUMMARY ***
+Total pot 155 | Rake 0
+Seat 1: PrincePoker (button) collected (155)
+Seat 3: DiggErr555 (small blind) folded before Flop
+Seat 4: Gselweckle (big blind) folded before Flop
+
+PokerStars Hand #212772189418: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/04/26 20:47:22 MSK [2020/04/26 13:47:22 ET]
+Table '2881133193 1' 4-max Seat #3 is the button
+Seat 1: PrincePoker (290 in chips)
+Seat 3: DiggErr555 (1095 in chips)
+Seat 4: Gselweckle (615 in chips)
+PrincePoker: posts the ante 10
+DiggErr555: posts the ante 10
+Gselweckle: posts the ante 10
+Gselweckle: posts small blind 25
+PrincePoker: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [5d Td]
+DiggErr555: folds
+Gselweckle: raises 555 to 605 and is all-in
+PrincePoker: folds
+Uncalled bet (555) returned to Gselweckle
+Gselweckle collected 130 from pot
+Gselweckle: doesn't show hand
+*** SUMMARY ***
+Total pot 130 | Rake 0
+Seat 1: PrincePoker (big blind) folded before Flop
+Seat 3: DiggErr555 (button) folded before Flop (didn't bet)
+Seat 4: Gselweckle (small blind) collected (130)
+
+PokerStars Hand #212772215442: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round II, Level II (50/100) - 2020/04/26 20:47:46 MSK [2020/04/26 13:47:46 ET]
+Table '2881133193 1' 4-max Seat #4 is the button
+Seat 1: PrincePoker (230 in chips)
+Seat 3: DiggErr555 (1085 in chips)
+Seat 4: Gselweckle (685 in chips)
+PrincePoker: posts the ante 20
+DiggErr555: posts the ante 20
+Gselweckle: posts the ante 20
+PrincePoker: posts small blind 50
+DiggErr555: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [5s Jc]
+Gselweckle: folds
+PrincePoker: folds
+Uncalled bet (50) returned to DiggErr555
+DiggErr555 collected 160 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 160 | Rake 0
+Seat 1: PrincePoker (small blind) folded before Flop
+Seat 3: DiggErr555 (big blind) collected (160)
+Seat 4: Gselweckle (button) folded before Flop (didn't bet)
+
+PokerStars Hand #212772226977: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round II, Level II (50/100) - 2020/04/26 20:47:57 MSK [2020/04/26 13:47:57 ET]
+Table '2881133193 1' 4-max Seat #1 is the button
+Seat 1: PrincePoker (160 in chips)
+Seat 3: DiggErr555 (1175 in chips)
+Seat 4: Gselweckle (665 in chips)
+PrincePoker: posts the ante 20
+DiggErr555: posts the ante 20
+Gselweckle: posts the ante 20
+DiggErr555: posts small blind 50
+Gselweckle: posts big blind 100
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Qh Qc]
+PrincePoker: raises 40 to 140 and is all-in
+DiggErr555: calls 90
+Gselweckle: calls 40
+*** FLOP *** [5s 9c Ks]
+DiggErr555: checks
+Gselweckle: checks
+*** TURN *** [5s 9c Ks] [5c]
+DiggErr555: checks
+Gselweckle: checks
+*** RIVER *** [5s 9c Ks 5c] [Ah]
+DiggErr555: checks
+Gselweckle: bets 150
+DiggErr555: calls 150
+*** SHOW DOWN ***
+Gselweckle: shows [5d 4h] (three of a kind, Fives)
+DiggErr555: mucks hand
+Gselweckle collected 300 from side pot
+PrincePoker: mucks hand
+Gselweckle collected 480 from main pot
+PrincePoker finished the tournament in 3rd place and received $17.36.
+DiggErr555 finished the tournament in 1st place
+DiggErr555 wins an entry to tournament #2869142162
+Gselweckle finished the tournament in 1st place
+Gselweckle wins an entry to tournament #2869142162
+*** SUMMARY ***
+Total pot 780 Main pot 480. Side pot 300. | Rake 0
+Board [5s 9c Ks 5c Ah]
+Seat 1: PrincePoker (button) mucked [Ac 4s]
+Seat 3: DiggErr555 (small blind) mucked [Qh Qc]
+Seat 4: Gselweckle (big blind) showed [5d 4h] and won (780) with three of a kind, Fives

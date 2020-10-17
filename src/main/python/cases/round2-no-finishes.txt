@@ -1,0 +1,174 @@
+
+PokerStars Hand #213234800459: Tournament #2891517544, $26.96+$0.54 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/05/04 0:27:58 MSK [2020/05/03 17:27:58 ET]
+Table '2891517544 1' 4-max Seat #2 is the button
+Seat 1: Huiphie (500 in chips)
+Seat 2: jukkarajula (500 in chips)
+Seat 3: 6uprrnutscn (500 in chips)
+Seat 4: DiggErr555 (500 in chips)
+Huiphie: posts the ante 10
+jukkarajula: posts the ante 10
+6uprrnutscn: posts the ante 10
+DiggErr555: posts the ante 10
+6uprrnutscn: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [2d 4c]
+Huiphie: raises 440 to 490 and is all-in
+jukkarajula: folds
+6uprrnutscn: folds
+DiggErr555: folds
+Uncalled bet (440) returned to Huiphie
+Huiphie collected 165 from pot
+*** SUMMARY ***
+Total pot 165 | Rake 0
+Seat 1: Huiphie collected (165)
+Seat 2: jukkarajula (button) folded before Flop (didn't bet)
+Seat 3: 6uprrnutscn (small blind) folded before Flop
+Seat 4: DiggErr555 (big blind) folded before Flop
+
+PokerStars Hand #213234817952: Tournament #2891517544, $26.96+$0.54 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/05/04 0:28:12 MSK [2020/05/03 17:28:12 ET]
+Table '2891517544 1' 4-max Seat #3 is the button
+Seat 1: Huiphie (605 in chips)
+Seat 2: jukkarajula (490 in chips)
+Seat 3: 6uprrnutscn (465 in chips)
+Seat 4: DiggErr555 (440 in chips)
+Huiphie: posts the ante 10
+jukkarajula: posts the ante 10
+6uprrnutscn: posts the ante 10
+DiggErr555: posts the ante 10
+DiggErr555: posts small blind 25
+Huiphie: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [8c 9h]
+jukkarajula: raises 430 to 480 and is all-in
+6uprrnutscn: calls 455 and is all-in
+DiggErr555: folds
+Huiphie: folds
+Uncalled bet (25) returned to jukkarajula
+*** FLOP *** [8d 4d 4h]
+*** TURN *** [8d 4d 4h] [Jd]
+*** RIVER *** [8d 4d 4h Jd] [Ah]
+*** SHOW DOWN ***
+jukkarajula: shows [2s As] (two pair, Aces and Fours)
+6uprrnutscn: shows [Jh Js] (a full house, Jacks full of Fours)
+6uprrnutscn collected 1025 from pot
+*** SUMMARY ***
+Total pot 1025 | Rake 0
+Board [8d 4d 4h Jd Ah]
+Seat 1: Huiphie (big blind) folded before Flop
+Seat 2: jukkarajula showed [2s As] and lost with two pair, Aces and Fours
+Seat 3: 6uprrnutscn (button) showed [Jh Js] and won (1025) with a full house, Jacks full of Fours
+Seat 4: DiggErr555 (small blind) folded before Flop
+
+PokerStars Hand #213234866970: Tournament #2891517544, $26.96+$0.54 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/05/04 0:28:52 MSK [2020/05/03 17:28:52 ET]
+Table '2891517544 1' 4-max Seat #1 is the button
+Seat 1: Huiphie (590 in chips)
+Seat 3: 6uprrnutscn (1015 in chips)
+Seat 4: DiggErr555 (395 in chips)
+Huiphie: posts the ante 10
+6uprrnutscn: posts the ante 10
+DiggErr555: posts the ante 10
+6uprrnutscn: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Kd As]
+Huiphie: folds
+6uprrnutscn: raises 955 to 1005 and is all-in
+DiggErr555: calls 335 and is all-in
+Uncalled bet (620) returned to 6uprrnutscn
+*** FLOP *** [Jd 3s 5c]
+*** TURN *** [Jd 3s 5c] [7h]
+*** RIVER *** [Jd 3s 5c 7h] [Kh]
+*** SHOW DOWN ***
+6uprrnutscn: shows [Tc 3c] (a pair of Threes)
+DiggErr555: shows [Kd As] (a pair of Kings)
+DiggErr555 collected 800 from pot
+*** SUMMARY ***
+Total pot 800 | Rake 0
+Board [Jd 3s 5c 7h Kh]
+Seat 1: Huiphie (button) folded before Flop (didn't bet)
+Seat 3: 6uprrnutscn (small blind) showed [Tc 3c] and lost with a pair of Threes
+Seat 4: DiggErr555 (big blind) showed [Kd As] and won (800) with a pair of Kings
+
+PokerStars Hand #213234898683: Tournament #2891517544, $26.96+$0.54 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/05/04 0:29:20 MSK [2020/05/03 17:29:20 ET]
+Table '2891517544 1' 4-max Seat #3 is the button
+Seat 1: Huiphie (580 in chips)
+Seat 3: 6uprrnutscn (620 in chips)
+Seat 4: DiggErr555 (800 in chips)
+Huiphie: posts the ante 10
+6uprrnutscn: posts the ante 10
+DiggErr555: posts the ante 10
+DiggErr555: posts small blind 25
+Huiphie: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [7c 5h]
+6uprrnutscn: raises 560 to 610 and is all-in
+DiggErr555: folds
+Huiphie: folds
+Uncalled bet (560) returned to 6uprrnutscn
+6uprrnutscn collected 155 from pot
+6uprrnutscn: doesn't show hand
+*** SUMMARY ***
+Total pot 155 | Rake 0
+Seat 1: Huiphie (big blind) folded before Flop
+Seat 3: 6uprrnutscn (button) collected (155)
+Seat 4: DiggErr555 (small blind) folded before Flop
+
+PokerStars Hand #213234915353: Tournament #2891517544, $26.96+$0.54 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/05/04 0:29:34 MSK [2020/05/03 17:29:34 ET]
+Table '2891517544 1' 4-max Seat #4 is the button
+Seat 1: Huiphie (520 in chips)
+Seat 3: 6uprrnutscn (715 in chips)
+Seat 4: DiggErr555 (765 in chips)
+Huiphie: posts the ante 10
+6uprrnutscn: posts the ante 10
+DiggErr555: posts the ante 10
+Huiphie: posts small blind 25
+6uprrnutscn: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [7s 7c]
+DiggErr555: raises 705 to 755 and is all-in
+Huiphie: folds
+6uprrnutscn: folds
+Uncalled bet (705) returned to DiggErr555
+DiggErr555 collected 155 from pot
+DiggErr555: doesn't show hand
+*** SUMMARY ***
+Total pot 155 | Rake 0
+Seat 1: Huiphie (small blind) folded before Flop
+Seat 3: 6uprrnutscn (big blind) folded before Flop
+Seat 4: DiggErr555 (button) collected (155)
+
+PokerStars Hand #213234930657: Tournament #2891517544, $26.96+$0.54 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/05/04 0:29:47 MSK [2020/05/03 17:29:47 ET]
+Table '2891517544 1' 4-max Seat #1 is the button
+Seat 1: Huiphie (485 in chips)
+Seat 3: 6uprrnutscn (655 in chips)
+Seat 4: DiggErr555 (860 in chips)
+Huiphie: posts the ante 10
+6uprrnutscn: posts the ante 10
+DiggErr555: posts the ante 10
+6uprrnutscn: posts small blind 25
+DiggErr555: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [2h 7s]
+Huiphie: raises 425 to 475 and is all-in
+6uprrnutscn: raises 170 to 645 and is all-in
+DiggErr555: folds
+Uncalled bet (170) returned to 6uprrnutscn
+*** FLOP *** [9d Ah 6d]
+*** TURN *** [9d Ah 6d] [Ac]
+*** RIVER *** [9d Ah 6d Ac] [2d]
+*** SHOW DOWN ***
+6uprrnutscn: shows [Jd Jh] (two pair, Aces and Jacks)
+Huiphie: shows [Qs 8s] (a pair of Aces)
+6uprrnutscn collected 1030 from pot
+Huiphie finished the tournament in 3rd place and received $1.36.
+6uprrnutscn finished the tournament in 1st place
+6uprrnutscn wins an entry to tournament #2874010084
+DiggErr555 finished the tournament in 1st place
+DiggErr555 wins an entry to tournament #2874010084
+*** SUMMARY ***
+Total pot 1030 | Rake 0
+Board [9d Ah 6d Ac 2d]
+Seat 1: Huiphie (button) showed [Qs 8s] and lost with a pair of Aces
+Seat 3: 6uprrnutscn (small blind) showed [Jd Jh] and won (1030) with two pair, Aces and Jacks
+Seat 4: DiggErr555 (big blind) folded before Flop

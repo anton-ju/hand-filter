@@ -1,0 +1,35 @@
+
+
+PokerStars Hand #212777156195: Tournament #2881216810, $14.71+$0.29 USD Hold'em No Limit - Match Round I, Level I (25/50) - 2020/04/26 21:58:31 MSK [2020/04/26 14:58:31 ET]
+Table '2881216810 2' 4-max Seat #1 is the button
+Seat 1: aaeschaa (500 in chips)
+Seat 2: kindose (500 in chips)
+Seat 3: bbtondo (500 in chips)
+Seat 4: DiggErr555 (500 in chips)
+aaeschaa: posts the ante 10
+kindose: posts the ante 10
+bbtondo: posts the ante 10
+DiggErr555: posts the ante 10
+kindose: posts small blind 25
+bbtondo: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Qs Jc]
+DiggErr555: raises 440 to 490 and is all-in
+aaeschaa: folds
+kindose: calls 465 and is all-in
+bbtondo: folds
+*** FLOP *** [Ad 3c 2h]
+*** TURN *** [Ad 3c 2h] [9d]
+*** RIVER *** [Ad 3c 2h 9d] [7h]
+*** SHOW DOWN ***
+kindose: shows [Js Ah] (a pair of Aces)
+DiggErr555: shows [Qs Jc] (high card Ace)
+kindose collected 1070 from pot
+DiggErr555 finished the tournament in 16th place
+*** SUMMARY ***
+Total pot 1070 | Rake 0
+Board [Ad 3c 2h 9d 7h]
+Seat 1: aaeschaa (button) folded before Flop (didn't bet)
+Seat 2: kindose (small blind) showed [Js Ah] and won (1070) with a pair of Aces
+Seat 3: bbtondo (big blind) folded before Flop
+Seat 4: DiggErr555 showed [Qs Jc] and lost with high card Ace
