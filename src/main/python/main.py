@@ -72,14 +72,21 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
             self.config["NOTES"] = file_name
 
     def set_input_folder(self):
-        directory = QFileDialog.getExistingDirectory(self, "Выберите папку")
+
+        dir = self.lineEditInput.text() if self.lineEditInput.text() else str(CWD)
+        directory = QFileDialog.getExistingDirectory(self,
+                                                     caption="Выберите папку",
+                                                     directory=dir)
 
         if directory:  # не продолжать выполнение, если пользователь не выбрал директорию
             self.lineEditInput.setText(directory)
             self.config["INPUT"] = directory
 
     def set_output_folder(self):
-        directory = QFileDialog.getExistingDirectory(self, "Выберите папку")
+        dir = self.lineEditOutput.text() if self.lineEditOutput.text() else str(CWD)
+        directory = QFileDialog.getExistingDirectory(self,
+                                                     caption="Выберите папку",
+                                                     directory=dir)
 
         if directory:  # не продолжать выполнение, если пользователь не выбрал директорию
             self.lineEditOutput.setText(directory)
@@ -250,7 +257,7 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
             round1, round2 = split_sat_hh(s)
             dd, mm, yy = get_ddmmyy_from_hh(round1)
 
-            if not hh:
+            if not s:
                 skipped += 1
                 continue
             if bool(round1 and round1.strip()):
