@@ -71,6 +71,7 @@ class Ui_MainWindow(object):
         self.toolButtonOutput.setObjectName("toolButtonOutput")
         self.gridLayout.addWidget(self.toolButtonOutput, 1, 1, 1, 1)
         self.radioSplit = QtWidgets.QRadioButton(self.centralwidget)
+        self.radioSplit.setChecked(True)
         self.radioSplit.setObjectName("radioSplit")
         self.gridLayout.addWidget(self.radioSplit, 3, 0, 1, 1)
         self.radioEv = QtWidgets.QRadioButton(self.centralwidget)

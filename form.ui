@@ -131,6 +131,9 @@
         <property name="text">
          <string>Split satellit hand history files</string>
         </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
        </widget>
       </item>
       <item row="9" column="0">
