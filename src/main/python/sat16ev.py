@@ -26,6 +26,19 @@ HERO_REGEX = r"Dealt to (?P<hero>.*)\s\["
 WINNER_REGEX = "(?P<winner>.*?) wins the tournament"
 PRIZE_WON_REGEX = "(?P<player>.*) (?:wins|finished).*and (?:received|receives) \$(?P<prize>\d+\.\d+)(?:.|\s)"
 
+BI_PRIZE = {
+    '131.79': 1050,
+    '66.66': 530,
+    '26.96': 215,
+    '14.71': 109,
+    '10.79': 82,
+    '4.32': 33,
+    '5.59': 44,
+    '7.36': 55,
+    '2.79': 22,
+    '2.16': 16.5,
+}
+
 config = {
     "HERO": 'DiggErr555',
     "FISH_LABELS": ('15', '16', '17', '18', 'uu'),
@@ -203,17 +216,11 @@ def fix_finishes_round1(hh: str) -> str:
 
 
 def fix_finishes_round2(hh: str) -> str:
-    bi_dict = {'14.71': 109,
-               '5.59': 44,
-               '26.96': 215,
-               '7.36': 55,
-               '2.85': 22,
-               '2.16': 16.5,
-               '66.66': 530}
+
     res = hh
     matches = list(re.finditer('in (?:1st|2nd) place', hh))[::-1]
     bi = re.findall(BI_BOUNTY_RAKE_REGEX, hh)[0][1]
-    prize = bi_dict.get(bi, 0)
+    prize = BI_PRIZE.get(bi, 0)
     place_3 = round(float(bi) * 16 - 2 * prize, 2)
     for m in matches:
         paste_index = m.end()
