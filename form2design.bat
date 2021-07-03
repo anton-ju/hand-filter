@@ -1,1 +1,1 @@
-pyuic5 form.ui -o src\main\python\design.py
+pyuic5 form2.ui -o src\main\python\design.py

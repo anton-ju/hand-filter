@@ -1,0 +1,26 @@
+PokerStars Hand #212772006791: Tournament #2881133193, $14.71+$0.29 USD Hold'em No Limit - Match Round II, Level I (25/50) - 2020/04/26 20:44:34 MSK [2020/04/26 13:44:34 ET]
+Table '2881133193 1' 4-max Seat #3 is the button
+Seat 1: PrincePoker (500 in chips)
+Seat 2: sobo998 (500 in chips)
+Seat 3: DiggErr555 (500 in chips)
+Seat 4: Gselweckle (500 in chips)
+PrincePoker: posts the ante 10
+sobo998: posts the ante 10
+DiggErr555: posts the ante 10
+Gselweckle: posts the ante 10
+Gselweckle: posts small blind 25
+PrincePoker: posts big blind 50
+*** HOLE CARDS ***
+Dealt to DiggErr555 [Td 5d]
+sobo998: folds
+DiggErr555: folds
+Gselweckle: raises 440 to 490 and is all-in
+PrincePoker: folds
+Uncalled bet (440) returned to Gselweckle
+Gselweckle collected 140 from pot
+*** SUMMARY ***
+Total pot 140 | Rake 0
+Seat 1: PrincePoker (big blind) folded before Flop
+Seat 2: sobo998 folded before Flop (didn't bet)
+Seat 3: DiggErr555 (button) folded before Flop (didn't bet)
+Seat 4: Gselweckle (small blind) collected (140)

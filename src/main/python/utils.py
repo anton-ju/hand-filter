@@ -2,7 +2,10 @@ from pathlib import Path
 import json
 from typing import List
 from pypokertools.parsers import PSHandHistory
-
+from datetime import datetime
+import logging
+from xml.dom import minidom
+logger = logging.getLogger(__name__)
 
 def load_config(config_file):
     try:
@@ -71,12 +74,12 @@ def get_path_dir_or_error(path):
         raise RuntimeError('Path does not exists')
 
 
-def get_ddmmyy_from_hh(hh: str):
+def get_dt_from_hh(hh: str):
     """returns (dd, mm, yy) from hand history file"""
     s = hh.split('\n\n')
     # determine date and time by first hand in tournament
     hh = None
-    dd, mm, yy = ('', '', '')
+    dt = datetime.now()
     for text in s:
         try:
             # if None or empty string take next element
@@ -84,11 +87,21 @@ def get_ddmmyy_from_hh(hh: str):
                 continue
             # print(f'text: {text}')
             hh = PSHandHistory(text)
-            dd = str(hh.datetime.day)
-            mm = str(hh.datetime.month)
-            yy = str(hh.datetime.year)
+            dt = hh.datetime
             break
         except Exception as e:
-            pass
+            logger.exception('hand id: %s, tournament id: %s', hh.hid, hh.tid)
 
+    return dt
+
+def get_ddmmyy_from_dt(dt: datetime):
+    """returns (dd, mm, yy) from datetime"""
+    try:
+        dd = str(dt.day)
+        mm = str(dt.month)
+        yy = str(dt.year)
+    except Exception as e:
+        logger.exception(e)
     return dd, mm, yy
+
+

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>260</width>
-    <height>410</height>
+    <height>601</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,25 @@
      <enum>QLayout::SetFixedSize</enum>
     </property>
     <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tabDisk">
+       <attribute name="title">
+        <string>Disk</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tabDB">
+       <attribute name="title">
+        <string>H2N</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+    <item>
      <layout class="QGridLayout" name="gridLayout">
-      <item row="8" column="0">
+      <item row="18" column="0">
        <widget class="QRadioButton" name="radioSort">
         <property name="enabled">
          <bool>false</bool>
@@ -30,10 +47,14 @@
         </property>
        </widget>
       </item>
-      <item row="0" column="0">
-       <widget class="QLineEdit" name="lineEditInput"/>
+      <item row="9" column="1">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>To</string>
+        </property>
+       </widget>
       </item>
-      <item row="12" column="0">
+      <item row="22" column="0">
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
          <widget class="QPushButton" name="pushButtonStart">
@@ -44,7 +65,7 @@
         </item>
        </layout>
       </item>
-      <item row="11" column="0">
+      <item row="21" column="0">
        <widget class="QGroupBox" name="groupBox">
         <property name="title">
          <string>Filters</string>
@@ -109,24 +130,7 @@
         </layout>
        </widget>
       </item>
-      <item row="0" column="1">
-       <widget class="QToolButton" name="toolButtonInput">
-        <property name="text">
-         <string>in</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QLineEdit" name="lineEditOutput"/>
-      </item>
-      <item row="1" column="1">
-       <widget class="QToolButton" name="toolButtonOutput">
-        <property name="text">
-         <string>out</string>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="0">
+      <item row="13" column="0">
        <widget class="QRadioButton" name="radioSplit">
         <property name="text">
          <string>Split satellit hand history files</string>
@@ -136,31 +140,31 @@
         </property>
        </widget>
       </item>
-      <item row="9" column="0">
+      <item row="19" column="0">
        <widget class="QRadioButton" name="radioEv">
         <property name="text">
          <string>Fix hands for EV calculating</string>
         </property>
        </widget>
       </item>
-      <item row="10" column="0">
+      <item row="20" column="0">
        <widget class="QRadioButton" name="radioCsv">
         <property name="text">
          <string>Save summary to csv file</string>
         </property>
        </widget>
       </item>
-      <item row="2" column="0">
+      <item row="6" column="0">
        <widget class="QLineEdit" name="lineEditNotes"/>
       </item>
-      <item row="2" column="1">
+      <item row="6" column="1">
        <widget class="QToolButton" name="toolButtonNotes">
         <property name="text">
          <string>notes</string>
         </property>
        </widget>
       </item>
-      <item row="4" column="0">
+      <item row="14" column="0">
        <widget class="QCheckBox" name="checkBoxSort">
         <property name="layoutDirection">
          <enum>Qt::LeftToRight</enum>
@@ -175,6 +179,73 @@
          <bool>true</bool>
         </property>
        </widget>
+      </item>
+      <item row="11" column="0">
+       <widget class="QSpinBox" name="spinBoxBiFrom"/>
+      </item>
+      <item row="10" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Buyins</string>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="0">
+       <widget class="QSpinBox" name="spinBoxBiTo"/>
+      </item>
+      <item row="11" column="1">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>From</string>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="1">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>To</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="lineEditOutput"/>
+      </item>
+      <item row="8" column="1">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>From</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLineEdit" name="lineEditInput"/>
+      </item>
+      <item row="3" column="1">
+       <widget class="QToolButton" name="toolButtonInput">
+        <property name="text">
+         <string>in</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QToolButton" name="toolButtonOutput">
+        <property name="text">
+         <string>out</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Starting date and time of tournaments</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QDateTimeEdit" name="dteFrom"/>
+      </item>
+      <item row="9" column="0">
+       <widget class="QDateTimeEdit" name="dteTo"/>
       </item>
      </layout>
     </item>

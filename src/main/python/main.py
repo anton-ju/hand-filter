@@ -1,3 +1,4 @@
+from PyQt5.QtCore import QObject, QThread, pyqtSignal
 from PyQt5.QtWidgets import QMainWindow, QApplication, QFileDialog
 import design
 import sys
@@ -7,9 +8,13 @@ from sat16ev import get_output_dir, get_tournament_id, split_sat_hh, add_round1_
 from sat16ev import rename_tournament, change_bi, remove_win_entry_round2, fix_finishes_round2
 from pypokertools.parsers import PSHandHistory
 from pypokertools.storage.hand_storage import HandStorage
-from utils import get_path_dir_or_create, get_path_dir_or_error, load_config, save_config, get_ddmmyy_from_hh
+from utils import get_path_dir_or_create, get_path_dir_or_error, load_config, save_config, get_ddmmyy_from_dt
+from utils import load_ps_notes
 import csv
 import logging
+import filters
+import operator
+import datetime
 
 CWD = Path.cwd()
 HandWriteEntry = namedtuple('HandWriteEntry', ['root_dir', 'file_name', 'text'])
@@ -17,8 +22,12 @@ logging.basicConfig(level=logging.DEBUG,
                     format='[%(asctime)s] %(levelname).1s %(message)s',
                     datefmt='%Y.%m.%d %H:%M:%S')
 logger = logging.getLogger(__name__)
-logger.addHandler(logging.FileHandler("handproc.log"))
+formatter = logging.Formatter('[%(asctime)s] %(levelname).1s %(message)s')
+fh = logging.FileHandler("handproc.log")
+fh.setFormatter(formatter)
+logger.addHandler(fh)
 
+# TODO add filters to config
 config = {
     "HERO": 'DiggErr555',
     "FISH_LABELS": ('15', '16', '17', '18', 'uu'),
@@ -35,6 +44,8 @@ config = {
 
 class PSGrandTourHistory(PSHandHistory):
     BOUNTY_WON_REGEX = "(?P<player>.*) wins \$(?P<bounty>.*) for eliminating "
+
+
 
 
 class HandProcApp(QMainWindow, design.Ui_MainWindow):
@@ -60,7 +71,9 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
         self.lineEditInput.setText(self.config.get("INPUT", ''))
         self.lineEditOutput.setText(self.config.get("OUTPUT", ''))
         self.lineEditNotes.setText(self.config.get("NOTES", ''))
-        # TODO load_config from config file
+        self.hand_filter = filters.HandFilter()
+        self.dteTo.setDateTime(datetime.datetime.now())
+        # TODO load filters from config
 
     def set_notes(self):
         file_name, _ = QFileDialog.getOpenFileName(self,
@@ -92,6 +105,48 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
             self.lineEditOutput.setText(directory)
             self.config["OUTPUT"] = directory
 
+    def set_hand_filter(self):
+        self.hand_filter.clear()
+        cond1 = filters.Condition('datetime', operator.ge, self.dteFrom.dateTime())
+        cond2 = filters.Condition('datetime', operator.le, self.dteTo.dateTime())
+        self.hand_filter.add_condition(cond1)
+        self.hand_filter.add_condition(cond2)
+        bi_from_cond = filters.Condition('bi', operator.ge, self.spinBoxBiFrom.value())
+        bi_to_cond = filters.Condition('bi', operator.le, self.spinBoxBiTo.value())
+        self.hand_filter.add_condition(bi_from_cond)
+        self.hand_filter.add_condition(bi_to_cond)
+        if self.checkBoxCoReg.isChecked():
+            cond = filters.CORegFilter()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxBuReg.isChecked():
+            cond = filters.BURegFilter()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxSbReg.isChecked():
+            cond = filters.SBRegFilter()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxBbReg.isChecked():
+            cond = filters.BBRegFilter()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxCoFish.isChecked():
+            cond = filters.COFishFilter()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxBuFish.isChecked():
+            cond = filters.BUFishFilter()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxSbFish.isChecked():
+            cond = filters.SBFishFilter()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxBbFish.isChecked():
+            cond = filters.BBFishFilter()
+            self.hand_filter.add_condition(cond)
+
     def start(self):
         input_dir = self.lineEditInput.text()
         output_dir = self.lineEditOutput.text()
@@ -108,8 +163,6 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
                 self.stats(o)
             elif self.radioSplit.isChecked():
                 self.split(o)
-            elif self.radioSort.isChecked():
-                self.sort(o)
         else:
             self.statusBar().showMessage("Fill input and output directories!")
 
@@ -202,7 +255,6 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
 
         for txt in storage.read_hand():
             counter += 1
-            # TODO add filters check
             try:
                 hh = PSGrandTourHistory(txt)
             except Exception as e:
@@ -241,8 +293,8 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
             return
         output_dir_path = get_path_dir_or_create(options.output_dir)
 
-
         file_list = list(input_path.glob('**/*.txt'))
+        # TODO need to exclude tournament summaries
         total = len(file_list)
         counter = 0
         skipped = 0
@@ -251,37 +303,53 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
         round2_path = output_dir_path.joinpath(config['ROUND2_DIR'])
         self.progressBar.reset()
         self.progressBar.setRange(0, total)
+        self.set_hand_filter()
+        notes = load_ps_notes(self.config["NOTES"])
 
         for file in file_list:
             s = file.read_text(encoding='utf-8')
-            round1, round2 = split_sat_hh(s)
-            dd, mm, yy = get_ddmmyy_from_hh(round1)
-
             if not s:
                 skipped += 1
                 continue
-            if bool(round1 and round1.strip()):
-                write_round1_path = round1_path.joinpath(yy).joinpath(mm).joinpath(dd)
-                entry = HandWriteEntry(write_round1_path, file.name, round1)
-                hands_write_query.append(entry)
+            round1, round2 = split_sat_hh(s)
+
+            round1hands = round1.strip().split('\n\n')
+            for txt in round1hands:
+                if bool(txt and txt.strip()):
+                    try:
+                        parsed = PSHandHistory(txt)
+                        dd, mm, yy = get_ddmmyy_from_dt(parsed.datetime)
+                    except Exception as e:
+                        logger.exception('Exception %s while parsing file: %s', e, file)
+                        logger.debug("hid: " + str(parsed.hid))
+                        logger.debug("hh: " + parsed.hand_history)
+                        continue
+                    if self.hand_filter.check_conditions(parsed, notes=notes, config=self.config):
+                        write_round1_path = round1_path.joinpath(yy).joinpath(mm).joinpath(dd)
+                        entry = HandWriteEntry(write_round1_path,  parsed.hid + '.txt', txt)
+                        hands_write_query.append(entry)
 
             if bool(round2 and round2.strip()):
                 # sorting round2 by positions
                 if self.checkBoxSort.isChecked():
                     hand_list = round2.strip().split('\n\n')
                     for txt in hand_list:
+                        pos_str = '0'
                         try:
-                            hh = PSHandHistory(txt)
+                            parsed = PSHandHistory(txt)
                         except Exception as e:
+                            logger.exception('Exception %s while parsing file: %s', e, file)
                             self.statusBar().showMessage("%s " % e)
                             continue
-                        try:
-                            pos_str = self.get_positions_str(hh)
-                        except RuntimeError:
-                            continue
-                        write_round2_path = round2_path.joinpath(pos_str).joinpath(yy).joinpath(mm).joinpath(dd)
-                        entry = HandWriteEntry(write_round2_path, hh.hid + '.txt', txt)
-                        hands_write_query.append(entry)
+                        if self.hand_filter.check_conditions(parsed, notes=notes, config=self.config):
+                            try:
+                                pos_str = self.get_positions_str(parsed)
+                            except (RuntimeError, KeyError) as e:
+                                logger.exception('Exception %s in get_position_str in file: %s', e, file)
+                                continue
+                            write_round2_path = round2_path.joinpath(pos_str).joinpath(yy).joinpath(mm).joinpath(dd)
+                            entry = HandWriteEntry(write_round2_path, parsed.hid + '.txt', txt)
+                            hands_write_query.append(entry)
                 else:
                     write_round2_path = round2_path.joinpath(yy).joinpath(mm).joinpath(dd)
                     entry = HandWriteEntry(write_round2_path, file.name, round2)
@@ -358,81 +426,8 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
     def split_n_sort(self, options):
         pass
 
-    # def co_reg_filter(self, hh):
-    #     for player, pos in hh.positions().items():
-    #         if pos == 'CO' and notes.get(player, 'uu') in config['REG_LABELS']:
-    #             return True
-    #     return False
-    #
-    # def bu_reg_filter(self, hh):
-    #     for player, pos in hh.positions().items():
-    #         if pos == 'BU' and notes.get(player, 'uu') in config['REG_LABELS']:
-    #             return True
-    #     return False
-    #
-    # def sb_reg_filter(self, hh):
-    #     for player, pos in hh.positions().items():
-    #         if pos == 'SB' and notes.get(player, 'uu') in config['REG_LABELS']:
-    #             return True
-    #     return False
-    #
-    # def bb_reg_filter(self, hh):
-    #     for player, pos in hh.positions().items():
-    #         if pos == 'BB' and notes.get(player, 'uu') in config['REG_LABELS']:
-    #             return True
-    #     return False
-    #
-    # def bb_fish_filter(self, hh):
-    #     for player, pos in hh.positions().items():
-    #         if pos == 'BB' and notes.get(player, 'uu') in config['FISH_LABELS']:
-    #             return True
-    #     return False
-    #
-    # def sb_fish_filter(self, hh):
-    #     for player, pos in hh.positions().items():
-    #         if pos == 'SB' and notes.get(player, 'uu') in config['FISH_LABELS']:
-    #             return True
-    #     return False
-    #
-    # def bu_fish_filter(self, hh):
-    #     for player, pos in hh.positions().items():
-    #         if pos == 'BU' and notes.get(player, 'uu') in config['FISH_LABELS']:
-    #             return True
-    #     return False
-    #
-    # def co_fish_filter(self, hh):
-    #     for player, pos in hh.positions().items():
-    #         if pos == 'CO' and notes.get(player, 'uu') in config['FISH_LABELS']:
-    #             return True
-    #     return False
-    #
-    # def pass_filters(self, hh, options):
-    #     """
-    #     check if hand pass filters
-    #     returns: boolean
-    #     """
-    #     passed = []
-    #     if options.co_reg:
-    #         passed.append(co_reg_filter(hh))
-    #     if options.bu_reg:
-    #         passed.append(bu_reg_filter(hh))
-    #     if options.sb_reg:
-    #         passed.append(sb_reg_filter(hh))
-    #     if options.bb_reg:
-    #         passed.append(bb_reg_filter(hh))
-    #
-    #     if options.co_fish:
-    #         passed.append(co_fish_filter(hh))
-    #     if options.bu_fish:
-    #         passed.append(bu_fish_filter(hh))
-    #     if options.sb_fish:
-    #         passed.append(sb_fish_filter(hh))
-    #     if options.bb_fish:
-    #         passed.append(bb_fish_filter(hh))
-    #     return all(passed)
-
     def closeEvent(self, a0) -> None:
-        # TODO save_config to file
+        # TODO save filters to config
         save_config(self.config, self.config_file)
 
     def check_input(self) -> None:
