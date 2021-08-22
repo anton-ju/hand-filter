@@ -5,7 +5,40 @@ from pypokertools.parsers import PSHandHistory
 from datetime import datetime
 import logging
 from xml.dom import minidom
+import psycopg2
 logger = logging.getLogger(__name__)
+
+
+class Hand2NoteDB():
+    def __init__(self, dbname='Hand2Note3', user='postgres', host='127.0.0.1', port='5318', pwd=''):
+        # try:
+            self.conn = psycopg2.connect(
+                f"dbname='{dbname}' user='{user}' host='{host}' port='{port}'")
+        # except:
+        #     raise psycopg2.Error('Connection error')
+
+    def get_hh(self, start_date=datetime(2000, 1, 1), end_date=None):
+
+        if end_date is None:
+            end_date = datetime.today()
+        sql = " SELECT hh_id, date_played, room_id, gamenumber, hh FROM public.handhistory WHERE date_played BETWEEN %s AND %s; "
+        if self.conn:
+            with self.conn.cursor() as cur:
+                cur.execute(sql, (start_date.toPyDateTime(), end_date.toPyDateTime()))
+                for record in cur:
+                    yield record[4]
+
+    def get_summary(self, tid):
+        if self.conn:
+            with self.conn.cursor() as cur:
+                cur.execute("SELECT tournament_id, summary "
+                            "FROM tournament_summaries "
+                            f"WHERE tournament_id = {tid}")
+                if cur.rowcount > 0:
+                    return cur.fetchone()[1]
+                else:
+                    return None
+
 
 def load_config(config_file):
     try:
@@ -23,7 +56,7 @@ def load_config(config_file):
 def save_config(config_current, config_file):
     try:
         with open(config_file, 'w', encoding='utf-8') as f:
-            config_json = json.dumps(config_current)
+            config_json = json.dumps(config_current, default=str)
             if config_json == '':
                 return
             f.write(config_json)

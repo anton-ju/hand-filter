@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>243</width>
-    <height>632</height>
+    <width>226</width>
+    <height>637</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,7 +24,7 @@
        </size>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -51,24 +51,47 @@
         <item row="1" column="1">
          <widget class="QLineEdit" name="lineEditOutput"/>
         </item>
-        <item row="2" column="0">
-         <widget class="QToolButton" name="toolButtonNotes">
-          <property name="text">
-           <string>notes</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="1">
-         <widget class="QLineEdit" name="lineEditNotes"/>
-        </item>
        </layout>
       </widget>
       <widget class="QWidget" name="tab_2">
        <attribute name="title">
         <string>H2N</string>
        </attribute>
+       <widget class="QLineEdit" name="lineEditDBName">
+        <property name="geometry">
+         <rect>
+          <x>13</x>
+          <y>11</y>
+          <width>133</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonTestConn">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>10</y>
+          <width>51</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Connect</string>
+        </property>
+       </widget>
       </widget>
      </widget>
+    </item>
+    <item>
+     <widget class="QToolButton" name="toolButtonNotes">
+      <property name="text">
+       <string>notes</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditNotes"/>
     </item>
     <item>
      <widget class="QGroupBox" name="groupBox_2">
@@ -359,23 +382,6 @@
    </layout>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>243</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menuabout">
-    <property name="title">
-     <string>about</string>
-    </property>
-    <addaction name="actionVersion_0_1_0"/>
-   </widget>
-   <addaction name="menuabout"/>
-  </widget>
   <action name="actionVersion_0_1_0">
    <property name="text">
     <string>Version 0.2.0</string>
