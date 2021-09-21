@@ -16,6 +16,8 @@ DEFAULT_OUTPUT_DIR = 'output'
 ROUND1_DIR = 'round1'
 ROUND2_DIR = 'round2'
 CONFIG_FILE = 'sat16ev.cfg'
+ROUND1_PREFIX = '10'
+ROUND2_PREFIX = '20'
 
 TID_REGEX = "Tournament #(?P<tid>\d+)"
 BI_BOUNTY_RAKE_REGEX = TID_REGEX + ",\s\$(?P<bi>\d+?\.\d+)(?:\+\$)?(?P<bounty>\d+?\.\d+)?\+\$(?P<rake>\d+?\.\d+)"
@@ -86,15 +88,16 @@ def get_hands_list_from_hh(hh: str) -> List[str]:
     return res
 
 
-def split_sat_hh(hh: str) -> Tuple[str, str]:
+def split_sat_hh(hh: str, sats_only: bool = True) -> Tuple[str, str]:
     index: int
     linestart: int
     round1: str
     round2: str
 
-    index = hh.find('Match Round I')
-    if index == -1:
-        return ("", "")
+    if sats_only:
+        index = hh.find('Match Round I')
+        if index == -1:
+            return ("", "")
     index = hh.find('Match Round II')
     if index == -1:
         round1 = hh[:]
@@ -187,6 +190,7 @@ def get_hero(hh: str) -> str:
 def add_round1_winner(hh: str) -> str:
     """ paste string into round1 history
         if where are no winner, no hu, we will add random players finishes to let pt4 know what the payouts are
+        16.09.21 change logic. as soon as pt4 do not calculates ev no need to add winners to round 1
     """
     res = hh
     winner, remain_players = get_round1_winner(hh)
@@ -194,14 +198,15 @@ def add_round1_winner(hh: str) -> str:
     if winner:
         res = paste_finished(hh, winner, 1, bi * 4)
     else:
-        # there are cases then no message in hh about winning in HU
-        # if hero not finished tornament -> he wins HU
-        hero = get_hero(hh)
-        if hero in remain_players:
-            res = paste_finished(hh, hero, 1, bi * 4)
-        else:
-            for player in remain_players[:1]:
-                res = paste_finished(hh, player, 1, bi * 4)
+        pass
+        # # there are cases then no message in hh about winning in HU
+        # # if hero not finished tornament -> he wins HU
+        # hero = get_hero(hh)
+        # if hero in remain_players:
+        #     res = paste_finished(hh, hero, 1, bi * 4)
+        # else:
+        #     for player in remain_players[:1]:
+        #          res = paste_finished(hh, player, 1, bi * 4)
     return res
 
 
@@ -217,6 +222,9 @@ def fix_finishes_round1(hh: str) -> str:
 
 def fix_finishes_round2(hh: str) -> str:
 
+    """
+        16.09.21 change logic. as soon as pt4 do not calculates ev no need to add random winners
+    """
     res = hh
     matches = list(re.finditer('in (?:1st|2nd) place', hh))[::-1]
     bi = re.findall(BI_BOUNTY_RAKE_REGEX, hh)[0][1]
@@ -227,18 +235,19 @@ def fix_finishes_round2(hh: str) -> str:
         paste_str = f' and received ${prize}.'
         res = res[:paste_index] + paste_str + res[paste_index:]
     else:
+        pass
         # if there are no finishes add random winners to let pt4 know what the payouts are
 
-        prize_won = get_prize_won(hh)
-        if not prize_won:
-            winner, remain_players = get_round1_winner(hh)
-            if len(remain_players) == 3:
-                res = paste_finished(res, remain_players[0], 3, place_3)
-                res = paste_finished(res, remain_players[1], 1, prize)
-                res = paste_finished(res, remain_players[2], 1, prize)
+        # prize_won = get_prize_won(hh)
+        # if not prize_won:
+        #     winner, remain_players = get_round1_winner(hh)
+        #     if len(remain_players) == 3:
+        #         res = paste_finished(res, remain_players[0], 3, place_3)
+        #         res = paste_finished(res, remain_players[1], 1, prize)
+        #         res = paste_finished(res, remain_players[2], 1, prize)
 
     winner = get_tournament_winner(res)
-    " in 3 way all in case "
+    # in 3 way all in case
     if winner:
         res = paste_finished(res, winner, 1, prize)
     return res
@@ -268,6 +277,16 @@ def fix_summaries(hh: str) -> str:
 def open_hh(fn: str):
     p = Path(fn)
     return p.read_text(encoding='utf-8')
+
+
+def modify_round1_hh(hh):
+    result = add_round1_winner(fix_finishes_round1(rename_tournament(hh, ROUND1_PREFIX)))
+    return result
+
+
+def modify_round2_hh(hh):
+    hh = change_bi(remove_win_entry_round2(fix_finishes_round2(rename_tournament(hh, ROUND2_PREFIX))))
+    return hh.replace("Round II", "Round I")
 
 
 # Print iterations progress

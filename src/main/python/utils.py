@@ -1,6 +1,6 @@
 from pathlib import Path
 import json
-from typing import List
+from typing import List, Dict
 from pypokertools.parsers import PSHandHistory
 from datetime import datetime
 import logging
@@ -66,7 +66,7 @@ def save_config(config_current, config_file):
         raise RuntimeError("Config file saving error")
 
 
-def load_ps_notes(notes_file):
+def load_ps_notes(notes_file) -> Dict[str, str]:
     """
     load pokerstars player notes from xml file
     returns: dict {player: note}
