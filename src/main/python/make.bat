@@ -1,1 +1,2 @@
 pyinstaller --noconfirm --onefile --noconsole --hiddenimport "pkg_resources.py2_warn"  "Z:/cloud/SkyDrive/python-projects/hand-filter/src/main/python/main.py"
+move /y Z:\cloud\SkyDrive\python-projects\hand-filter\src\main\python\dist\main.exe Z:\cloud\SkyDrive\python-projects\hand-filter\src\main\python\dist\handproc.exe.

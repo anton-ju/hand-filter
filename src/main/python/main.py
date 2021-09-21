@@ -1,5 +1,5 @@
 from PyQt5.QtCore import QObject, QThread, pyqtSignal, pyqtSlot
-from PyQt5.QtWidgets import QMainWindow, QApplication, QFileDialog
+from PyQt5.QtWidgets import QMainWindow, QApplication, QFileDialog, QMessageBox
 import design
 import sys
 import time
@@ -9,6 +9,7 @@ from collections import namedtuple
 from pathlib import Path
 from sat16ev import get_output_dir, get_tournament_id, split_sat_hh, add_round1_winner, fix_finishes_round1
 from sat16ev import rename_tournament, change_bi, remove_win_entry_round2, fix_finishes_round2
+from sat16ev import modify_round1_hh, modify_round2_hh
 from pypokertools.parsers import PSHandHistory
 from pypokertools.storage.hand_storage import HandStorage
 from utils import get_path_dir_or_create, get_path_dir_or_error, load_config, save_config, get_ddmmyy_from_dt
@@ -19,6 +20,7 @@ import logging
 import filters
 import operator
 import datetime
+from typing import Dict, Callable
 
 CWD = Path.cwd()
 HandWriteEntry = namedtuple('HandWriteEntry', ['root_dir', 'file_name', 'text'])
@@ -31,7 +33,7 @@ fh = logging.FileHandler("handproc.log")
 fh.setFormatter(formatter)
 logger.addHandler(fh)
 
-VERSION = "0.3.2"
+VERSION = "0.3.3"
 # TODO add filters to config
 config = {
     "HERO": 'DiggErr555',
@@ -47,7 +49,9 @@ config = {
     'ROUND2_DIR': 'round2',
     'DB': 'Hand2Note3',
     'DATE_FROM': datetime.date(2020, 1, 1),
-    'DATE_TO': datetime.date.today()
+    'DATE_TO': datetime.date.today(),
+    'SATS_ONLY': True,
+    'SORT_ROUND1_HANDS': False,
 }
 
 
@@ -60,52 +64,66 @@ class HandProcessor(QObject):
     progress = pyqtSignal(int, int)
     writer_progress = pyqtSignal(int)
 
-    def run(self, file_list, notes, options, hand_filter, path, hands_write_queue, from_file=False):
+    def __init__(self):
+        self.skipped = 0
+        self.counter = 0
+        self.writer_counter = 0
+        super().__init__()
 
-        skipped = 0
-        counter = 0
-        self.progress.emit(counter, skipped)
-        self.writer_progress.emit(counter)
+    def run(self, file_list, notes, config, hand_filter, path, hands_write_queue, from_file=False,
+            round1_modifier: Callable[[str], str] = lambda x: x,
+            round2_modifier: Callable[[str], str] = lambda x: x):
+        """
+        @parameter
+            round1_modifier: function which exec on every hand round1 before send it to queue
+            round1_modifier: function which exec on every hand round2 before send it to queue
+        """
+
+        self.progress.emit(self.counter, self.skipped)
+        self.writer_progress.emit(self.counter)
         # total = len(file_list)
-        round1_path = path.joinpath(options['ROUND1_DIR'])
-        round2_path = path.joinpath(options['ROUND2_DIR'])
+        round1_path = path.joinpath(config['ROUND1_DIR'])
+        round2_path = path.joinpath(config['ROUND2_DIR'])
         logger.debug("Hand processor started")
         for file in file_list:
             QApplication.processEvents()
             if from_file:
                 s = file.read_text(encoding='utf-8')
                 if not s:
-                    skipped += 1
                     continue
             else:
                 s = file
                 file = "DB"
-            round1, round2 = split_sat_hh(s)
+            # TODO add tournament type detection. depend on detection split or not split,
+            # to split by position s not only satellite hands
+            round1, round2 = split_sat_hh(s, config['SATS_ONLY'])
 
             round1_hands = round1.strip().split('\n\n')
-            self.process_hands(round1_hands, file, notes, options, hand_filter, round1_path, hands_write_queue)
+            by_position = config["SORT_ROUND1_HANDS"]
+            self.process_hands(round1_hands, file, notes, config, hand_filter, round1_path, hands_write_queue,
+                               by_position=by_position,
+                               modifier=round1_modifier)
 
             # sorting round2 by positions
             round2_hands = round2.strip().split('\n\n')
-            self.process_hands(round2_hands, file, notes, options, hand_filter, round2_path,
-                          hands_write_queue, by_position=True)
+            self.process_hands(round2_hands, file, notes, config, hand_filter, round2_path, hands_write_queue,
+                               by_position=True,
+                               modifier=round2_modifier)
 
-            counter += 1
-            self.progress.emit(counter, skipped)
+            self.progress.emit(self.counter, self.skipped)
         logger.debug("Hand processor finished")
         self.write_hands(hands_write_queue)
         self.finished.emit()
 
     def write_hands(self, queue):
-        counter = 0
         while not queue.empty():
             QApplication.processEvents()
             try:
                 entry = queue.get_nowait()
                 if entry:
                     self.write_entry(entry)
-                    counter += 1
-                    self.writer_progress.emit(counter)
+                    self.writer_counter += 1
+                    self.writer_progress.emit(self.writer_counter)
             except Empty:
                 logger.exception("Exception Empty")
             except Exception as e:
@@ -126,7 +144,8 @@ class HandProcessor(QObject):
         dir_path.mkdir(parents=True, exist_ok=True)
         dir_path.joinpath(entry.file_name).write_text(entry.text, encoding='utf-8')
 
-    def process_hands(self, hands, file, notes, options, hand_filter, path, hands_write_query, by_position=False):
+    def process_hands(self, hands, file, notes, options, hand_filter,
+                      path, hands_write_query, by_position=False, modifier: Callable[[str], str] = lambda x: x):
         new_path = Path(path)
         for txt in hands:
             if bool(txt and txt.strip()):
@@ -140,6 +159,7 @@ class HandProcessor(QObject):
                     logger.debug("hh: " + parsed.hand_history)
                     continue
                 if hand_filter.check_conditions(parsed, notes=notes, config=options):
+                    self.counter += 1
                     if by_position:
                         try:
                             pos_str = get_positions_str(parsed)
@@ -147,7 +167,10 @@ class HandProcessor(QObject):
                         except (RuntimeError, KeyError) as e:
                             logger.exception('Exception %s in get_position_str in file: %s', e, file)
                             continue
+                    txt = modifier(txt)
                     self.append_write_entry(new_path, yy, mm, dd, parsed, txt, hands_write_query)
+                else:
+                    self.skipped += 1
 
 
 # class HandWriter(QObject):
@@ -219,6 +242,7 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
         self.toolButtonNotes.clicked.connect(self.set_notes)
         self.pushButtonStart.clicked.connect(self.start)
         self.pushButtonTestConn.clicked.connect(self.connect_db)
+        self.checkBoxSort.stateChanged.connect(self.set_sort_all_hands)
         self.config = dict(config)
         self.config_file = 'handproc.cfg'
         try:
@@ -233,6 +257,7 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
         self.lineEditOutput.setText(self.config.get("OUTPUT", ''))
         self.lineEditNotes.setText(self.config.get("NOTES", ''))
         self.lineEditDBName.setText(self.config.get("DB", ''))
+        self.checkBoxSort.setChecked(self.config.get("SORT_ROUND1_HANDS", False))
         # self.dteFrom.setDate(datetime.datetime.strptime(self.config.get("DATE_FROM", "2021-01-01"), '%Y-%m-%d'))
         # self.dteTo.setDate(datetime.datetime.strptime(self.config.get("DATE_TO", datetime.date.today().isoformat()), '%Y-%m-%d'))
         self.hand_filter = filters.HandFilter()
@@ -242,6 +267,10 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
         self.hand_write_queue = Queue()
 
         self.db = None
+        self.db_mode = False
+
+    def set_sort_all_hands(self):
+        self.config["SORT_ROUND1_HANDS"] = self.checkBoxSort.isChecked()
 
     def set_notes(self):
         file_name, _ = QFileDialog.getOpenFileName(self,
@@ -256,7 +285,7 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
 
         dir = self.lineEditInput.text() if self.lineEditInput.text() else str(CWD)
         directory = QFileDialog.getExistingDirectory(self,
-                                                     caption="Выберите папку",
+                                                     caption="Choose directory",
                                                      directory=dir)
 
         if directory:  # не продолжать выполнение, если пользователь не выбрал директорию
@@ -266,7 +295,7 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
     def set_output_folder(self):
         dir = self.lineEditOutput.text() if self.lineEditOutput.text() else str(CWD)
         directory = QFileDialog.getExistingDirectory(self,
-                                                     caption="Выберите папку",
+                                                     caption="Choose directory",
                                                      directory=dir)
 
         if directory:  # не продолжать выполнение, если пользователь не выбрал директорию
@@ -319,6 +348,7 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
         try:
             db = Hand2NoteDB(dbname=self.lineEditDBName.text())
             self.db = db
+            self.config["DB"] = self.lineEditDBName.text()
             self.statusBar().showMessage(f'Successfully connected!')
         except Exception as e:
             logger.exception('Exception %s in HandProcApp.connect_db', e)
@@ -327,36 +357,52 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
 
     @pyqtSlot(int, int)
     def report_processor_progress(self, counter, skipped):
-        self.processorLabel.setText(f"Processed files: {counter}  Skipped: {skipped}")
+        self.processorLabel.setText(f"Passed: {counter} Skipped: {skipped} Total: {counter + skipped}")
 
     @pyqtSlot(int)
     def report_writer_progress(self, value):
-        self.writerLabel.setText(f"Wrote hands: {str(value)}")
+        self.writerLabel.setText(f"Write hands: {str(value)}")
 
     def input_is_filled(self) -> bool:
+        is_filled = True
         input_dir = self.lineEditInput.text()
         output_dir = self.lineEditOutput.text()
         notes_file = self.lineEditNotes.text()
         if not notes_file.strip():
-            self.statusBar().showMessage("Fill notes file path")
-            return False
-        if self.tabWidget.currentIndex() != 1:
+            self.show_msgbox(QMessageBox.Critical, "Fill notes file path")
+            is_filled = False
+
+        if not self.db_mode:
             if input_dir.strip() and output_dir.strip():
-                self.statusBar().showMessage("Fill input and output directories paths!")
-            return False
-        return True
+                is_filled = True
+            else:
+                self.show_msgbox(QMessageBox.Critical, "Fill input and output directories paths!")
+                is_filled = False
+
+        return is_filled
+
+    def show_msgbox(self, msg_type, msg_text: str):
+        msg_box = QMessageBox()
+        msg_box.setIcon(msg_type)
+        msg_box.setText(msg_text)
+        msg_box.exec()
 
     def start(self):
+        self.db_mode = False
         input_dir = self.lineEditInput.text()
         output_dir = self.lineEditOutput.text()
         notes_file = self.lineEditNotes.text()
+        if self.tabWidget.currentIndex() == 1:
+            self.db_mode = True
+        else:
+            self.db_mode = False
 
-        self.statusBar().showMessage(f'Processing hand histories...')
         if self.input_is_filled():
+            self.statusBar().showMessage(f'Processing hand histories...')
             Options = namedtuple('Options', ['input_dir', 'output_dir', 'notes_file'])
             o = Options(input_dir, output_dir, notes_file)
             if self.radioEv.isChecked():
-                self.fix_hands_for_pt4(o)
+                self.split(o, fix=True)
             elif self.radioCsv.isChecked():
                 self.stats(o)
             elif self.radioSplit.isChecked():
@@ -369,7 +415,7 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
         try:
             input_path = get_path_dir_or_error(self.config["INPUT"])
         except RuntimeError as e:
-            self.statusBar().showMessage('Place hand history files in "input" directory')
+            self.show_msgbox(QMessageBox.Critical, 'Place hand history files in "input" directory')
             logger.exception('Exception %s in HandProcApp.fix_hands_for_pt4', e)
             return
         output_dir_path = get_path_dir_or_create(self.config["OUTPUT"])
@@ -416,6 +462,7 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
         self.progressBar.setValue(total)
         self.save_hands(hands_write_queue)
         self.statusBar().showMessage(f'Total hands processed: {counter}, skipped: {skipped}')
+
 
     def save_hands(self, queue):
         # self.statusBar().showMessage(f'Writing hands...')
@@ -485,7 +532,18 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
 
         self.statusBar().showMessage("Done!")
 
-    def start_processor_thread(self, file_list, notes, output_dir_path, total, finish_event, from_file=False):
+    def start_processor_thread(self, file_list, notes, output_dir_path, total, finish_event, from_file=False,
+                               round1_modifier: Callable[[str], str] = lambda x: x,
+                               round2_modifier: Callable[[str], str] = lambda x: x):
+        """
+        move calculations to separate thread to prevent GUI freeze
+        file_list:  contains list of filenames or list of text hand histories
+        notes: dict
+        output_dit_path: path to output dir
+        total: int counter
+        round1_modifier: function to exec before write hand history
+
+        """
 
         self.thread1 = QThread()
         self.processor = HandProcessor()
@@ -495,7 +553,7 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
 
         self.thread1.started.connect(
             lambda: self.processor.run(file_list, notes, self.config, self.hand_filter, output_dir_path,
-                                       self.hand_write_queue, from_file))
+                                       self.hand_write_queue, from_file, round1_modifier, round2_modifier))
 
         self.processor.finished.connect(self.thread1.quit)
         self.processor.finished.connect(self.processor.deleteLater)
@@ -508,6 +566,9 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
         )
         self.thread1.finished.connect(
             lambda: self.progressBar.setValue(total)
+        )
+        self.thread1.finished.connect(
+            lambda:  self.show_msgbox(QMessageBox.Information, 'Done')
         )
         # self.thread1.finished.connect(
         #     lambda: finish_event.set()
@@ -534,13 +595,13 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
     #     self.thread2.start()
     #     logger.debug("Thread2 started")
 
-    def split(self, options):
+    def split(self, options, fix=False):
 
         from_file = True
         # checking input and output directories
         # if visible tab 1 then take hands from db
         # else from disk
-        if self.tabWidget.currentIndex() == 1:
+        if self.db_mode:
             if self.db:
                 file_list = list(self.db.get_hh(self.dteFrom.dateTime(), self.dteTo.dateTime()))
                 from_file = False
@@ -558,7 +619,7 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
                 file_list = list(input_path.glob('**/*.txt'))
             except RuntimeError as e:
                 logger.exception('Exception %s in HandProcApp.split', e)
-                self.statusBar().showMessage('Place hand history files in "input" directory')
+                self.show_msgbox(QMessageBox.Critical, 'Place hand history files in "input" directory')
                 return
         output_dir_path = get_path_dir_or_create(options.output_dir)
 
@@ -572,15 +633,21 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
             notes = load_ps_notes(self.config["NOTES"])
         except RuntimeError as e:
             logger.exception('Exception %s in HandProcApp.split', e)
-            self.statusBar().showMessage(e)
+            self.show_msgbox(QMessageBox.Critical, f'Error while loading notes /n {e}')
+            return
 
         finish_event = Event()
         finish_event.clear()
-        self.start_processor_thread(file_list, notes, output_dir_path, total, finish_event, from_file)
+        if fix:
+            self.start_processor_thread(file_list, notes, output_dir_path, total, finish_event, from_file,
+                                        modify_round1_hh, modify_round2_hh)
+        else:
+            self.start_processor_thread(file_list, notes, output_dir_path, total, finish_event, from_file)
         # self.start_writer_thread(finish_event)
 
         self.pushButtonStart.setEnabled(False)
         # self.statusBar().showMessage(f'Total hands processed: {counter}, skipped: {skipped}')
+        # todo add button stop
 
     def sort(self, options):
         # this script filters hh of sats with 4 playrs tables, suits for 4max and for 3max
