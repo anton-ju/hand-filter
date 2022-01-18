@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>264</width>
-    <height>668</height>
+    <height>628</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,7 +24,7 @@
        </size>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -40,16 +40,6 @@
         </item>
         <item row="0" column="1">
          <widget class="QLineEdit" name="lineEditInput"/>
-        </item>
-        <item row="1" column="0">
-         <widget class="QToolButton" name="toolButtonOutput">
-          <property name="text">
-           <string>out</string>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="1">
-         <widget class="QLineEdit" name="lineEditOutput"/>
         </item>
        </layout>
       </widget>
@@ -84,14 +74,34 @@
      </widget>
     </item>
     <item>
-     <widget class="QToolButton" name="toolButtonNotes">
-      <property name="text">
-       <string>notes</string>
+     <layout class="QFormLayout" name="formLayout">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMinimumSize</enum>
       </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLineEdit" name="lineEditNotes"/>
+      <property name="formAlignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <item row="0" column="0">
+       <widget class="QToolButton" name="toolButtonOutput">
+        <property name="text">
+         <string>out</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEditOutput"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QToolButton" name="toolButtonNotes">
+        <property name="text">
+         <string>notes</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEditNotes"/>
+      </item>
+     </layout>
     </item>
     <item>
      <widget class="QGroupBox" name="groupBox_2">
@@ -224,7 +234,7 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <property name="sizeConstraint">
-       <enum>QLayout::SetMaximumSize</enum>
+       <enum>QLayout::SetMinimumSize</enum>
       </property>
       <item>
        <spacer name="horizontalSpacer">
@@ -270,13 +280,6 @@
      <widget class="QRadioButton" name="radioEv">
       <property name="text">
        <string>Fix hands for EV calculating</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QRadioButton" name="radioCsv">
-      <property name="text">
-       <string>Save summary to csv file</string>
       </property>
      </widget>
     </item>

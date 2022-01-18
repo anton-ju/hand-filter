@@ -427,8 +427,6 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
             o = Options(input_dir, output_dir, notes_file)
             if self.radioEv.isChecked():
                 self.split(o, fix=True)
-            elif self.radioCsv.isChecked():
-                self.stats(o)
             elif self.radioSplit.isChecked():
                 self.split(o)
 
@@ -444,61 +442,6 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
             dir_path.joinpath(entry.file_name).write_text(entry.text, encoding='utf-8')
             counter += 1
             # self.progressBar.setValue(counter)
-
-    def stats(self, options):
-        # counting statistics and saving in csv file
-
-        try:
-            input_path = get_path_dir_or_error(options.input_dir)
-        except RuntimeError as e:
-            self.statusBar().showMessage('Place hand history files in "input" directory')
-            logger.exception('Exception %s in HandProcApp.stats', e)
-            return
-        output_dir_path = get_path_dir_or_create(options.output_dir)
-
-        storage = HandStorage(options.input_dir)
-        total = len(list(storage.read_hand()))
-        counter = 0
-
-        self.statusBar().showMessage('Calculating...')
-        self.progressBar.reset()
-        self.progressBar.setRange(0, total)
-
-        csv_columns = ['tid', 'hid', 'player', 'bounty', 'cnt']
-        csv_file = "stats.csv"
-        stats = []
-
-        for txt in storage.read_hand():
-            counter += 1
-            try:
-                hh = PSGrandTourHistory(txt)
-            except Exception as e:
-                self.statusBar().showMessage("%s " % e)
-                continue
-            self.progressBar.setValue(counter)
-            try:
-                bounty_won = hh.bounty_won
-            except Exception as e:
-                logger.exception('Exception %s in HandProcApp.stats', e)
-                self.statusBar().showMessage(hh.hid)
-                return
-
-            if bounty_won:
-                tid = hh.tid
-                hid = hh.hid
-                for player, bounty in bounty_won.items():
-                    stats.append({'tid': tid, 'hid': hid, 'player': player, 'bounty': bounty, 'cnt': 1})
-
-        try:
-            with open(csv_file, 'w', newline='', encoding='utf-8') as csvfile:
-                writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
-                writer.writeheader()
-                writer.writerows(stats)
-        except IOError as e:
-            logger.exception('Exception %s in HandProcApp.stats', e)
-            self.statusBar().showMessage("%s " % e)
-
-        self.statusBar().showMessage("Done!")
 
     def start_processor_thread(self, notes, output_dir_path,
                                round1_modifier: Callable[[str], str] = lambda x: x,
