@@ -570,16 +570,12 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
         check self.db_mode and self.db if set to True then take hands from db else from path in self.config['INPUT']
         """
         if self.db_mode:
+            self.connect_db()
             if self.db:
-                res = self.db.get_hh(self.dteFrom.dateTime(), self.dteTo.dateTime())
-                # get_hh returns generator
+                for h in self.db.get_hh(self.dteFrom.dateTime(), self.dteTo.dateTime()):
+                    yield RawHandHistory(h, 'DB')
             else:
-                self.connect_db()
-                if self.db:
-                    for h in self.db.get_hh(self.dteFrom.dateTime(), self.dteTo.dateTime()):
-                        yield RawHandHistory(h, 'DB')
-                else:
-                    return
+                return
         else:
             try:
                 input_path = get_path_dir_or_error(self.config["INPUT"])
