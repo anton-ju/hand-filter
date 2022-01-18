@@ -33,7 +33,7 @@ fh = logging.FileHandler("handproc.log")
 fh.setFormatter(formatter)
 logger.addHandler(fh)
 
-VERSION = "0.3.4"
+VERSION = "0.3.5"
 # TODO add filters to config
 config = {
     "HERO": 'DiggErr555',
@@ -121,9 +121,17 @@ class HandProcessor(QObject):
         round2_hands = round2.strip().split('\n\n')
 
         by_position = self.config["SORT_ROUND1_HANDS"]
-        self.process_hands(round1_hands, raw_history.file_name, by_position=by_position, modifier=self.round1_func)
+        self.process_hands(round1_hands,
+                           raw_history.file_name,
+                           self.round1_path,
+                           by_position=by_position,
+                           modifier=self.round1_func)
         # sorting round2 by positions
-        self.process_hands(round2_hands, raw_history.file_name, by_position=True, modifier=self.round2_func)
+        self.process_hands(round2_hands,
+                           raw_history.file_name,
+                           self.round2_path,
+                           by_position=True,
+                           modifier=self.round2_func)
 
     def write_hands(self):
         queue = self.hands_write_queue
@@ -155,9 +163,14 @@ class HandProcessor(QObject):
         dir_path.mkdir(parents=True, exist_ok=True)
         dir_path.joinpath(entry.file_name).write_text(entry.text, encoding='utf-8')
 
-    def process_hands(self, hands: List[str], file_name: str,
-                      by_position: bool=False, modifier: Callable[[str], str] = lambda x: x):
-        new_path = Path(self.path)
+    def process_hands(self, hands: List[str],
+                      file_name: str,
+                      path: str,
+                      by_position: bool=False,
+                      modifier: Callable[[str], str] = lambda x: x,
+                      ):
+
+        new_path = Path(path)
         for txt in hands:
             if bool(txt and txt.strip()):
                 pos_str = '0'
@@ -414,66 +427,8 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
             o = Options(input_dir, output_dir, notes_file)
             if self.radioEv.isChecked():
                 self.split(o, fix=True)
-            elif self.radioCsv.isChecked():
-                self.stats(o)
             elif self.radioSplit.isChecked():
                 self.split(o)
-
-    def fix_hands_for_pt4(self, options):
-        """ change original hand histories to load into pt4
-        """
-        # checking if there correct input ind output folders
-        try:
-            input_path = get_path_dir_or_error(self.config["INPUT"])
-        except RuntimeError as e:
-            self.show_msgbox(QMessageBox.Critical, 'Place hand history files in "input" directory')
-            logger.exception('Exception %s in HandProcApp.fix_hands_for_pt4', e)
-            return
-        output_dir_path = get_path_dir_or_create(self.config["OUTPUT"])
-
-        file_list = list(input_path.glob('**/*.txt'))
-        total = len(file_list)
-        counter = 0
-        skipped = 0
-        hands_write_queue = Queue()
-        round1_path = output_dir_path.joinpath(self.config['ROUND1_DIR'])
-        round2_path = output_dir_path.joinpath(self.config['ROUND2_DIR'])
-        self.progressBar.reset()
-        self.progressBar.setRange(0, total)
-
-        for file in file_list:
-            counter += 1
-            s = file.read_text(encoding='utf-8')
-            tid = get_tournament_id(s)
-            round1, round2 = split_sat_hh(s)
-            if not round1 and not round2:
-                skipped += 1
-                continue
-            dt = get_dt_from_hh(round1)
-            dd, mm, yy = str(dt.day), str(dt.month), str(dt.year)
-            text = ''
-            root_dir_path = None
-            prefix = self.config['ROUND1_PREFIX']
-            if bool(round1 and round1.strip()):
-                text = add_round1_winner(fix_finishes_round1(rename_tournament(round1, prefix)))
-                root_dir_path = round1_path.joinpath(yy).joinpath(mm).joinpath(dd)
-                entry = HandWriteEntry(root_dir_path, prefix + file.name, text)
-                hands_write_queue.put_nowait(entry)
-
-            if bool(round2 and round2.strip()):
-                prefix = self.config['ROUND2_PREFIX']
-                round2 = change_bi(remove_win_entry_round2(fix_finishes_round2(rename_tournament(round2, prefix))))
-                text = round2.replace("Round II", "Round I")
-                root_dir_path = round2_path.joinpath(yy).joinpath(mm).joinpath(dd)
-                entry = HandWriteEntry(root_dir_path, prefix + file.name, text)
-                hands_write_queue.put_nowait(entry)
-
-            self.progressBar.setValue(counter)
-
-        self.progressBar.setValue(total)
-        self.save_hands(hands_write_queue)
-        self.statusBar().showMessage(f'Total hands processed: {counter}, skipped: {skipped}')
-
 
     def save_hands(self, queue):
         # self.statusBar().showMessage(f'Writing hands...')
@@ -487,61 +442,6 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
             dir_path.joinpath(entry.file_name).write_text(entry.text, encoding='utf-8')
             counter += 1
             # self.progressBar.setValue(counter)
-
-    def stats(self, options):
-        # counting statistics and saving in csv file
-
-        try:
-            input_path = get_path_dir_or_error(options.input_dir)
-        except RuntimeError as e:
-            self.statusBar().showMessage('Place hand history files in "input" directory')
-            logger.exception('Exception %s in HandProcApp.stats', e)
-            return
-        output_dir_path = get_path_dir_or_create(options.output_dir)
-
-        storage = HandStorage(options.input_dir)
-        total = len(list(storage.read_hand()))
-        counter = 0
-
-        self.statusBar().showMessage('Calculating...')
-        self.progressBar.reset()
-        self.progressBar.setRange(0, total)
-
-        csv_columns = ['tid', 'hid', 'player', 'bounty', 'cnt']
-        csv_file = "stats.csv"
-        stats = []
-
-        for txt in storage.read_hand():
-            counter += 1
-            try:
-                hh = PSGrandTourHistory(txt)
-            except Exception as e:
-                self.statusBar().showMessage("%s " % e)
-                continue
-            self.progressBar.setValue(counter)
-            try:
-                bounty_won = hh.bounty_won
-            except Exception as e:
-                logger.exception('Exception %s in HandProcApp.stats', e)
-                self.statusBar().showMessage(hh.hid)
-                return
-
-            if bounty_won:
-                tid = hh.tid
-                hid = hh.hid
-                for player, bounty in bounty_won.items():
-                    stats.append({'tid': tid, 'hid': hid, 'player': player, 'bounty': bounty, 'cnt': 1})
-
-        try:
-            with open(csv_file, 'w', newline='', encoding='utf-8') as csvfile:
-                writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
-                writer.writeheader()
-                writer.writerows(stats)
-        except IOError as e:
-            logger.exception('Exception %s in HandProcApp.stats', e)
-            self.statusBar().showMessage("%s " % e)
-
-        self.statusBar().showMessage("Done!")
 
     def start_processor_thread(self, notes, output_dir_path,
                                round1_modifier: Callable[[str], str] = lambda x: x,
@@ -613,16 +513,12 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
         check self.db_mode and self.db if set to True then take hands from db else from path in self.config['INPUT']
         """
         if self.db_mode:
+            self.connect_db()
             if self.db:
-                res = self.db.get_hh(self.dteFrom.dateTime(), self.dteTo.dateTime())
-                # get_hh returns generator
+                for h in self.db.get_hh(self.dteFrom.dateTime(), self.dteTo.dateTime()):
+                    yield RawHandHistory(h, 'DB')
             else:
-                self.connect_db()
-                if self.db:
-                    for h in self.db.get_hh(self.dteFrom.dateTime(), self.dteTo.dateTime()):
-                        yield RawHandHistory(h, 'DB')
-                else:
-                    return
+                return
         else:
             try:
                 input_path = get_path_dir_or_error(self.config["INPUT"])
