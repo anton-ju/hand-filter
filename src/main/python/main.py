@@ -33,7 +33,7 @@ fh = logging.FileHandler("handproc.log")
 fh.setFormatter(formatter)
 logger.addHandler(fh)
 
-VERSION = "0.3.4"
+VERSION = "0.3.5"
 # TODO add filters to config
 config = {
     "HERO": 'DiggErr555',
