@@ -121,9 +121,17 @@ class HandProcessor(QObject):
         round2_hands = round2.strip().split('\n\n')
 
         by_position = self.config["SORT_ROUND1_HANDS"]
-        self.process_hands(round1_hands, raw_history.file_name, by_position=by_position, modifier=self.round1_func)
+        self.process_hands(round1_hands,
+                           raw_history.file_name,
+                           self.round1_path,
+                           by_position=by_position,
+                           modifier=self.round1_func)
         # sorting round2 by positions
-        self.process_hands(round2_hands, raw_history.file_name, by_position=True, modifier=self.round2_func)
+        self.process_hands(round2_hands,
+                           raw_history.file_name,
+                           self.round2_path,
+                           by_position=True,
+                           modifier=self.round2_func)
 
     def write_hands(self):
         queue = self.hands_write_queue
@@ -155,9 +163,14 @@ class HandProcessor(QObject):
         dir_path.mkdir(parents=True, exist_ok=True)
         dir_path.joinpath(entry.file_name).write_text(entry.text, encoding='utf-8')
 
-    def process_hands(self, hands: List[str], file_name: str,
-                      by_position: bool=False, modifier: Callable[[str], str] = lambda x: x):
-        new_path = Path(self.path)
+    def process_hands(self, hands: List[str],
+                      file_name: str,
+                      path: str,
+                      by_position: bool=False,
+                      modifier: Callable[[str], str] = lambda x: x,
+                      ):
+
+        new_path = Path(path)
         for txt in hands:
             if bool(txt and txt.strip()):
                 pos_str = '0'
@@ -418,62 +431,6 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
                 self.stats(o)
             elif self.radioSplit.isChecked():
                 self.split(o)
-
-    def fix_hands_for_pt4(self, options):
-        """ change original hand histories to load into pt4
-        """
-        # checking if there correct input ind output folders
-        try:
-            input_path = get_path_dir_or_error(self.config["INPUT"])
-        except RuntimeError as e:
-            self.show_msgbox(QMessageBox.Critical, 'Place hand history files in "input" directory')
-            logger.exception('Exception %s in HandProcApp.fix_hands_for_pt4', e)
-            return
-        output_dir_path = get_path_dir_or_create(self.config["OUTPUT"])
-
-        file_list = list(input_path.glob('**/*.txt'))
-        total = len(file_list)
-        counter = 0
-        skipped = 0
-        hands_write_queue = Queue()
-        round1_path = output_dir_path.joinpath(self.config['ROUND1_DIR'])
-        round2_path = output_dir_path.joinpath(self.config['ROUND2_DIR'])
-        self.progressBar.reset()
-        self.progressBar.setRange(0, total)
-
-        for file in file_list:
-            counter += 1
-            s = file.read_text(encoding='utf-8')
-            tid = get_tournament_id(s)
-            round1, round2 = split_sat_hh(s)
-            if not round1 and not round2:
-                skipped += 1
-                continue
-            dt = get_dt_from_hh(round1)
-            dd, mm, yy = str(dt.day), str(dt.month), str(dt.year)
-            text = ''
-            root_dir_path = None
-            prefix = self.config['ROUND1_PREFIX']
-            if bool(round1 and round1.strip()):
-                text = add_round1_winner(fix_finishes_round1(rename_tournament(round1, prefix)))
-                root_dir_path = round1_path.joinpath(yy).joinpath(mm).joinpath(dd)
-                entry = HandWriteEntry(root_dir_path, prefix + file.name, text)
-                hands_write_queue.put_nowait(entry)
-
-            if bool(round2 and round2.strip()):
-                prefix = self.config['ROUND2_PREFIX']
-                round2 = change_bi(remove_win_entry_round2(fix_finishes_round2(rename_tournament(round2, prefix))))
-                text = round2.replace("Round II", "Round I")
-                root_dir_path = round2_path.joinpath(yy).joinpath(mm).joinpath(dd)
-                entry = HandWriteEntry(root_dir_path, prefix + file.name, text)
-                hands_write_queue.put_nowait(entry)
-
-            self.progressBar.setValue(counter)
-
-        self.progressBar.setValue(total)
-        self.save_hands(hands_write_queue)
-        self.statusBar().showMessage(f'Total hands processed: {counter}, skipped: {skipped}')
-
 
     def save_hands(self, queue):
         # self.statusBar().showMessage(f'Writing hands...')
