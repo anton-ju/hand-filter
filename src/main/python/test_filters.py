@@ -90,6 +90,24 @@ def test_co_fish_filter():
     assert result == expected
 
 
+def test_bu_covers_sb_bb():
+    th = Path('cases/pko/ps-44-pko-8p.txt').read_text(encoding='utf-8')
+    parsed = PSHandHistory(th)
+    f = filters.BUCoversSBBB()
+    result = f(parsed, **{'notes': notes, 'config': config})
+    expected = True
+    assert result == expected
+
+
+def test_bu_not_covers_sb_bb():
+    th = Path('cases/pko/ps-44-pko-7p-aipreflop.txt').read_text(encoding='utf-8')
+    parsed = PSHandHistory(th)
+    f = filters.BUCoversSBBB()
+    result = f(parsed, **{'notes': notes, 'config': config})
+    expected = False
+    assert result == expected
+
+
 def test_hand_filter_match_3conditions():
     hf = HandFilter()
     th = Path('cases/bb-not-reg.txt').read_text(encoding='utf-8')

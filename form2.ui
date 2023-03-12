@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>264</width>
-    <height>628</height>
+    <width>314</width>
+    <height>790</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -285,20 +285,42 @@
     </item>
     <item>
      <widget class="QGroupBox" name="gbFilters">
-      <property name="maximumSize">
-       <size>
-        <width>16777215</width>
-        <height>119</height>
-       </size>
-      </property>
       <property name="title">
        <string>Filters</string>
       </property>
       <layout class="QGridLayout" name="gridLayout_2">
-       <item row="2" column="0">
-        <widget class="QCheckBox" name="checkBoxBuReg">
+       <item row="7" column="1">
+        <widget class="QCheckBox" name="checkBoxBuNotCoversSBBB">
          <property name="text">
-          <string>BU reg</string>
+          <string>BU NOT covers BB, SB</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QCheckBox" name="checkBoxBuCoversSBnotBB">
+         <property name="text">
+          <string>BU covers SB NOT BB</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QCheckBox" name="checkBoxBuCoversBBNotSB">
+         <property name="text">
+          <string>BU covers BB NOT SB</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="1">
+        <widget class="QCheckBox" name="checkBoxCOCoversSBBB">
+         <property name="text">
+          <string>CO covers SB,BB</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="0">
+        <widget class="QCheckBox" name="checkBoxCOCoversBUSB">
+         <property name="text">
+          <string>CO covers BU, SB</string>
          </property>
         </widget>
        </item>
@@ -348,6 +370,76 @@
         <widget class="QCheckBox" name="checkBoxCoFish">
          <property name="text">
           <string>CO fish</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QCheckBox" name="checkBoxBuCoversSBBB">
+         <property name="text">
+          <string>BU covers BB, SB</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QCheckBox" name="checkBoxBuReg">
+         <property name="text">
+          <string>BU reg</string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="0">
+        <widget class="QCheckBox" name="checkBoxCOCoversBUBB">
+         <property name="text">
+          <string>CO covers BU, BB</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="0">
+        <widget class="QCheckBox" name="checkBoxCOCoversBUSBBB">
+         <property name="text">
+          <string>CO covers BU,SB,BB</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="0">
+        <widget class="Line" name="line">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="Line" name="line_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="1">
+        <widget class="QCheckBox" name="checkBoxCONotCoversBUSBBB">
+         <property name="text">
+          <string>CO NOT covers BU,SB,BB</string>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="0">
+        <widget class="QCheckBox" name="checkBoxCOCoversBU">
+         <property name="text">
+          <string>CO covers BU</string>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="1">
+        <widget class="QCheckBox" name="checkBoxCOCoversSB">
+         <property name="text">
+          <string>CO covers SB</string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="1">
+        <widget class="QCheckBox" name="checkBoxCOCoversBB">
+         <property name="text">
+          <string>CO covers BB</string>
          </property>
         </widget>
        </item>

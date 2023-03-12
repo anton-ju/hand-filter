@@ -33,7 +33,7 @@ fh = logging.FileHandler("handproc.log")
 fh.setFormatter(formatter)
 logger.addHandler(fh)
 
-VERSION = "0.3.5"
+VERSION = "0.3.6"
 # TODO add filters to config
 config = {
     "HERO": 'DiggErr555',
@@ -366,6 +366,55 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
 
         if self.checkBoxBbFish.isChecked():
             cond = filters.BBFishFilter()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxBuCoversSBBB.isChecked():
+            cond = filters.BUCoversSBBB()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxBuNotCoversSBBB.isChecked():
+            cond = filters.BUNotCoversSBBB()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxBuCoversBBNotSB.isChecked():
+            cond = filters.BUCoversBBNotSB()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxBuCoversSBnotBB.isChecked():
+            cond = filters.BUCoversSBNotBB()
+            self.hand_filter.add_condition(cond)
+
+        #co filters
+        if self.checkBoxCOCoversBUSBBB.isChecked():
+            cond = filters.COCoversBUSBBB()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxCONotCoversBUSBBB.isChecked():
+            cond = filters.CONotCoversBUSBBB()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxCOCoversBU.isChecked():
+            cond = filters.COCoversBU()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxCOCoversBUSB.isChecked():
+            cond = filters.COCoversBUSB()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxCOCoversBUBB.isChecked():
+            cond = filters.COCoversBUBB()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxCOCoversSB.isChecked():
+            cond = filters.COCoversSB()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxCOCoversSBBB.isChecked():
+            cond = filters.COCoversSBBB()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxCOCoversBB.isChecked():
+            cond = filters.COCoversBB()
             self.hand_filter.add_condition(cond)
 
     def connect_db(self):
