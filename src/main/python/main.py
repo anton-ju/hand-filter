@@ -21,6 +21,7 @@ import filters
 import operator
 import datetime
 from typing import Dict, Callable, List, Generator, NamedTuple
+from collections import defaultdict
 
 CWD = Path.cwd()
 HandWriteEntry = namedtuple('HandWriteEntry', ['root_dir', 'file_name', 'text'])
@@ -33,7 +34,7 @@ fh = logging.FileHandler("handproc.log")
 fh.setFormatter(formatter)
 logger.addHandler(fh)
 
-VERSION = "0.3.6"
+VERSION = "0.3.8"
 # TODO add filters to config
 config = {
     "HERO": 'DiggErr555',
@@ -89,6 +90,7 @@ class HandProcessor(QObject):
         self.writer_counter = 0
         self.round1_path = path.joinpath(config['ROUND1_DIR'])
         self.round2_path = path.joinpath(config['ROUND2_DIR'])
+        self.write_txt_dict = defaultdict(list)
         super().__init__()
 
     def run(self, hist_iter):
@@ -134,28 +136,26 @@ class HandProcessor(QObject):
                            modifier=self.round2_func)
 
     def write_hands(self):
-        queue = self.hands_write_queue
-        while not queue.empty():
+        # queue = self.hands_write_queue
+        # while not queue.empty():
+        for key, value in self.write_txt_dict.items():
             QApplication.processEvents()
             try:
-                entry = queue.get_nowait()
-                if entry:
-                    self.write_entry(entry)
-                    self.writer_counter += 1
-                    self.writer_progress.emit(self.writer_counter)
-            except Empty:
-                logger.exception("Exception Empty")
+                text = '\n\n'.join(value)
+                file_path = Path(key)
+                file_path.parent.mkdir(parents=True, exist_ok=True)
+                file_path.write_text(text, encoding='utf-8')
+                # self.write_entry(entry)
+                self.writer_counter += 1
+                self.writer_progress.emit(self.writer_counter)
             except Exception as e:
-                if entry:
-                    logger.exception('Exception %s while writing file: %s in dir: $s', e, entry.file_name, entry.root_dir)
-                else:
-                    logger.exception('Exception %s', e)
+                logger.exception('Exception %s while writing file: %s', e, key)
 
-    @staticmethod
-    def append_write_entry(path, yy, mm, dd, parsed, txt, hands_write_queue):
-        write_path = path.joinpath(yy).joinpath(mm).joinpath(dd)
-        entry = HandWriteEntry(write_path, parsed.hid + '.txt', txt)
-        hands_write_queue.put_nowait(entry)
+    def append_write_entry(self, path, yy, mm, dd, parsed, txt, hands_write_queue):
+        write_path = path.joinpath(yy).joinpath(mm).joinpath(yy + mm + dd + '.txt')
+        self.write_txt_dict[write_path].append(txt)
+        # entry = HandWriteEntry(write_path, parsed.hid + '.txt', txt)
+        # hands_write_queue.put_nowait(entry)
 
     @staticmethod
     def write_entry(entry):
@@ -434,7 +434,7 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
 
     @pyqtSlot(int)
     def report_writer_progress(self, value):
-        self.writerLabel.setText(f"Write hands: {str(value)}")
+        self.writerLabel.setText(f"Write files: {str(value)}")
 
     def input_is_filled(self) -> bool:
         is_filled = True
