@@ -46,7 +46,7 @@ def load_config(config_file):
             config_json = f.read()
             if config_json == '':
                 return []
-            return json.loads(config_json, encoding='utf-8')
+            return json.loads(config_json)
     except IOError:
         raise RuntimeError("Config file opening error")
     except json.JSONDecodeError:
