@@ -34,7 +34,7 @@ fh = logging.FileHandler("handproc.log")
 fh.setFormatter(formatter)
 logger.addHandler(fh)
 
-VERSION = "0.3.8"
+VERSION = "0.3.9"
 # TODO add filters to config
 config = {
     "HERO": 'DiggErr555',
@@ -57,7 +57,7 @@ config = {
 
 
 class PSGrandTourHistory(PSHandHistory):
-    BOUNTY_WON_REGEX = "(?P<player>.*) wins \$(?P<bounty>.*) for eliminating "
+    BOUNTY_WON_REGEX = r"(?P<player>.*) wins \$(?P<bounty>.*) for eliminating "
 
 
 class RawHandHistory(NamedTuple):
@@ -415,6 +415,54 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
 
         if self.checkBoxCOCoversBB.isChecked():
             cond = filters.COCoversBB()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxUTGCoversAll.isChecked():
+            cond = filters.UTGCoversAll()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxUTGNotCoversAll.isChecked():
+            cond = filters.UTGNotCoversAll()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxMPCoversAll.isChecked():
+            cond = filters.MPCoversAll()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxMPNotCoversAll.isChecked():
+            cond = filters.MPNotCoversAll()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxEPCoversAll.isChecked():
+            cond = filters.EPCoversAll()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxEPNotCoversAll.isChecked():
+            cond = filters.EPNotCoversAll()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxLJCoversAll.isChecked():
+            cond = filters.LJCoversAll()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxLJNotCoversAll.isChecked():
+            cond = filters.LJNotCoversAll()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxHJCoversAll.isChecked():
+            cond = filters.HJCoversAll()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxHJNotCoversAll.isChecked():
+            cond = filters.HJNotCoversAll()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxSBCoversBB.isChecked():
+            cond = filters.SBCoversBB()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxSBNotCoversBB.isChecked():
+            cond = filters.SBNotCoversBB()
             self.hand_filter.add_condition(cond)
 
     def connect_db(self):

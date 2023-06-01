@@ -200,6 +200,49 @@ class Ui_MainWindow(object):
         self.checkBoxCOCoversBB = QtWidgets.QCheckBox(self.gbFilters)
         self.checkBoxCOCoversBB.setObjectName("checkBoxCOCoversBB")
         self.gridLayout_2.addWidget(self.checkBoxCOCoversBB, 14, 1, 1, 1)
+
+        self.checkBoxUTGCoversAll = QtWidgets.QCheckBox(self.gbFilters)
+        self.checkBoxUTGCoversAll.setObjectName("checkBoxUTGCoversAll")
+        self.gridLayout_2.addWidget(self.checkBoxUTGCoversAll, 16, 0, 1, 1)
+        self.checkBoxUTGNotCoversAll = QtWidgets.QCheckBox(self.gbFilters)
+        self.checkBoxUTGNotCoversAll.setObjectName("checkBoxUTGNotCoversAll ")
+        self.gridLayout_2.addWidget(self.checkBoxUTGNotCoversAll, 16, 1, 1, 1)
+
+        self.checkBoxMPCoversAll = QtWidgets.QCheckBox(self.gbFilters)
+        self.checkBoxMPCoversAll.setObjectName("checkBoxMPCoversAll")
+        self.gridLayout_2.addWidget(self.checkBoxMPCoversAll, 17, 0, 1, 1)
+        self.checkBoxMPNotCoversAll = QtWidgets.QCheckBox(self.gbFilters)
+        self.checkBoxMPNotCoversAll.setObjectName("checkBoxMPNotCoversAll ")
+        self.gridLayout_2.addWidget(self.checkBoxMPNotCoversAll, 17, 1, 1, 1)
+
+        self.checkBoxEPCoversAll = QtWidgets.QCheckBox(self.gbFilters)
+        self.checkBoxEPCoversAll.setObjectName("checkBoxEPCoversAll")
+        self.gridLayout_2.addWidget(self.checkBoxEPCoversAll, 18, 0, 1, 1)
+        self.checkBoxEPNotCoversAll = QtWidgets.QCheckBox(self.gbFilters)
+        self.checkBoxEPNotCoversAll.setObjectName("checkBoxEPNotCoversAll ")
+        self.gridLayout_2.addWidget(self.checkBoxEPNotCoversAll, 18, 1, 1, 1)
+
+        self.checkBoxLJCoversAll = QtWidgets.QCheckBox(self.gbFilters)
+        self.checkBoxLJCoversAll.setObjectName("checkBoxLJCoversAll")
+        self.gridLayout_2.addWidget(self.checkBoxLJCoversAll, 19, 0, 1, 1)
+        self.checkBoxLJNotCoversAll = QtWidgets.QCheckBox(self.gbFilters)
+        self.checkBoxLJNotCoversAll.setObjectName("checkBoxLJNotCoversAll ")
+        self.gridLayout_2.addWidget(self.checkBoxLJNotCoversAll, 19, 1, 1, 1)
+
+        self.checkBoxHJCoversAll = QtWidgets.QCheckBox(self.gbFilters)
+        self.checkBoxHJCoversAll.setObjectName("checkBoxHJCoversAll")
+        self.gridLayout_2.addWidget(self.checkBoxHJCoversAll, 20, 0, 1, 1)
+        self.checkBoxHJNotCoversAll = QtWidgets.QCheckBox(self.gbFilters)
+        self.checkBoxHJNotCoversAll.setObjectName("checkBoxHJNotCoversAll ")
+        self.gridLayout_2.addWidget(self.checkBoxHJNotCoversAll, 20, 1, 1, 1)
+
+        self.checkBoxSBCoversBB = QtWidgets.QCheckBox(self.gbFilters)
+        self.checkBoxSBCoversBB.setObjectName("checkBoxSBCoversBB")
+        self.gridLayout_2.addWidget(self.checkBoxSBCoversBB, 21, 0, 1, 1)
+        self.checkBoxSBNotCoversBB= QtWidgets.QCheckBox(self.gbFilters)
+        self.checkBoxSBNotCoversBB.setObjectName("checkBoxSBNotCoversBB")
+        self.gridLayout_2.addWidget(self.checkBoxSBNotCoversBB, 21, 1, 1, 1)
+
         self.verticalLayout.addWidget(self.gbFilters)
         self.progressBar = QtWidgets.QProgressBar(self.centralwidget)
         self.progressBar.setProperty("value", 24)
@@ -266,5 +309,24 @@ class Ui_MainWindow(object):
         self.checkBoxCOCoversBU.setText(_translate("MainWindow", "CO covers BU"))
         self.checkBoxCOCoversSB.setText(_translate("MainWindow", "CO covers SB"))
         self.checkBoxCOCoversBB.setText(_translate("MainWindow", "CO covers BB"))
+
+        self.checkBoxUTGCoversAll.setText(_translate("MainWindow", "UTG covers All"))
+        self.checkBoxUTGNotCoversAll.setText(_translate("MainWindow", "UTG not covers All"))
+
+        self.checkBoxMPCoversAll.setText(_translate("MainWindow", "MP covers All"))
+        self.checkBoxMPNotCoversAll.setText(_translate("MainWindow", "MP not covers All"))
+
+        self.checkBoxEPCoversAll.setText(_translate("MainWindow", "EP covers All"))
+        self.checkBoxEPNotCoversAll.setText(_translate("MainWindow", "EP not covers All"))
+
+        self.checkBoxLJCoversAll.setText(_translate("MainWindow", "LJ covers All"))
+        self.checkBoxLJNotCoversAll.setText(_translate("MainWindow", "LJ not covers All"))
+
+        self.checkBoxHJCoversAll.setText(_translate("MainWindow", "HJ covers All"))
+        self.checkBoxHJNotCoversAll.setText(_translate("MainWindow", "HJ not covers All"))
+
+        self.checkBoxSBCoversBB.setText(_translate("MainWindow", "SB covers BB"))
+        self.checkBoxSBNotCoversBB.setText(_translate("MainWindow", "SB not covers BB"))
+
         self.pushButtonStart.setText(_translate("MainWindow", "Start"))
         self.actionVersion_0_1_0.setText(_translate("MainWindow", "Version 0.2.0"))

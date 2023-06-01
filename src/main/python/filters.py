@@ -325,3 +325,236 @@ class COCoversBUBB:
         else:
             return False
 
+
+class UTGCoversAll:
+    def __call__(self, hh, **kwargs):
+
+        try:
+            chips = hh.position_chips
+        except Exception as e:
+            logger.exception(e)
+            logger.exception(hh.hid)
+            return False
+
+        p_chips = chips.get('UTG', 0)
+        if p_chips > 0:
+            for _, chip in chips.items():
+                if p_chips < chip:
+                    return False
+        else:
+            return False
+        return True
+
+
+class UTGNotCoversAll:
+    def __call__(self, hh, **kwargs):
+
+        try:
+            chips = hh.position_chips
+        except Exception as e:
+            logger.exception(e)
+            logger.exception(hh.hid)
+            return False
+
+        p_chips = chips.get('UTG', 0)
+        if p_chips > 0:
+            for _, chip in chips.items():
+                if p_chips > chip:
+                    return False
+        else:
+            return False
+        return True
+
+
+class MPCoversAll:
+    def __call__(self, hh, **kwargs):
+
+        try:
+            chips = hh.position_chips
+        except Exception as e:
+            logger.exception(e)
+            logger.exception(hh.hid)
+            return False
+
+        p_chips = chips.get('MP', 0)
+        if p_chips > 0:
+            for _, chip in chips.items():
+                if p_chips < chip:
+                    return False
+        else:
+            return False
+        return True
+
+
+class MPNotCoversAll:
+    def __call__(self, hh, **kwargs):
+
+        try:
+            chips = hh.position_chips
+        except Exception as e:
+            logger.exception(e)
+            logger.exception(hh.hid)
+            return False
+
+        p_chips = chips.get('MP', 0)
+        if p_chips > 0:
+            for _, chip in chips.items():
+                if p_chips > chip:
+                    return False
+        else:
+            return False
+        return True
+
+
+class EPCoversAll:
+    def __call__(self, hh, **kwargs):
+
+        try:
+            chips = hh.position_chips
+        except Exception as e:
+            logger.exception(e)
+            logger.exception(hh.hid)
+            return False
+
+        p_chips = chips.get('EP', 0)
+        if p_chips > 0:
+            for _, chip in chips.items():
+                if p_chips < chip:
+                    return False
+        else:
+            return False
+        return True
+
+
+class EPNotCoversAll:
+    def __call__(self, hh, **kwargs):
+
+        try:
+            chips = hh.position_chips
+        except Exception as e:
+            logger.exception(e)
+            logger.exception(hh.hid)
+            return False
+
+        p_chips = chips.get('EP', 0)
+        if p_chips > 0:
+            for _, chip in chips.items():
+                if p_chips > chip:
+                    return False
+        else:
+            return False
+        return True
+
+
+class LJCoversAll:
+    def __call__(self, hh, **kwargs):
+
+        try:
+            chips = hh.position_chips
+        except Exception as e:
+            logger.exception(e)
+            logger.exception(hh.hid)
+            return False
+
+        p_chips = chips.get('LJ', 0)
+        if p_chips > 0:
+            for _, chip in chips.items():
+                if p_chips < chip:
+                    return False
+        else:
+            return False
+        return True
+
+
+class LJNotCoversAll:
+    def __call__(self, hh, **kwargs):
+
+        try:
+            chips = hh.position_chips
+        except Exception as e:
+            logger.exception(e)
+            logger.exception(hh.hid)
+            return False
+
+        p_chips = chips.get('LJ', 0)
+        if p_chips > 0:
+            for _, chip in chips.items():
+                if p_chips > chip:
+                    return False
+        else:
+            return False
+        return True
+
+
+class HJCoversAll:
+    def __call__(self, hh, **kwargs):
+
+        try:
+            chips = hh.position_chips
+        except Exception as e:
+            logger.exception(e)
+            logger.exception(hh.hid)
+            return False
+
+        p_chips = chips.get('HJ', 0)
+        if p_chips > 0:
+            for _, chip in chips.items():
+                if p_chips < chip:
+                    return False
+        else:
+            return False
+        return True
+
+
+class HJNotCoversAll:
+    def __call__(self, hh, **kwargs):
+
+        try:
+            chips = hh.position_chips
+        except Exception as e:
+            logger.exception(e)
+            logger.exception(hh.hid)
+            return False
+
+        p_chips = chips.get('HJ', 0)
+        if p_chips > 0:
+            for _, chip in chips.items():
+                if p_chips > chip:
+                    return False
+        else:
+            return False
+        return True
+
+
+class SBCoversBB:
+    def __call__(self, hh, **kwargs):
+
+        try:
+            chips = hh.position_chips
+        except Exception as e:
+            logger.exception(e)
+            logger.exception(hh.hid)
+            return False
+
+        p_chips = chips.get('HJ', 0)
+        if chips.get('SB', 0) >= chips.get('BB', 0):
+            return True
+        else:
+            return False
+
+
+class SBNotCoversBB:
+    def __call__(self, hh, **kwargs):
+
+        try:
+            chips = hh.position_chips
+        except Exception as e:
+            logger.exception(e)
+            logger.exception(hh.hid)
+            return False
+
+        p_chips = chips.get('HJ', 0)
+        if chips.get('SB', 0) < chips.get('BB', 0):
+            return True
+        else:
+            return False
