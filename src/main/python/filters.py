@@ -524,3 +524,37 @@ class HJNotCoversAll:
         else:
             return False
         return True
+
+
+class SBCoversBB:
+    def __call__(self, hh, **kwargs):
+
+        try:
+            chips = hh.position_chips
+        except Exception as e:
+            logger.exception(e)
+            logger.exception(hh.hid)
+            return False
+
+        p_chips = chips.get('HJ', 0)
+        if chips.get('SB', 0) >= chips.get('BB', 0):
+            return True
+        else:
+            return False
+
+
+class SBNotCoversBB:
+    def __call__(self, hh, **kwargs):
+
+        try:
+            chips = hh.position_chips
+        except Exception as e:
+            logger.exception(e)
+            logger.exception(hh.hid)
+            return False
+
+        p_chips = chips.get('HJ', 0)
+        if chips.get('SB', 0) < chips.get('BB', 0):
+            return True
+        else:
+            return False

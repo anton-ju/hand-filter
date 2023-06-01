@@ -236,6 +236,13 @@ class Ui_MainWindow(object):
         self.checkBoxHJNotCoversAll.setObjectName("checkBoxHJNotCoversAll ")
         self.gridLayout_2.addWidget(self.checkBoxHJNotCoversAll, 20, 1, 1, 1)
 
+        self.checkBoxSBCoversBB = QtWidgets.QCheckBox(self.gbFilters)
+        self.checkBoxSBCoversBB.setObjectName("checkBoxSBCoversBB")
+        self.gridLayout_2.addWidget(self.checkBoxSBCoversBB, 21, 0, 1, 1)
+        self.checkBoxSBNotCoversBB= QtWidgets.QCheckBox(self.gbFilters)
+        self.checkBoxSBNotCoversBB.setObjectName("checkBoxSBNotCoversBB")
+        self.gridLayout_2.addWidget(self.checkBoxSBNotCoversBB, 21, 1, 1, 1)
+
         self.verticalLayout.addWidget(self.gbFilters)
         self.progressBar = QtWidgets.QProgressBar(self.centralwidget)
         self.progressBar.setProperty("value", 24)
@@ -317,6 +324,9 @@ class Ui_MainWindow(object):
 
         self.checkBoxHJCoversAll.setText(_translate("MainWindow", "HJ covers All"))
         self.checkBoxHJNotCoversAll.setText(_translate("MainWindow", "HJ not covers All"))
+
+        self.checkBoxSBCoversBB.setText(_translate("MainWindow", "SB covers BB"))
+        self.checkBoxSBNotCoversBB.setText(_translate("MainWindow", "SB not covers BB"))
 
         self.pushButtonStart.setText(_translate("MainWindow", "Start"))
         self.actionVersion_0_1_0.setText(_translate("MainWindow", "Version 0.2.0"))

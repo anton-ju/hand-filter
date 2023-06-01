@@ -457,6 +457,14 @@ class HandProcApp(QMainWindow, design.Ui_MainWindow):
             cond = filters.HJNotCoversAll()
             self.hand_filter.add_condition(cond)
 
+        if self.checkBoxSBCoversBB.isChecked():
+            cond = filters.SBCoversBB()
+            self.hand_filter.add_condition(cond)
+
+        if self.checkBoxSBNotCoversBB.isChecked():
+            cond = filters.SBNotCoversBB()
+            self.hand_filter.add_condition(cond)
+
     def connect_db(self):
         try:
             db = Hand2NoteDB(dbname=self.lineEditDBName.text())
